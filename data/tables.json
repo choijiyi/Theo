@@ -1,0 +1,74 @@
+{
+"t1": {
+"createdAt": "2026-09-08T00:00:00.000Z",
+"imageDataUrl": "images/tables/t1-imageDataUrl-1.jpg",
+"location": "seoul",
+"order": 0,
+"quantity": 29,
+"size": "2000x600",
+"usage": "마루아트 3관",
+"id": "t1"
+},
+"t2": {
+"createdAt": "2026-09-08T00:00:00.000Z",
+"imageDataUrl": "images/tables/t2-imageDataUrl-2.jpg",
+"location": "cheonan",
+"order": 1,
+"quantity": 71,
+"size": "1800x900",
+"usage": "천안 갤러리",
+"id": "t2"
+},
+"t3": {
+"createdAt": "2026-09-08T00:00:00.000Z",
+"imageDataUrl": "images/tables/t3-imageDataUrl-3.jpg",
+"location": "undecided",
+"order": 2,
+"quantity": 30,
+"size": "1200x600",
+"usage": "미정",
+"id": "t3"
+},
+"t4": {
+"contact": "010-4090-0750",
+"createdAt": "2026-09-08T00:00:00.000Z",
+"imageDataUrl": "images/tables/t4-imageDataUrl-4.jpg",
+"installSchedule": "20일(화) 오후 4시",
+"location": "undecided",
+"order": 3,
+"quantity": null,
+"size": "600x600x1000",
+"teardownSchedule": "26일(월) 오후 5시 (반납)",
+"usage": null,
+"vendor": "렌탈프리",
+"id": "t4"
+},
+"t5": {
+"contact": "010-5813-8844",
+"createdAt": "2026-09-08T00:00:00.000Z",
+"imageDataUrl": "images/tables/t5-imageDataUrl-5.jpg",
+"installSchedule": "20일(화) 오후 2시",
+"location": "undecided",
+"order": 4,
+"quantity": null,
+"size": "1500x600x1000",
+"teardownSchedule": "27일(화) 오전 10시",
+"usage": null,
+"vendor": "성장가구렌탈",
+"id": "t5"
+},
+"t6": {
+"contact": "010-4090-0750",
+"createdAt": "2026-09-08T18:30:00.000Z",
+"imageDataUrl": "images/tables/t6-imageDataUrl-6.jpg",
+"installSchedule": "20일(화) 오후 4시",
+"location": "undecided",
+"order": 5,
+"quantity": null,
+"size": "1200x600x1000",
+"teardownSchedule": "26일(월) 오후 5시 (반납)",
+"usage": null,
+"vendor": "렌탈프리",
+"id": "t6"
+}
+}

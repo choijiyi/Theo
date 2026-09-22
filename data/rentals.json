@@ -1,0 +1,67 @@
+{
+"rental-1": {
+"contact": "010-3336-8423",
+"cost": 1595000,
+"createdAt": "2026-09-08T12:40:00.000Z",
+"imageDataUrl": "images/rentals/rental-1-imageDataUrl-7.jpg",
+"installSchedule": "20일(화) 오후 2시",
+"location": "마루아트 1관",
+"name": "대여물품",
+"order": 0,
+"quantity": 4,
+"size": "1000x250x1900",
+"teardownSchedule": "27일(화) 오전 11시",
+"vendor": "한백가구렌탈",
+"id": "rental-1"
+},
+"rental-imac": {
+"contact": "010-2947-1678",
+"createdAt": "2026-09-08T17:46:20.000Z",
+"imageDataUrl": "images/rentals/rental-imac-imageDataUrl-8.jpg",
+"name": "아이맥",
+"order": 2,
+"quantity": 123,
+"vendor": "애플플라자",
+"id": "rental-imac"
+},
+"rental-ipad": {
+"contact": "010-2947-1678",
+"createdAt": "2026-09-08T17:46:20.000Z",
+"imageDataUrl": "images/rentals/rental-ipad-imageDataUrl-9.jpg",
+"name": "아이패드",
+"order": 1,
+"quantity": 48,
+"vendor": "애플플라자",
+"id": "rental-ipad"
+},
+"rental-iphone": {
+"contact": "010-2947-1678",
+"createdAt": "2026-09-08T17:46:20.000Z",
+"imageDataUrl": "images/rentals/rental-iphone-imageDataUrl-10.jpg",
+"name": "아이폰",
+"order": 3,
+"quantity": 24,
+"vendor": "애플플라자",
+"id": "rental-iphone"
+},
+"rental-keyboard": {
+"contact": "010-2947-1678",
+"createdAt": "2026-09-08T17:46:20.000Z",
+"imageDataUrl": "images/rentals/rental-keyboard-imageDataUrl-11.jpg",
+"name": "키보드",
+"order": 5,
+"quantity": 35,
+"vendor": "애플플라자",
+"id": "rental-keyboard"
+},
+"rental-mouse": {
+"contact": "010-2947-1678",
+"createdAt": "2026-09-08T17:46:20.000Z",
+"imageDataUrl": "images/rentals/rental-mouse-imageDataUrl-12.jpg",
+"name": "마우스",
+"order": 4,
+"quantity": 89,
+"vendor": "애플플라자",
+"id": "rental-mouse"
+}
+}

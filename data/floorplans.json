@@ -1,0 +1,112 @@
+{
+"cheonan-floor1": {
+"hallLabel": "1층",
+"imageDataUrl": "images/floorplans/cheonan-floor1-imageDataUrl-13.jpg",
+"location": "cheonan",
+"order": 0,
+"sourceTitle": "전시장배치도면",
+"uploadedAt": "2026-09-08T00:00:00.000Z",
+"versionLabel": "2026-09-08 기본 도면",
+"id": "cheonan-floor1"
+},
+"cheonan-floor2": {
+"hallLabel": "2층",
+"imageDataUrl": "images/floorplans/cheonan-floor2-imageDataUrl-14.jpg",
+"location": "cheonan",
+"order": 1,
+"sourceTitle": "전시장배치도면",
+"uploadedAt": "2026-09-08T00:00:00.000Z",
+"versionLabel": "2026-09-08 기본 도면",
+"id": "cheonan-floor2"
+},
+"seoul-grand": {
+"hallLabel": "그랜드관",
+"imageDataUrl": "images/floorplans/seoul-grand-imageDataUrl-15.jpg",
+"location": "seoul",
+"order": 1,
+"sourceTitle": "전시장배치도면서울",
+"uploadedAt": "2026-09-08T00:00:00.000Z",
+"versionLabel": "2026-09-08 손우성교수님 보고본",
+"id": "seoul-grand"
+},
+"seoul-hall1": {
+"hallLabel": "1관",
+"imageDataUrl": "images/floorplans/seoul-hall1-imageDataUrl-16.jpg",
+"location": "seoul",
+"order": 5,
+"sourceTitle": "전시장배치도면서울",
+"uploadedAt": "2026-09-08T00:00:00.000Z",
+"versionLabel": "2026-09-08 손우성교수님 보고본",
+"id": "seoul-hall1"
+},
+"seoul-hall2": {
+"hallLabel": "2관",
+"imageDataUrl": "images/floorplans/seoul-hall2-imageDataUrl-17.jpg",
+"location": "seoul",
+"order": 3,
+"sourceTitle": "전시장배치도면서울",
+"uploadedAt": "2026-09-08T00:00:00.000Z",
+"versionLabel": "2026-09-08 손우성교수님 보고본",
+"id": "seoul-hall2"
+},
+"seoul-hall3": {
+"hallLabel": "3관",
+"imageDataUrl": "images/floorplans/seoul-hall3-imageDataUrl-18.jpg",
+"location": "seoul",
+"order": 2,
+"sourceTitle": "전시장배치도면서울",
+"uploadedAt": "2026-09-08T00:00:00.000Z",
+"versionLabel": "2026-09-08 손우성교수님 보고본",
+"id": "seoul-hall3"
+},
+"seoul-hall4": {
+"hallLabel": "4관",
+"imageDataUrl": "images/floorplans/seoul-hall4-imageDataUrl-19.jpg",
+"location": "seoul",
+"order": 4,
+"sourceTitle": "전시장배치도면서울",
+"uploadedAt": "2026-09-08T00:00:00.000Z",
+"versionLabel": "2026-09-08 손우성교수님 보고본",
+"id": "seoul-hall4"
+},
+"seoul-hall5": {
+"hallLabel": "5관",
+"imageDataUrl": "images/floorplans/seoul-hall5-imageDataUrl-20.jpg",
+"location": "seoul",
+"order": 0,
+"sourceTitle": "전시장배치도면서울",
+"uploadedAt": "2026-09-08T00:00:00.000Z",
+"versionLabel": "2026-09-08 손우성교수님 보고본",
+"id": "seoul-hall5"
+},
+"seoul-maruart-floor1": {
+"hallLabel": "마루아트센터 1층",
+"imageDataUrl": "images/floorplans/seoul-maruart-floor1-imageDataUrl-21.jpg",
+"location": "seoul",
+"order": -3,
+"sourceTitle": "마루아트센터 1층",
+"uploadedAt": "2026-09-08T13:10:00.000Z",
+"versionLabel": "마루아트센터 건물 안내도 (1층~3층, 계단·엘리베이터·화장실 등 공용시설 위치)",
+"id": "seoul-maruart-floor1"
+},
+"seoul-maruart-floor2": {
+"hallLabel": "마루아트센터 2층",
+"imageDataUrl": "images/floorplans/seoul-maruart-floor2-imageDataUrl-22.jpg",
+"location": "seoul",
+"order": -2,
+"sourceTitle": "마루아트센터 2층",
+"uploadedAt": "2026-09-08T13:10:00.000Z",
+"versionLabel": "마루아트센터 건물 안내도 (1층~3층, 계단·엘리베이터·화장실 등 공용시설 위치)",
+"id": "seoul-maruart-floor2"
+},
+"seoul-maruart-floor3": {
+"hallLabel": "마루아트센터 3층",
+"imageDataUrl": "images/floorplans/seoul-maruart-floor3-imageDataUrl-23.jpg",
+"location": "seoul",
+"order": -1,
+"sourceTitle": "마루아트센터 3층",
+"uploadedAt": "2026-09-08T13:10:00.000Z",
+"versionLabel": "마루아트센터 건물 안내도 (1층~3층, 계단·엘리베이터·화장실 등 공용시설 위치)",
+"id": "seoul-maruart-floor3"
+}
+}

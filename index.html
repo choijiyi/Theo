@@ -1,0 +1,2622 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>테오</title>
+<style>
+  :root{
+    --paper:#F2F3EE;
+    --surface:#FFFFFF;
+    --surface-soft:#E7E9E1;
+    --ink:#17191C;
+    --ink-soft:#585D63;
+    --ink-faint:#8B9096;
+    --line:#D7D9D2;
+    --accent:#33478C;
+    --accent-ink:#FFFFFF;
+    --amber:#B8842A;
+    --crimson:#A23B34;
+    --ok:#3E7D52;
+    --team-admin:#8C7A5B;
+    --team-plan:#33478C;
+    --team-pr:#C06B3E;
+    --team-design:#6E4E8C;
+    --team-web:#1F7A8C;
+    --team-general:#7D6A1E;
+    --team-plenary:#17191C;
+    --shadow:0 1px 2px rgba(23,25,28,.06), 0 6px 16px -8px rgba(23,25,28,.14);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#15171B;
+      --surface:#1C1F24;
+      --surface-soft:#20242A;
+      --ink:#ECEDE8;
+      --ink-soft:#9BA0A6;
+      --ink-faint:#6B7076;
+      --line:#2B2F35;
+      --accent:#8092D9;
+      --accent-ink:#12141A;
+      --amber:#D8A75A;
+      --crimson:#E4897E;
+      --ok:#6FBE8B;
+      --team-admin:#B7A483;
+      --team-plan:#8092D9;
+      --team-pr:#E2916A;
+      --team-design:#B092CF;
+      --team-web:#55B6C9;
+      --team-general:#C2A85A;
+      --team-plenary:#ECEDE8;
+      --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 20px -10px rgba(0,0,0,.5);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#15171B;
+    --surface:#1C1F24;
+    --surface-soft:#20242A;
+    --ink:#ECEDE8;
+    --ink-soft:#9BA0A6;
+    --ink-faint:#6B7076;
+    --line:#2B2F35;
+    --accent:#8092D9;
+    --accent-ink:#12141A;
+    --amber:#D8A75A;
+    --crimson:#E4897E;
+    --ok:#6FBE8B;
+    --team-admin:#B7A483;
+    --team-plan:#8092D9;
+    --team-pr:#E2916A;
+    --team-design:#B092CF;
+    --team-web:#55B6C9;
+    --team-general:#C2A85A;
+    --team-plenary:#ECEDE8;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 20px -10px rgba(0,0,0,.5);
+  }
+
+  *{box-sizing:border-box;}
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.001ms !important; transition-duration:.001ms !important;}
+  }
+
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .num{font-family:'IBM Plex Mono',ui-monospace,monospace; font-variant-numeric:tabular-nums;}
+  .display{font-family:'Gothic A1','Apple SD Gothic Neo',sans-serif;}
+
+  a{color:inherit;}
+  button{font:inherit; color:inherit;}
+  textarea,input,select{font:inherit; color:inherit;}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:4px;}
+
+  .app{
+    max-width:1180px;
+    margin:0 auto;
+    padding:28px 24px 60px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+  }
+
+  /* ---------- topbar ---------- */
+  .topbar{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:16px;
+    flex-wrap:wrap;
+    border-bottom:1px solid var(--line);
+    padding-bottom:16px;
+  }
+  .brand{display:flex; flex-direction:column; gap:4px;}
+  .brand .mark{
+    display:flex; align-items:baseline; gap:8px;
+  }
+  .brand .mark .name{
+    font-family:'Gothic A1',sans-serif;
+    font-weight:900;
+    font-size:26px;
+    letter-spacing:-.01em;
+  }
+  .brand .mark .name em{
+    font-style:normal;
+    color:var(--accent);
+  }
+  .brand .tagline{
+    font-size:12.5px;
+    color:var(--ink-soft);
+    letter-spacing:.01em;
+  }
+  .brand .committee{
+    font-size:11px;
+    color:var(--ink-faint);
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    font-weight:600;
+  }
+
+  .topbar-right{
+    display:flex; flex-direction:column; align-items:flex-end; gap:8px;
+  }
+  .nav-btn{
+    display:inline-flex; align-items:center; gap:4px;
+    background:var(--surface); border:1px solid var(--line); color:var(--ink);
+    text-decoration:none; font-size:12px; font-weight:600;
+    padding:6px 12px; border-radius:999px; box-shadow:var(--shadow);
+    white-space:nowrap; transition:border-color .15s ease, color .15s ease;
+  }
+  .nav-btn:hover{border-color:var(--accent); color:var(--accent);}
+  .month-nav{
+    display:flex; align-items:center; gap:10px;
+  }
+  .month-nav .month-label{
+    font-family:'Gothic A1',sans-serif;
+    font-weight:700;
+    font-size:19px;
+    min-width:118px;
+    text-align:center;
+    text-wrap:balance;
+  }
+  .navbtn{
+    width:32px; height:32px;
+    display:flex; align-items:center; justify-content:center;
+    border:1px solid var(--line);
+    background:var(--surface);
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    transition:border-color .15s ease, background .15s ease;
+  }
+  .navbtn:hover{border-color:var(--accent); background:var(--surface-soft);}
+  .todaybtn{
+    padding:0 14px; height:32px;
+    border:1px solid var(--line);
+    background:var(--surface);
+    border-radius:8px;
+    cursor:pointer;
+    font-size:12.5px;
+    font-weight:600;
+    letter-spacing:.02em;
+  }
+  .todaybtn:hover{border-color:var(--accent);}
+
+  /* ---------- legend ---------- */
+  .legend{
+    display:flex; flex-wrap:wrap; gap:8px 14px;
+    padding:10px 2px 2px;
+  }
+  .legend-item{
+    display:flex; align-items:center; gap:6px;
+    font-size:11.5px; color:var(--ink-soft);
+  }
+  .legend-swatch{
+    width:9px; height:9px; border-radius:2px;
+  }
+
+  /* ---------- briefing ---------- */
+  .briefing{
+    display:flex;
+    gap:14px;
+    align-items:stretch;
+    flex-wrap:wrap;
+  }
+  .brief-card{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:14px 16px;
+    box-shadow:var(--shadow);
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    min-width:210px;
+  }
+  .brief-card.next-meeting{flex:1.1;}
+  .brief-eyebrow{
+    font-size:10.5px;
+    font-weight:700;
+    letter-spacing:.09em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+  }
+  .brief-main{
+    font-family:'Gothic A1',sans-serif;
+    font-weight:700;
+    font-size:16px;
+    display:flex; align-items:center; gap:8px;
+    text-wrap:balance;
+  }
+  .brief-sub{font-size:12.5px; color:var(--ink-soft);}
+  .pulse-dot{
+    width:7px;height:7px;border-radius:50%;
+    background:var(--crimson);
+    box-shadow:0 0 0 3px color-mix(in srgb, var(--crimson) 22%, transparent);
+    flex:none;
+  }
+
+  .brief-card.reminders{flex:2; min-width:260px;}
+  .reminder-row{
+    display:flex; gap:8px; flex-wrap:wrap;
+    overflow-x:auto;
+    padding-bottom:2px;
+  }
+  .reminder-chip{
+    display:flex; align-items:center; gap:6px;
+    border:1px solid var(--line);
+    background:var(--surface-soft);
+    border-radius:999px;
+    padding:5px 10px 5px 8px;
+    font-size:12px;
+    white-space:nowrap;
+    flex:none;
+  }
+  .sev-stripe{width:6px; height:6px; border-radius:50%; flex:none;}
+  .sev-overdue .sev-stripe, .sev-today .sev-stripe{background:var(--crimson);}
+  .sev-high .sev-stripe{background:var(--crimson); opacity:.75;}
+  .sev-medium .sev-stripe{background:var(--amber);}
+  .sev-low .sev-stripe{background:var(--amber); opacity:.55;}
+  .reminder-chip .rd-title{font-weight:600; max-width:160px; overflow:hidden; text-overflow:ellipsis;}
+  .reminder-chip .rd-when{color:var(--ink-soft); font-family:'IBM Plex Mono',monospace; font-size:11px;}
+  .no-reminders{font-size:12.5px; color:var(--ink-faint); padding:4px 0;}
+
+  /* ---------- console layout ---------- */
+  .console{
+    display:grid;
+    grid-template-columns:1fr 360px;
+    gap:18px;
+    align-items:start;
+  }
+  @media (max-width:880px){
+    .console{grid-template-columns:1fr;}
+  }
+
+  .panel{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:14px;
+    box-shadow:var(--shadow);
+  }
+
+  /* ---------- calendar ---------- */
+  .calendar-panel{padding:16px;}
+  .weekday-row{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    padding:4px 2px 8px;
+  }
+  .weekday-row span{
+    text-align:center;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.05em;
+    color:var(--ink-faint);
+    text-transform:uppercase;
+  }
+  .weekday-row span:first-child{color:var(--crimson);}
+  .weekday-row span:last-child{color:var(--team-web);}
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    grid-auto-rows:minmax(88px,1fr);
+    gap:5px;
+  }
+  .cell{
+    border:1px solid var(--line);
+    border-radius:9px;
+    padding:6px 6px 7px;
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    cursor:pointer;
+    background:var(--surface);
+    transition:border-color .12s ease, background .12s ease;
+    overflow:hidden;
+  }
+  .cell:hover{border-color:var(--accent);}
+  .cell.outside{background:var(--surface-soft); opacity:.55;}
+  .cell.today{border-color:var(--accent); box-shadow:inset 0 0 0 1px var(--accent);}
+  .cell.selected{background:color-mix(in srgb, var(--accent) 9%, var(--surface));}
+  .cell-top{display:flex; align-items:center; justify-content:space-between;}
+  .cell-date{font-family:'IBM Plex Mono',monospace; font-size:12.5px; font-weight:500; color:var(--ink-soft);}
+  .cell.today .cell-date{color:var(--accent); font-weight:700;}
+  .minutes-dot{width:6px; height:6px; border-radius:50%; background:var(--ok); flex:none;}
+  .cell-chips{display:flex; flex-direction:column; gap:2px; min-height:0;}
+  .mchip{
+    font-size:10px;
+    line-height:1.5;
+    border-radius:4px;
+    padding:0 4px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    border:1px solid currentColor;
+    font-weight:600;
+  }
+  .mchip.plenary-fill{
+    background:var(--team-plenary);
+    color:var(--paper);
+    border-color:var(--team-plenary);
+  }
+  .mchip.cancelled{
+    text-decoration:line-through;
+    opacity:.55;
+  }
+  .cell-tasks{display:flex; gap:3px; margin-top:auto; flex-wrap:wrap;}
+  .tdot{width:6px; height:6px; border-radius:50%;}
+  .tdot.sev-overdue,.tdot.sev-today{background:var(--crimson);}
+  .tdot.sev-high{background:var(--crimson); opacity:.7;}
+  .tdot.sev-medium{background:var(--amber);}
+  .tdot.sev-low{background:var(--amber); opacity:.5;}
+  .tmore{font-size:9.5px; color:var(--ink-faint); font-family:'IBM Plex Mono',monospace;}
+
+  /* ---------- sidebar ---------- */
+  .sidebar{display:flex; flex-direction:column; gap:14px;}
+  .panel-head{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 16px 10px;
+    border-bottom:1px solid var(--line);
+  }
+  .panel-head h2{
+    margin:0; font-family:'Gothic A1',sans-serif; font-size:14.5px; font-weight:700;
+  }
+  .panel-head .count{
+    font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint);
+  }
+
+  .tasks-panel .list, .today-panel .list{
+    max-height:260px;
+    overflow-y:auto;
+    padding:6px 8px 10px;
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+  }
+  .today-panel{
+    border-top:2px solid var(--crimson);
+  }
+  .today-panel .panel-head h2{color:var(--crimson);}
+  .next-prep-panel .list{
+    max-height:260px;
+    overflow-y:auto;
+    padding:6px 8px 10px;
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+  }
+  .next-prep-panel{
+    border-top:2px solid var(--accent);
+  }
+  .next-prep-panel .panel-head h2{color:var(--accent);}
+  .next-prep-sub{
+    padding:0 16px 8px;
+    font-size:12px;
+    color:var(--ink-soft);
+  }
+  .display-rules-panel{
+    border-top:2px solid var(--crimson);
+  }
+  .display-rules-panel .panel-head h2{color:var(--crimson);}
+  .display-rules-list{
+    padding:10px 14px 14px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .rule-row{display:flex; gap:8px; align-items:flex-start;}
+  .rule-num{
+    flex:none; width:19px; height:19px; border-radius:50%;
+    background:var(--crimson); color:var(--accent-ink);
+    font-size:10.5px; font-weight:700; margin-top:1px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .rule-body{display:flex; flex-direction:column; gap:2px; min-width:0;}
+  .rule-title{font-size:12.5px; font-weight:700;}
+  .rule-desc{font-size:11.5px; color:var(--ink-soft); line-height:1.55;}
+  .task-row{
+    display:flex; align-items:flex-start; gap:9px;
+    padding:8px 8px;
+    border-radius:8px;
+  }
+  .task-row:hover{background:var(--surface-soft);}
+  .task-check{
+    width:16px; height:16px; border-radius:5px;
+    border:1.5px solid var(--line);
+    margin-top:2px;
+    flex:none;
+    cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    background:var(--surface);
+  }
+  .task-check.done{background:var(--ok); border-color:var(--ok);}
+  .task-check.done::after{content:"✓"; color:var(--surface); font-size:11px; line-height:1;}
+  .star-btn{
+    appearance:none; border:none; background:transparent; padding:0; margin-top:1px;
+    width:16px; height:16px; flex:none; cursor:pointer;
+    color:var(--ink-faint); font-size:14px; line-height:1;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .star-btn:hover{color:var(--accent);}
+  .star-btn.on{color:var(--accent);}
+  .task-body{display:flex; flex-direction:column; gap:2px; min-width:0;}
+  .task-title{font-size:13px; font-weight:500; line-height:1.4;}
+  .task-row.done .task-title{color:var(--ink-faint); text-decoration:line-through;}
+  .task-meta{display:flex; gap:6px; align-items:center; flex-wrap:wrap;}
+  .team-tag{
+    font-size:10px; font-weight:700; padding:1px 6px; border-radius:999px;
+    border:1px solid currentColor;
+  }
+  .due-badge{
+    font-family:'IBM Plex Mono',monospace; font-size:10.5px;
+    padding:1px 6px; border-radius:999px;
+    background:var(--surface-soft); color:var(--ink-soft);
+  }
+  .due-badge.sev-overdue,.due-badge.sev-today{background:color-mix(in srgb, var(--crimson) 16%, var(--surface)); color:var(--crimson);}
+  .due-badge.sev-high{background:color-mix(in srgb, var(--crimson) 10%, var(--surface)); color:var(--crimson);}
+  .due-badge.sev-medium,.due-badge.sev-low{background:color-mix(in srgb, var(--amber) 14%, var(--surface)); color:var(--amber);}
+  .jump-link{font-size:11px; color:var(--accent); cursor:pointer; text-decoration:underline; text-underline-offset:2px;}
+  .empty-note{padding:16px; font-size:12.5px; color:var(--ink-faint); text-align:center;}
+
+  /* ---------- tables panel ---------- */
+  .tables-panel{border-top:2px solid var(--amber); margin-top:16px;}
+  .tables-panel .panel-head h2{color:var(--amber);}
+  .table-tabs{display:flex; gap:6px; padding:12px 16px 0; flex-wrap:wrap;}
+  .table-tab{
+    appearance:none; border:1px solid var(--line); background:var(--surface);
+    color:var(--ink-soft); font-size:12px; font-weight:600; padding:5px 12px;
+    border-radius:999px; cursor:pointer; font-family:'Gothic A1',sans-serif;
+  }
+  .table-tab:hover{border-color:var(--accent);}
+  .table-tab.active{background:var(--accent); border-color:var(--accent); color:var(--paper);}
+  .table-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:12px;
+    padding:12px 16px 18px;
+  }
+  .table-card{
+    border:1px solid var(--line); border-radius:12px; overflow:hidden;
+    background:var(--surface); display:flex; flex-direction:column;
+  }
+  .table-card-img{
+    width:100%; height:150px; object-fit:cover; display:block;
+    background:var(--surface-soft);
+  }
+  .table-card-body{padding:10px 12px 12px; display:flex; flex-direction:column; gap:6px;}
+  .table-card-top{display:flex; align-items:center; justify-content:space-between; gap:6px;}
+  .table-card-size{font-family:'IBM Plex Mono',monospace; font-size:15px; font-weight:700;}
+  .table-loc-badge{
+    font-size:10px; font-weight:700; padding:2px 8px; border-radius:999px;
+    border:1px solid currentColor; flex:none;
+  }
+  .table-loc-badge.seoul{color:var(--accent);}
+  .table-loc-badge.cheonan{color:var(--crimson);}
+  .table-loc-badge.undecided{color:var(--ink-faint);}
+  .table-card-usage{font-size:12.5px; color:var(--ink);}
+  .table-card-qty{font-size:12px; color:var(--ink-soft);}
+
+  /* ---------- rentals panel ---------- */
+  .rentals-panel{border-top:2px solid var(--team-general); margin-top:16px;}
+  .rentals-panel .panel-head h2{color:var(--team-general);}
+  .rental-loc-badge{
+    font-size:10px; font-weight:700; padding:2px 8px; border-radius:999px;
+    border:1px solid currentColor; flex:none; color:var(--ink-soft);
+  }
+  .rental-card-vendor{font-size:11.5px; color:var(--ink-soft);}
+  .rental-card-cost{font-size:12px; color:var(--ink); font-family:'IBM Plex Mono',monospace;}
+  .rental-card-schedule{font-size:11.5px; color:var(--ink-soft); line-height:1.6; border-top:1px dashed var(--line); padding-top:6px; margin-top:2px;}
+
+  /* ---------- floorplan panel ---------- */
+  .floorplan-panel{border-top:2px solid var(--team-web); margin-top:16px;}
+  .floorplan-panel .panel-head h2{color:var(--team-web);}
+  .floorplan-panel .panel-head .sub{
+    font-size:11.5px; color:var(--ink-faint); font-weight:500;
+  }
+  .floorplan-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+    gap:14px;
+    padding:12px 16px 18px;
+  }
+  .floorplan-card{
+    border:1px solid var(--line); border-radius:12px; overflow:hidden;
+    background:var(--surface); display:flex; flex-direction:column;
+    text-decoration:none; color:inherit; cursor:pointer;
+    transition:border-color .12s ease;
+  }
+  .floorplan-card:hover{border-color:var(--team-web);}
+  .floorplan-card.expanded{grid-column:1 / -1; border-color:var(--team-web);}
+  .floorplan-card-imgwrap{
+    width:100%; height:190px; background:var(--surface-soft);
+    display:flex; align-items:center; justify-content:center; overflow:hidden;
+  }
+  .floorplan-card-imgwrap.expanded{height:auto; max-height:82vh; padding:10px;}
+  .floorplan-card-img{width:100%; height:100%; object-fit:contain; display:block;}
+  .floorplan-card-imgwrap.expanded .floorplan-card-img{width:auto; height:auto; max-width:100%; max-height:82vh;}
+  .floorplan-card-body{padding:10px 12px 12px; display:flex; flex-direction:column; gap:4px;}
+  .floorplan-card-title{font-family:'Gothic A1',sans-serif; font-weight:700; font-size:14px;}
+  .floorplan-card-version{font-size:11px; color:var(--ink-faint); font-family:'IBM Plex Mono',monospace;}
+
+  /* ---------- students panel ---------- */
+  .students-panel{border-top:2px solid var(--team-design); margin-top:16px;}
+  .students-panel .panel-head h2{color:var(--team-design);}
+  .students-nav{display:flex; gap:8px; align-items:center; padding:12px 16px 0; flex-wrap:wrap;}
+  .students-nav .navlink-btn{
+    appearance:none; border:1px solid var(--line); background:var(--surface);
+    color:var(--ink-soft); font-size:12px; font-weight:600; padding:5px 12px;
+    border-radius:999px; cursor:pointer; font-family:'Gothic A1',sans-serif;
+  }
+  .students-nav .navlink-btn:hover{border-color:var(--team-design); color:var(--team-design);}
+  .students-crumb{font-size:12px; color:var(--ink-faint);}
+  .studio-grid{
+    display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+    gap:14px; padding:14px 16px 18px;
+  }
+  .studio-card{
+    border:1px solid var(--line); border-radius:12px; padding:20px 18px;
+    background:var(--surface); cursor:pointer; text-align:left;
+    display:flex; flex-direction:column; gap:6px;
+    transition:border-color .12s ease; font-family:inherit;
+  }
+  .studio-card:hover{border-color:var(--team-design);}
+  .studio-card-title{font-family:'Gothic A1',sans-serif; font-weight:800; font-size:17px;}
+  .studio-card-sub{font-size:12px; color:var(--ink-soft);}
+  .prof-grid{
+    display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr));
+    gap:10px; padding:14px 16px 18px;
+  }
+  .prof-card{
+    border:1px solid var(--line); border-radius:10px; padding:14px;
+    background:var(--surface); cursor:pointer; text-align:center;
+    display:flex; flex-direction:column; gap:4px;
+    transition:border-color .12s ease; font-family:inherit;
+  }
+  .prof-card:hover{border-color:var(--team-design);}
+  .prof-card-name{font-weight:700; font-size:14px;}
+  .prof-card-count{font-size:11px; color:var(--ink-faint); font-family:'IBM Plex Mono',monospace;}
+  .roster-search-wrap{padding:12px 16px 0;}
+  .roster-search{
+    width:100%; box-sizing:border-box; appearance:none;
+    border:1px solid var(--line); border-radius:10px; padding:9px 14px;
+    font-size:13px; font-family:inherit; background:var(--surface); color:var(--ink);
+  }
+  .roster-search:focus{outline:none; border-color:var(--team-design);}
+  .roster-search::placeholder{color:var(--ink-faint);}
+  .roster-count{font-size:11px; color:var(--ink-faint); padding:8px 16px 0; font-family:'IBM Plex Mono',monospace;}
+  .roster-grid{
+    display:grid; grid-template-columns:repeat(auto-fill,minmax(120px,1fr));
+    gap:12px; padding:10px 16px 18px;
+  }
+  .roster-card{
+    border:1px solid var(--line); border-radius:12px; overflow:hidden;
+    background:var(--surface); display:flex; flex-direction:column;
+    transition:border-color .12s ease, transform .12s ease;
+  }
+  .roster-card--clickable{cursor:pointer;}
+  .roster-card--clickable:hover{border-color:var(--team-design); transform:translateY(-1px);}
+  .roster-card-imgwrap{
+    width:100%; aspect-ratio:3/4; background:var(--surface-soft);
+    display:flex; align-items:center; justify-content:center; overflow:hidden;
+  }
+  .roster-card-img{width:100%; height:100%; object-fit:cover; display:block;}
+  .roster-card-noimg{font-size:11px; color:var(--ink-faint);}
+  .roster-card-body{padding:8px 10px 10px; display:flex; flex-direction:column; gap:2px;}
+  .roster-name{font-weight:600; font-size:13px;}
+  .roster-id{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-soft);}
+  .roster-id.unassigned{color:var(--ink-faint); font-style:italic;}
+
+  /* ---------- promo materials panel ---------- */
+  .promo-panel{border-top:2px solid var(--team-pr); margin-top:16px;}
+  .promo-panel .panel-head h2{color:var(--team-pr);}
+  .promo-overview-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+    gap:12px;
+    padding:12px 16px 4px;
+  }
+  .promo-overview-card{
+    border:1px solid var(--line); border-radius:12px; overflow:hidden;
+    background:var(--surface); display:flex; flex-direction:column;
+    cursor:pointer; transition:border-color .12s ease;
+  }
+  .promo-overview-card:hover{border-color:var(--team-pr);}
+  .promo-overview-card.expanded{grid-column:1 / -1; border-color:var(--team-pr);}
+  .promo-overview-imgwrap{
+    width:100%; height:140px; background:var(--surface-soft);
+    display:flex; align-items:center; justify-content:center; overflow:hidden;
+  }
+  .promo-overview-imgwrap.expanded{height:auto; max-height:80vh; padding:10px;}
+  .promo-overview-img{width:100%; height:100%; object-fit:cover; display:block;}
+  .promo-overview-imgwrap.expanded .promo-overview-img{width:auto; height:auto; max-width:100%; max-height:80vh; object-fit:contain;}
+  .promo-overview-label{padding:8px 10px; font-size:12px; font-weight:600;}
+  .promo-category-tabs{display:flex; gap:6px; padding:4px 16px 0; flex-wrap:wrap;}
+  .promo-group-list{display:flex; flex-direction:column; gap:12px; padding:14px 16px 18px;}
+  .promo-group-card{
+    border:1px solid var(--line); border-radius:12px; background:var(--surface);
+    padding:12px; display:flex; gap:14px; flex-wrap:wrap;
+  }
+  .promo-group-photo{
+    flex:none; width:260px; max-width:100%; border-radius:8px; overflow:hidden;
+    background:var(--surface-soft); cursor:pointer; align-self:flex-start;
+  }
+  .promo-group-photo img{width:100%; display:block;}
+  .promo-group-photo.expanded{width:100%;}
+  .promo-group-photo.expanded img{width:auto; max-width:100%; max-height:80vh; margin:0 auto; display:block;}
+  .promo-group-body{flex:1; min-width:240px; display:flex; flex-direction:column; gap:8px;}
+  .promo-group-title{font-family:'Gothic A1',sans-serif; font-weight:700; font-size:14px;}
+  .promo-item-row{border-top:1px dashed var(--line); padding-top:8px; display:flex; flex-direction:column; gap:3px;}
+  .promo-group-body .promo-item-row:first-of-type{border-top:none; padding-top:0;}
+  .promo-item-head{display:flex; gap:8px; align-items:center; flex-wrap:wrap;}
+  .promo-item-badge{
+    background:var(--team-pr); color:var(--accent-ink);
+    border-radius:999px; min-width:20px; height:20px; padding:0 6px;
+    display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; flex:none;
+  }
+  .promo-item-size{font-family:'IBM Plex Mono',monospace; font-size:12.5px; font-weight:600;}
+  .promo-item-type{font-size:11px; padding:2px 8px; border:1px solid var(--line); border-radius:999px; color:var(--ink-soft);}
+  .promo-item-qty{font-size:11.5px; color:var(--ink-soft);}
+  .promo-item-content{font-size:12.5px; color:var(--ink); line-height:1.6;}
+
+  /* ---------- issues panel ---------- */
+  .issues-panel{border-top:2px solid var(--crimson); margin-top:16px;}
+  .issues-panel .panel-head h2{color:var(--crimson);}
+  .issue-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:12px;
+    padding:12px 16px 18px;
+  }
+  .issue-card{
+    border:1px solid var(--line); border-radius:12px; overflow:hidden;
+    background:var(--surface); display:flex; flex-direction:column;
+    cursor:pointer; transition:border-color .12s ease;
+  }
+  .issue-card:hover{border-color:var(--crimson);}
+  .issue-card.expanded{grid-column:1 / -1; border-color:var(--crimson);}
+  .issue-card-imgwrap{
+    width:100%; height:150px; background:var(--surface-soft);
+    display:flex; align-items:flex-start; justify-content:center; overflow:hidden;
+  }
+  .issue-card-imgwrap.expanded{
+    height:auto; max-height:none; padding:10px; gap:10px;
+    flex-direction:column; align-items:center;
+  }
+  .issue-card-img{width:100%; height:100%; object-fit:cover; display:block;}
+  .issue-card-imgwrap.expanded .issue-card-img{
+    width:auto; height:auto; max-width:100%; max-height:80vh; object-fit:contain; border-radius:8px;
+  }
+  .issue-card-body{padding:10px 12px 12px; display:flex; flex-direction:column; gap:6px;}
+  .issue-card-top{display:flex; align-items:center; justify-content:space-between; gap:6px;}
+  .issue-card-date{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint);}
+  .issue-card-title{font-family:'Gothic A1',sans-serif; font-weight:700; font-size:14px;}
+  .issue-card-summary{font-size:12.5px; color:var(--ink-soft); line-height:1.65; white-space:pre-line; border-top:1px dashed var(--line); padding-top:8px; margin-top:2px;}
+
+  /* ---------- student detail ---------- */
+  .student-detail{padding:14px 16px 24px; display:flex; flex-direction:column; gap:18px;}
+  .detail-head{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; border-bottom:1px solid var(--line); padding-bottom:10px;}
+  .detail-name{font-family:'Gothic A1',sans-serif; font-weight:800; font-size:19px;}
+  .detail-id{font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--ink-soft);}
+  .detail-tag{font-size:12px; color:var(--ink-faint); background:var(--surface-soft); border-radius:999px; padding:3px 10px;}
+  .detail-section{display:flex; flex-direction:column; gap:8px;}
+  .detail-section-title{font-weight:700; font-size:13px; color:var(--team-design);}
+  .detail-img{max-width:100%; max-height:520px; border:1px solid var(--line); border-radius:10px; display:block; object-fit:contain; background:var(--surface-soft);}
+  .detail-artwork-row{display:flex; flex-direction:row; flex-wrap:wrap; gap:12px; align-items:flex-start;}
+  .detail-artwork-img{height:360px; width:auto; max-width:100%; max-height:360px; object-fit:contain;}
+  .detail-desc-grid{display:flex; flex-direction:column; gap:14px; align-items:stretch;}
+  .detail-desc-img{width:100%; height:auto; max-width:100%; object-fit:contain; border:1px solid var(--line); border-radius:10px; display:block; background:var(--surface-soft);}
+  .detail-empty{font-size:12px; color:var(--ink-faint); background:var(--surface-soft); border-radius:10px; padding:14px 16px;}
+  .equip-group{display:flex; flex-direction:column; gap:6px; margin-bottom:10px;}
+  .equip-group:last-child{margin-bottom:0;}
+  .equip-group-label{font-size:11px; font-weight:700; color:var(--ink-soft);}
+  .equip-list{display:flex; flex-wrap:wrap; gap:8px;}
+  .equip-pill{
+    display:inline-flex; align-items:center; gap:4px;
+    border:1px solid var(--line); background:var(--surface-soft);
+    border-radius:999px; padding:5px 12px; font-size:12.5px;
+  }
+  .equip-pill b{font-weight:700;}
+  .detail-missing{font-weight:700; font-size:13px; color:var(--amber); background:color-mix(in srgb, var(--amber) 14%, var(--surface)); border:1px solid color-mix(in srgb, var(--amber) 35%, transparent); text-align:center;}
+
+  /* ---------- drawer ---------- */
+  .drawer{padding-bottom:6px; border-top:2px solid var(--accent); margin-top:16px;}
+  .drawer .panel-head h2{color:var(--accent);}
+  .drawer-headline{text-align:right;}
+  .drawer-date{
+    font-family:'Gothic A1',sans-serif; font-weight:900; font-size:20px;
+  }
+  .drawer-dow{font-size:12px; color:var(--ink-soft); font-weight:600;}
+  .meeting-card{
+    border-top:1px solid var(--line);
+    padding:14px 16px 16px;
+    display:flex; flex-direction:column; gap:10px;
+  }
+  .meeting-head{display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
+  .meeting-title{font-family:'Gothic A1',sans-serif; font-weight:700; font-size:14px;}
+  .meeting-time{font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-soft);}
+  .weekly-recap{
+    border:1px solid var(--line); border-radius:10px;
+    background:var(--surface-soft);
+    padding:12px 14px; display:flex; flex-direction:column; gap:10px;
+  }
+  .weekly-recap-head{display:flex; align-items:baseline; justify-content:space-between; gap:8px; flex-wrap:wrap;}
+  .weekly-recap-title{font-family:'Gothic A1',sans-serif; font-weight:700; font-size:13px; color:var(--team-plenary);}
+  .weekly-recap-sub{font-size:10.5px; color:var(--ink-faint);}
+  .weekly-recap-section{display:flex; flex-direction:column; gap:6px;}
+  .weekly-recap-label{font-size:11px; font-weight:700; color:var(--ink-soft);}
+  .recap-meeting{background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:8px 10px; display:flex; flex-direction:column; gap:4px;}
+  .recap-meeting-head{display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
+  .recap-meeting-date{font-size:11px; color:var(--ink-soft);}
+  .recap-meeting-label{font-size:12px; font-weight:600;}
+  .recap-meeting-body{font-size:12.5px; line-height:1.6; color:var(--ink);}
+  .recap-tasklist{display:flex; flex-direction:column; gap:4px;}
+  .recap-task-row{display:flex; align-items:center; gap:8px; font-size:12.5px;}
+  .recap-task-check{width:9px; height:9px; border-radius:50%; border:1.5px solid var(--line); flex:none; display:inline-block;}
+  .recap-task-check.done{background:var(--ok); border-color:var(--ok);}
+  .recap-task-title{flex:1; min-width:0;}
+  .recap-task-row.done .recap-task-title{color:var(--ink-faint); text-decoration:line-through;}
+  .recap-empty{font-size:12px; color:var(--ink-faint);}
+  .board-columns{
+    display:grid;
+    grid-template-columns:1.15fr 1fr 1.25fr;
+    gap:14px;
+    align-items:start;
+  }
+  @media (max-width:900px){
+    .board-columns{grid-template-columns:1fr;}
+  }
+  .board-col{
+    display:flex; flex-direction:column; gap:8px;
+    border:1px solid var(--line); border-radius:10px;
+    background:var(--surface-soft);
+    padding:12px 14px 14px;
+  }
+  .minutes-field-label{font-family:'Gothic A1',sans-serif; font-size:11.5px; font-weight:700; color:var(--ink-soft); margin-bottom:5px;}
+  textarea.minutes{
+    width:100%; min-height:380px; resize:vertical;
+    border:1px solid var(--line); border-radius:9px;
+    padding:10px 11px; font-size:13px; line-height:1.6;
+    background:var(--surface); color:var(--ink);
+  }
+  textarea.minutes.tasks{min-height:380px;}
+  textarea.minutes:disabled{opacity:.5;}
+  .row-actions{display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
+  .btn{
+    border:1px solid var(--line);
+    background:var(--surface);
+    border-radius:8px;
+    padding:7px 13px;
+    font-size:12.5px;
+    font-weight:600;
+    cursor:pointer;
+    transition:border-color .12s ease, background .12s ease, opacity .12s ease;
+  }
+  .btn:hover{border-color:var(--accent);}
+  .btn:disabled{opacity:.45; cursor:not-allowed;}
+  .btn.primary{background:var(--accent); color:var(--accent-ink); border-color:var(--accent);}
+  .btn.primary:hover{opacity:.92;}
+  .btn.ghost{background:transparent;}
+  .save-note{font-size:11px; color:var(--ink-faint); font-family:'IBM Plex Mono',monospace;}
+
+  .board-col-ai{background:color-mix(in srgb, var(--accent) 6%, var(--surface-soft));}
+  .ai-label{
+    display:flex; align-items:center; gap:6px;
+    font-size:11.5px; font-weight:700; color:var(--accent);
+    text-transform:uppercase; letter-spacing:.05em;
+  }
+  .ai-label .dotmark{width:6px;height:6px;border-radius:50%;background:var(--accent);}
+  .ai-summary{
+    font-size:13px; line-height:1.7; color:var(--ink);
+    background:var(--surface-soft);
+    border-radius:9px;
+    padding:11px 12px;
+  }
+  .ai-empty{font-size:12px; color:var(--ink-faint); font-style:normal;}
+  .ai-tasklist{display:flex; flex-direction:column; gap:2px;}
+  .ai-status{font-size:12px; color:var(--ink-soft); display:flex; align-items:center; gap:6px;}
+  .spinner{
+    width:12px; height:12px; border-radius:50%;
+    border:2px solid var(--line); border-top-color:var(--accent);
+    animation:spin .7s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+
+  .schedule-hint{
+    padding:10px 16px 14px;
+    font-size:12px;
+    color:var(--ink-faint);
+    line-height:1.6;
+  }
+  .cancelled-card{opacity:.85;}
+
+  .foot-note{
+    font-size:11.5px; color:var(--ink-faint); line-height:1.7;
+    border-top:1px solid var(--line); padding-top:14px;
+    text-wrap:balance;
+  }
+  .foot-note b{color:var(--ink-soft); font-weight:600;}
+</style>
+
+<div class="app" id="app">
+  <header class="topbar">
+    <div class="brand">
+      <div class="committee">2026 상명대 커디과 졸업준비위원회</div>
+      <div class="mark"><span class="name">테오<em>의 콜시트</em></span></div>
+      <div class="tagline">회의록을 적으면, 테오가 요약하고 다음 과업을 챙깁니다.</div>
+    </div>
+    <div class="topbar-right">
+      <a class="nav-btn" href="https://claude.ai/code/artifact/dc7d7d03-9743-48f0-9b7f-e66fdf9418c4" target="_blank" rel="noopener">세피아로 이동 →</a>
+      <div class="month-nav">
+        <button class="navbtn" data-action="prev-month" aria-label="이전 달">←</button>
+        <div class="month-label num" id="monthLabel">2026년 9월</div>
+        <button class="navbtn" data-action="next-month" aria-label="다음 달">→</button>
+        <button class="todaybtn" data-action="today">오늘</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="legend" id="legend"></div>
+
+  <section class="panel today-panel" id="todayPanel">
+    <div class="panel-head">
+      <h2>금주의 과업</h2>
+      <span class="count" id="todayCount">0</span>
+    </div>
+    <div class="list" id="todayList"><div class="empty-note">불러오는 중…</div></div>
+  </section>
+
+  <section class="panel next-prep-panel" id="nextPrepPanel">
+    <div class="panel-head">
+      <h2>내가 해야 할 일</h2>
+      <span class="count" id="nextPrepCount">0</span>
+    </div>
+    <div class="next-prep-sub" id="nextPrepSub"></div>
+    <div class="list" id="nextPrepList"><div class="empty-note">불러오는 중…</div></div>
+  </section>
+
+  <section class="briefing" id="briefing">
+    <div class="brief-card next-meeting">
+      <div class="brief-eyebrow">다음 일정</div>
+      <div class="brief-main" id="nextMeetingMain">불러오는 중…</div>
+      <div class="brief-sub" id="nextMeetingSub"></div>
+    </div>
+    <div class="brief-card reminders" style="flex:2.4;">
+      <div class="brief-eyebrow">리마인드 · 7일 이내</div>
+      <div class="reminder-row" id="reminderRow"><span class="no-reminders">불러오는 중…</span></div>
+    </div>
+  </section>
+
+  <main class="console">
+    <section class="panel calendar-panel">
+      <div class="weekday-row">
+        <span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <aside class="sidebar">
+      <section class="panel tasks-panel">
+        <div class="panel-head">
+          <h2>진행 중인 과업</h2>
+          <span class="count" id="taskCount">0</span>
+        </div>
+        <div class="list" id="taskList"><div class="empty-note">불러오는 중…</div></div>
+      </section>
+
+      <section class="panel display-rules-panel" id="displayRulesPanel">
+        <div class="panel-head">
+          <h2>전시 디스플레이 제한사항</h2>
+        </div>
+        <div class="display-rules-list">
+          <div class="rule-row">
+            <span class="rule-num">1</span>
+            <div class="rule-body">
+              <div class="rule-title">행잉 전시 금지</div>
+              <div class="rule-desc">천장이 레일 조명 구조로 되어 있어 전기 공급이 끊길 우려가 있으므로 행잉 전시는 불가합니다.</div>
+            </div>
+          </div>
+          <div class="rule-row">
+            <span class="rule-num">2</span>
+            <div class="rule-body">
+              <div class="rule-title">테이블 위 부가 디피 금지</div>
+              <div class="rule-desc">작품 외의 부가적인 연출 요소(합판, 인조잔디, 식탁보 등)는 사용할 수 없습니다.</div>
+            </div>
+          </div>
+          <div class="rule-row">
+            <span class="rule-num">3</span>
+            <div class="rule-body">
+              <div class="rule-title">테이블 미사용 시 작품 크기 제한</div>
+              <div class="rule-desc">테이블을 사용하지 않는 경우에도 작품은 가로 60cm × 세로 60cm × 바닥 기준 높이 220cm를 초과할 수 없습니다.</div>
+            </div>
+          </div>
+          <div class="rule-row">
+            <span class="rule-num">4</span>
+            <div class="rule-body">
+              <div class="rule-title">테이블 사용 시 설치 제한</div>
+              <div class="rule-desc">테이블을 사용하는 경우, 스탠딩 전시(스탠바이미, TV 등) 및 바닥 설치형 전시는 불가합니다. (단, 테이블 미사용 시에는 3번 크기 제한 범위 내에서 스탠딩 전시·TV 설치 가능)</div>
+            </div>
+          </div>
+          <div class="rule-row">
+            <span class="rule-num">5</span>
+            <div class="rule-body">
+              <div class="rule-title">개인 빔프로젝터 사용 불가</div>
+              <div class="rule-desc">전시 공간 특성상 개인 작품 전시에 빔프로젝터 사용은 불가합니다.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </aside>
+  </main>
+
+  <section class="panel drawer" id="drawer">
+    <div class="panel-head">
+      <h2>콜시트</h2>
+      <div class="drawer-headline">
+        <div class="drawer-date" id="drawerDate">—</div>
+        <div class="drawer-dow" id="drawerDow"></div>
+      </div>
+    </div>
+    <div id="drawerBody"></div>
+  </section>
+
+  <section class="panel floorplan-panel" id="floorplanPanel">
+    <div class="panel-head">
+      <h2>전시장 배치도면</h2>
+      <span class="sub" id="floorplanSub"></span>
+    </div>
+    <div class="table-tabs" id="floorplanTabs">
+      <button type="button" class="table-tab active" data-action="floorplan-filter" data-loc="all">전체</button>
+      <button type="button" class="table-tab" data-action="floorplan-filter" data-loc="seoul">서울</button>
+      <button type="button" class="table-tab" data-action="floorplan-filter" data-loc="cheonan">천안</button>
+    </div>
+    <div class="floorplan-grid" id="floorplanGrid"><div class="empty-note">불러오는 중…</div></div>
+  </section>
+
+  <section class="panel students-panel" id="studentsPanel">
+    <div class="panel-head">
+      <h2>분반별 학생 정보</h2>
+      <span class="sub" id="studentsCrumb"></span>
+    </div>
+    <div class="roster-search-wrap">
+      <input type="text" id="studentsSearchInput" class="roster-search" data-role="student-search" placeholder="이름 또는 학번으로 학생 검색" autocomplete="off">
+    </div>
+    <div id="studentsBody"><div class="empty-note">불러오는 중…</div></div>
+  </section>
+
+  <section class="panel tables-panel" id="tablesPanel">
+    <div class="panel-head">
+      <h2>테이블 정보</h2>
+      <span class="count" id="tablesCount">0</span>
+    </div>
+    <div class="table-tabs" id="tableTabs">
+      <button type="button" class="table-tab active" data-action="table-filter" data-loc="all">전체</button>
+      <button type="button" class="table-tab" data-action="table-filter" data-loc="seoul">서울</button>
+      <button type="button" class="table-tab" data-action="table-filter" data-loc="cheonan">천안</button>
+      <button type="button" class="table-tab" data-action="table-filter" data-loc="undecided">미정</button>
+    </div>
+    <div class="table-grid" id="tableGrid"><div class="empty-note">불러오는 중…</div></div>
+  </section>
+
+  <section class="panel rentals-panel" id="rentalsPanel">
+    <div class="panel-head">
+      <h2>대여물품</h2>
+      <span class="count" id="rentalsCount">0</span>
+    </div>
+    <div class="table-grid" id="rentalsGrid"><div class="empty-note">불러오는 중…</div></div>
+  </section>
+
+  <section class="panel promo-panel" id="promoPanel">
+    <div class="panel-head">
+      <h2>홍보물 배치</h2>
+      <span class="count" id="promoCount">0</span>
+    </div>
+    <div class="table-tabs" id="promoTabs">
+      <button type="button" class="table-tab active" data-action="promo-filter" data-loc="seoul">서울</button>
+      <button type="button" class="table-tab" data-action="promo-filter" data-loc="cheonan">천안</button>
+    </div>
+    <div class="promo-overview-grid" id="promoOverviewGrid"></div>
+    <div class="promo-category-tabs" id="promoCategoryTabs"></div>
+    <div class="promo-group-list" id="promoGroupList"><div class="empty-note">불러오는 중…</div></div>
+  </section>
+
+  <section class="panel issues-panel" id="issuesPanel">
+    <div class="panel-head">
+      <h2>이슈</h2>
+      <span class="count" id="issuesCount">0</span>
+    </div>
+    <div class="issue-grid" id="issueGrid"><div class="empty-note">불러오는 중…</div></div>
+  </section>
+
+  <p class="foot-note">
+    <b>테오</b>는 매주 <b>월요일 19:00 기획팀 회의</b>와 <b>수요일 17:00 졸준위 전체 대면회의</b>를 기본 일정으로 캘린더에 표시합니다.
+    날짜가 지정된 과업은 자동으로 캘린더에 등록되어 7일·3일·1일 전에 리마인드 표시가 뜨고, 날짜가 없는 과업은 다음 과업 목록으로만 남습니다.
+    이 페이지는 깃허브 페이지로 배포된 정적 사이트예요. 회의록 작성, 과업 추가·완료 표시, 일정 변경, 새 이슈·자료 등록 같은 <b>내용을 바꾸는 요청은 이 페이지 안이 아니라 테오와의 대화창에서</b> 해주세요 — 말씀하시면 레포 데이터를 수정해서 커밋하고 다시 배포해드려요.
+    실시간 푸시 알림은 없어서, 열 때마다 위 브리핑 바에서 다가오는 일정과 마감을 바로 확인하는 방식으로 리마인드를 대신합니다. 자주 들어오신다면 브라우저 메뉴의 "바로가기 만들기"로 바탕화면에 아이콘을 만들어두면 편해요.
+  </p>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------------- constants ---------------- */
+  var TEAM_DEFS = {
+    admin:   {label:'관리팀',   short:'관리',   var:'--team-admin'},
+    plan:    {label:'기획팀',   short:'기획',   var:'--team-plan'},
+    pr:      {label:'홍보팀',   short:'홍보',   var:'--team-pr'},
+    design:  {label:'디자인팀', short:'디자인', var:'--team-design'},
+    web:     {label:'웹팀',     short:'웹',     var:'--team-web'},
+    general: {label:'총무팀',   short:'총무',   var:'--team-general'},
+    plenary: {label:'졸준위 전체', short:'전체', var:'--team-plenary'}
+  };
+  var DOW_LABELS = ['일','월','화','수','목','금','토'];
+
+  var DEFAULT_RULES = {
+    plan:    {dow:1, time:'19:00', label:'기획팀 회의'},
+    plenary: {dow:3, time:'17:00', label:'졸준위 전체 대면회의'}
+  };
+
+  var STUDIO_DEFS = {
+    fusion: {label:'융합디자인스튜디오', profs:['f1','f2','f3','f4','f5']},
+    innov:  {label:'혁신디자인스튜디오', profs:['i1','i2','i3','i4','i5']}
+  };
+  var PROF_DEFS = {
+    f1: {name:'김석진', studio:'fusion'},
+    f2: {name:'서승연', studio:'fusion'},
+    f3: {name:'손우성', studio:'fusion'},
+    f4: {name:'신윤진', studio:'fusion'},
+    f5: {name:'이원제', studio:'fusion'},
+    i1: {name:'김한솔', studio:'innov'},
+    i2: {name:'남정',   studio:'innov'},
+    i3: {name:'박소연', studio:'innov'},
+    i4: {name:'방경란', studio:'innov'},
+    i5: {name:'안혜선', studio:'innov'}
+  };
+
+  function recurringFor(dow){
+    var out = [];
+    var rules = (typeof state !== 'undefined' && state.recurringRules) || DEFAULT_RULES;
+    Object.keys(rules).forEach(function(key){
+      var r = rules[key];
+      if (r && r.dow === dow) out.push({team:key, label:r.label, time:r.time});
+    });
+    return out;
+  }
+
+  /* ---------------- date helpers ---------------- */
+  function pad2(n){ return String(n).padStart(2,'0'); }
+  function toDateStr(d){ return d.getFullYear() + '-' + pad2(d.getMonth()+1) + '-' + pad2(d.getDate()); }
+  function parseDateStr(s){ var p = s.split('-').map(Number); return new Date(p[0], p[1]-1, p[2]); }
+  function todayObj(){ var n = new Date(); return new Date(n.getFullYear(), n.getMonth(), n.getDate()); }
+  function todayStr(){ return toDateStr(todayObj()); }
+  function addDays(d,n){ var r = new Date(d); r.setDate(r.getDate()+n); return r; }
+  function daysBetween(a,b){ return Math.round((a-b)/86400000); }
+
+  function dateLabel(dateStr){
+    var d = parseDateStr(dateStr);
+    return (d.getMonth()+1) + '월 ' + d.getDate() + '일 (' + DOW_LABELS[d.getDay()] + ')';
+  }
+  function shortDateLabel(dateStr){
+    var d = parseDateStr(dateStr);
+    return (d.getMonth()+1) + '/' + d.getDate();
+  }
+
+  function severityFor(days){
+    if (days < 0) return 'overdue';
+    if (days === 0) return 'today';
+    if (days <= 1) return 'high';
+    if (days <= 3) return 'medium';
+    if (days <= 7) return 'low';
+    return null;
+  }
+  function severityLabel(sev, days){
+    if (sev === 'overdue') return (Math.abs(days)) + '일 지남';
+    if (sev === 'today') return '오늘 마감';
+    return 'D-' + days;
+  }
+
+  /* ---------------- state ---------------- */
+  var state = {
+    db: null,
+    sample: null,
+    dbReady: false,
+    viewYear: todayObj().getFullYear(),
+    viewMonth: todayObj().getMonth(),
+    selectedDate: todayStr(),
+    meetingsById: new Map(),
+    tasksById: new Map(),
+    tablesById: new Map(),
+    tableFilter: 'all',
+    rentalsById: new Map(),
+    floorplansById: new Map(),
+    floorplanFilter: 'all',
+    floorplanExpandedId: null,
+    promoGroupsById: new Map(),
+    promoOverviewById: new Map(),
+    promoFilter: 'seoul',
+    promoCategory: null,
+    promoOverviewExpandedId: null,
+    promoGroupExpandedId: null,
+    issuesById: new Map(),
+    issueExpandedId: null,
+    studentsById: new Map(),
+    studentWorkById: new Map(),
+    studentNav: { level: 'studios', studio: null, profKey: null, studentId: null, studentStudio: null, studentName: null },
+    studentSearch: '',
+    recurringRules: JSON.parse(JSON.stringify(DEFAULT_RULES)),
+    generating: {}
+  };
+
+  var TABLE_LOC_LABELS = { seoul: '서울', cheonan: '천안', undecided: '미정' };
+  var PROMO_CATEGORY_ORDER = ['1층 로비 · 5관 입구', '5관', '그랜드관', '신관 (공용)', '3관', '2관', '4관', '1관', '기타 · 옥외'];
+
+  function defaultMeetingDoc(dateStr, team, label, time, kind){
+    return {
+      date: dateStr, team: team, label: label, time: time, kind: kind,
+      status: 'scheduled', cancelReason: null, timeTBD: false,
+      minutes: '', minutesContent: '', minutesNextTasks: '', minutesUpdatedAt: null,
+      summary: '', summaryUpdatedAt: null,
+      tasks: [], createdAt: null
+    };
+  }
+
+  function getMeetingsForDate(dateStr){
+    var dow = parseDateStr(dateStr).getDay();
+    var list = [];
+    recurringFor(dow).forEach(function(r){
+      var id = 'rec-' + r.team + '-' + dateStr;
+      var existing = state.meetingsById.get(id);
+      var label = existing ? (existing.label || r.label) : r.label;
+      var time = existing ? (existing.time || r.time) : r.time;
+      var status = existing ? (existing.status || 'scheduled') : 'scheduled';
+      var timeTBD = existing ? !!existing.timeTBD : false;
+      list.push({
+        id: id, team: r.team, label: label, time: time, status: status, timeTBD: timeTBD, kind: 'recurring',
+        data: existing || defaultMeetingDoc(dateStr, r.team, label, time, 'recurring')
+      });
+    });
+    state.meetingsById.forEach(function(data, id){
+      if (data.date === dateStr && data.kind === 'adhoc'){
+        list.push({id:id, team:data.team, label:data.label, time:data.time, status: data.status || 'scheduled', timeTBD: !!data.timeTBD, kind:'adhoc', data:data});
+      }
+    });
+    list.sort(function(a,b){ return (a.time||'').localeCompare(b.time||''); });
+    return list;
+  }
+
+  /* ---------------- rendering: legend ---------------- */
+  function renderLegend(){
+    var order = ['plan','plenary','admin','pr','design','web','general'];
+    var html = order.map(function(key){
+      var t = TEAM_DEFS[key];
+      return '<span class="legend-item"><span class="legend-swatch" style="background:var(' + t.var + ')"></span>' + t.label + '</span>';
+    }).join('');
+    document.getElementById('legend').innerHTML = html;
+  }
+
+  /* ---------------- rendering: calendar ---------------- */
+  function renderCalendar(){
+    var y = state.viewYear, m = state.viewMonth;
+    document.getElementById('monthLabel').textContent = y + '년 ' + (m+1) + '월';
+
+    var firstOfMonth = new Date(y, m, 1);
+    var startOffset = firstOfMonth.getDay();
+    var gridStart = addDays(firstOfMonth, -startOffset);
+    var today = todayObj();
+
+    var cellsHtml = '';
+    for (var i = 0; i < 42; i++){
+      var d = addDays(gridStart, i);
+      var dateStr = toDateStr(d);
+      var inMonth = d.getMonth() === m;
+      var isToday = dateStr === todayStr();
+      var isSelected = dateStr === state.selectedDate;
+
+      var meetings = getMeetingsForDate(dateStr);
+      var chipsHtml = meetings.slice(0,3).map(function(mm){
+        var team = TEAM_DEFS[mm.team];
+        var hasMinutes = mm.data && mm.data.minutes;
+        var isCancelled = mm.status === 'cancelled';
+        var cls = (mm.team === 'plenary' ? 'mchip plenary-fill' : 'mchip') + (isCancelled ? ' cancelled' : '');
+        var style = mm.team === 'plenary' ? '' : ' style="color:var(' + team.var + ')"';
+        var timeLabel = mm.timeTBD ? '시간미정' : mm.time;
+        var text = timeLabel + ' ' + team.short + (isCancelled ? ' 취소' : (hasMinutes ? ' •' : ''));
+        return '<span class="' + cls + '"' + style + '>' + text + '</span>';
+      }).join('');
+
+      var dueTasks = [];
+      state.tasksById.forEach(function(t){
+        if (t.dueDate === dateStr && t.status === 'pending') dueTasks.push(t);
+      });
+      var taskDotsHtml = '';
+      if (dueTasks.length){
+        var shown = dueTasks.slice(0,4);
+        taskDotsHtml = '<div class="cell-tasks">' + shown.map(function(t){
+          var days = daysBetween(parseDateStr(t.dueDate), today);
+          var sev = severityFor(days) || 'low';
+          return '<span class="tdot sev-' + sev + '" title="' + t.title.replace(/"/g,'&quot;') + '"></span>';
+        }).join('') + (dueTasks.length > shown.length ? '<span class="tmore">+' + (dueTasks.length - shown.length) + '</span>' : '') + '</div>';
+      }
+
+      var cellClasses = ['cell'];
+      if (!inMonth) cellClasses.push('outside');
+      if (isToday) cellClasses.push('today');
+      if (isSelected) cellClasses.push('selected');
+
+      cellsHtml += '<div class="' + cellClasses.join(' ') + '" data-action="select-date" data-date="' + dateStr + '">' +
+        '<div class="cell-top"><span class="cell-date">' + d.getDate() + '</span>' +
+        (meetings.some(function(mm){ return mm.data && mm.data.minutes; }) ? '<span class="minutes-dot" title="회의록 작성됨"></span>' : '') +
+        '</div>' +
+        '<div class="cell-chips">' + chipsHtml + '</div>' +
+        taskDotsHtml +
+        '</div>';
+    }
+    document.getElementById('grid').innerHTML = cellsHtml;
+  }
+
+  /* ---------------- rendering: briefing ---------------- */
+  function computeNextMeeting(){
+    var now = new Date();
+    var candidates = [];
+    for (var i = 0; i < 21; i++){
+      var d = addDays(todayObj(), i);
+      var dateStr = toDateStr(d);
+      var dow = d.getDay();
+      recurringFor(dow).forEach(function(r){
+        var id = 'rec-' + r.team + '-' + dateStr;
+        var existing = state.meetingsById.get(id);
+        if (existing && existing.status === 'cancelled') return;
+        var label = existing ? (existing.label || r.label) : r.label;
+        var time = existing ? (existing.time || r.time) : r.time;
+        var timeTBD = existing ? !!existing.timeTBD : false;
+        var dt;
+        if (timeTBD || !/^\d{1,2}:\d{2}$/.test(time)){
+          dt = new Date(d); dt.setHours(23,59,0,0);
+        } else {
+          var parts = time.split(':').map(Number);
+          dt = new Date(d); dt.setHours(parts[0], parts[1], 0, 0);
+        }
+        if (dt >= now) candidates.push({dt:dt, date:dateStr, team:r.team, label:label, time:time, timeTBD:timeTBD});
+      });
+    }
+    state.meetingsById.forEach(function(data, id){
+      if (data.kind !== 'adhoc') return;
+      if (data.status === 'cancelled') return;
+      if (data.date < todayStr()) return;
+      var timeTBD = !!data.timeTBD;
+      var dt;
+      if (timeTBD || !/^\d{1,2}:\d{2}$/.test(data.time || '')){
+        dt = parseDateStr(data.date); dt.setHours(23,59,0,0);
+      } else {
+        var parts = (data.time || '00:00').split(':').map(Number);
+        dt = parseDateStr(data.date); dt.setHours(parts[0], parts[1], 0, 0);
+      }
+      if (dt >= now) candidates.push({dt:dt, date:data.date, team:data.team, label:data.label, time:data.time, timeTBD:timeTBD});
+    });
+    candidates.sort(function(a,b){ return a.dt - b.dt; });
+    return candidates[0] || null;
+  }
+
+  function computeReminderTasks(){
+    var today = todayObj();
+    var out = [];
+    state.tasksById.forEach(function(t){
+      if (t.status !== 'pending' || !t.dueDate) return;
+      var days = daysBetween(parseDateStr(t.dueDate), today);
+      if (days <= 7){
+        out.push({task:t, days:days, sev: severityFor(days)});
+      }
+    });
+    out.sort(function(a,b){ return a.days - b.days; });
+    return out;
+  }
+
+  function renderBriefing(){
+    var next = computeNextMeeting();
+    var mainEl = document.getElementById('nextMeetingMain');
+    var subEl = document.getElementById('nextMeetingSub');
+    if (!state.dbReady && !next){
+      mainEl.textContent = '불러오는 중…';
+      subEl.textContent = '';
+    } else if (!next){
+      mainEl.innerHTML = '예정된 일정 없음';
+      subEl.textContent = '';
+    } else {
+      var team = TEAM_DEFS[next.team];
+      var mins = Math.round((next.dt - new Date())/60000);
+      var soon = !next.timeTBD && mins <= 60;
+      mainEl.innerHTML = (soon ? '<span class="pulse-dot"></span>' : '') + team.label + ' · ' + next.label;
+      var timeLabel = next.timeTBD ? '시간 미정' : next.time;
+      var whenText;
+      if (next.date === todayStr()) whenText = '오늘 · ' + timeLabel;
+      else if (daysBetween(parseDateStr(next.date), todayObj()) === 1) whenText = '내일 · ' + timeLabel;
+      else whenText = dateLabel(next.date) + ' · ' + timeLabel;
+      if (soon && mins >= 0) whenText += ' · ' + mins + '분 후 시작';
+      subEl.textContent = whenText;
+    }
+
+    var reminders = computeReminderTasks();
+    var rowEl = document.getElementById('reminderRow');
+    if (!state.dbReady){
+      rowEl.innerHTML = '<span class="no-reminders">불러오는 중…</span>';
+    } else if (!reminders.length){
+      rowEl.innerHTML = '<span class="no-reminders">7일 이내 마감인 과업이 없습니다.</span>';
+    } else {
+      rowEl.innerHTML = reminders.slice(0,10).map(function(r){
+        return '<span class="reminder-chip sev-' + r.sev + '" data-action="jump-date" data-date="' + r.task.dueDate + '">' +
+          '<span class="sev-stripe"></span>' +
+          '<span class="rd-title">' + escapeHtml(r.task.title) + '</span>' +
+          '<span class="rd-when">' + severityLabel(r.sev, r.days) + '</span>' +
+          '</span>';
+      }).join('');
+    }
+  }
+
+  /* ---------------- rendering: task panel ---------------- */
+  function renderTaskPanel(){
+    var all = Array.from(state.tasksById.values()).filter(function(t){ return t.status === 'pending'; });
+    all.sort(function(a,b){
+      if (a.dueDate && b.dueDate) return a.dueDate.localeCompare(b.dueDate);
+      if (a.dueDate) return -1;
+      if (b.dueDate) return 1;
+      return (a.createdAt||'').localeCompare(b.createdAt||'');
+    });
+    document.getElementById('taskCount').textContent = all.length;
+    var listEl = document.getElementById('taskList');
+    if (!state.dbReady){
+      listEl.innerHTML = '<div class="empty-note">불러오는 중…</div>';
+      return;
+    }
+    if (!all.length){
+      listEl.innerHTML = '<div class="empty-note">아직 등록된 과업이 없습니다. 회의록 요약을 요청하면 여기에 채워져요.</div>';
+      return;
+    }
+    var today = todayObj();
+    listEl.innerHTML = all.map(function(t){
+      var team = TEAM_DEFS[t.team] || TEAM_DEFS.plan;
+      var dueHtml = '';
+      if (t.dueDate){
+        var days = daysBetween(parseDateStr(t.dueDate), today);
+        var sev = severityFor(days);
+        dueHtml = '<span class="due-badge' + (sev ? ' sev-' + sev : '') + '">' + shortDateLabel(t.dueDate) + '</span>';
+      } else {
+        dueHtml = '<span class="due-badge">날짜 미정</span>';
+      }
+      return '<div class="task-row' + (t.starred ? ' starred' : '') + '" data-id="' + t.id + '">' +
+        '<div class="task-check" data-action="toggle-task" data-id="' + t.id + '" data-status="' + t.status + '"></div>' +
+        starBtn(t) +
+        '<div class="task-body">' +
+          '<div class="task-title">' + escapeHtml(t.title) + '</div>' +
+          '<div class="task-meta">' +
+            '<span class="team-tag" style="color:var(' + team.var + ')">' + team.short + '</span>' +
+            dueHtml +
+            (t.assignee ? assigneeBadge(t.assignee) : '') +
+            '<span class="jump-link" data-action="jump-date" data-date="' + t.meetingDate + '">회의로 이동</span>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  /* ---------------- rendering: today panel ---------------- */
+  function renderTodayPanel(){
+    var today = todayObj();
+    var items = [];
+    var pendingCount = 0;
+    state.tasksById.forEach(function(t){
+      if (!t.dueDate) return;
+      var days = daysBetween(parseDateStr(t.dueDate), today);
+      if (days > 0) return;
+      items.push({task:t, days:days});
+      if (t.status === 'pending') pendingCount++;
+    });
+    items.sort(function(a,b){
+      var aDone = a.task.status === 'done', bDone = b.task.status === 'done';
+      if (aDone !== bDone) return aDone ? 1 : -1;
+      return a.days - b.days;
+    });
+
+    document.getElementById('todayCount').textContent = pendingCount;
+    var listEl = document.getElementById('todayList');
+    if (!state.dbReady){
+      listEl.innerHTML = '<div class="empty-note">불러오는 중…</div>';
+      return;
+    }
+    if (!items.length){
+      listEl.innerHTML = '<div class="empty-note">오늘 마감인 과업이 없습니다.</div>';
+      return;
+    }
+    listEl.innerHTML = items.map(function(it){
+      var t = it.task;
+      var done = t.status === 'done';
+      var team = TEAM_DEFS[t.team] || TEAM_DEFS.plan;
+      var sev = severityFor(it.days) || 'today';
+      return '<div class="task-row' + (done ? ' done' : '') + (t.starred ? ' starred' : '') + '" data-id="' + t.id + '">' +
+        '<div class="task-check' + (done ? ' done' : '') + '" data-action="toggle-task" data-id="' + t.id + '" data-status="' + t.status + '"></div>' +
+        starBtn(t) +
+        '<div class="task-body">' +
+          '<div class="task-title">' + escapeHtml(t.title) + '</div>' +
+          '<div class="task-meta">' +
+            '<span class="team-tag" style="color:var(' + team.var + ')">' + team.short + '</span>' +
+            '<span class="due-badge sev-' + sev + '">' + severityLabel(sev, it.days) + '</span>' +
+            (t.assignee ? assigneeBadge(t.assignee) : '') +
+            '<span class="jump-link" data-action="jump-date" data-date="' + t.meetingDate + '">회의로 이동</span>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  /* ---------------- rendering: next-meeting prep ---------------- */
+  function renderNextPrepPanel(){
+    var next = computeNextMeeting();
+    var subEl = document.getElementById('nextPrepSub');
+    var countEl = document.getElementById('nextPrepCount');
+    var listEl = document.getElementById('nextPrepList');
+
+    if (!state.dbReady){
+      subEl.textContent = '';
+      countEl.textContent = '0';
+      listEl.innerHTML = '<div class="empty-note">불러오는 중…</div>';
+      return;
+    }
+    if (!next){
+      subEl.textContent = '예정된 다음 회의가 없습니다.';
+      countEl.textContent = '0';
+      listEl.innerHTML = '<div class="empty-note">예정된 회의가 없어요.</div>';
+      return;
+    }
+
+    var team = TEAM_DEFS[next.team];
+    var whenText;
+    if (next.date === todayStr()) whenText = '오늘 ' + next.time;
+    else if (daysBetween(parseDateStr(next.date), todayObj()) === 1) whenText = '내일 ' + next.time;
+    else whenText = dateLabel(next.date) + ' ' + next.time;
+    subEl.textContent = '별표한 과업만 모아둔 목록이에요 · 다음 회의는 ' + team.label + ' · ' + next.label + ' (' + whenText + ')';
+
+    var items = [];
+    var pendingCount = 0;
+    state.tasksById.forEach(function(t){
+      if (!t.starred) return;
+      items.push(t);
+      if (t.status === 'pending') pendingCount++;
+    });
+    items.sort(function(a,b){
+      var aDone = a.status === 'done', bDone = b.status === 'done';
+      if (aDone !== bDone) return aDone ? 1 : -1;
+      if (a.dueDate && b.dueDate) return a.dueDate.localeCompare(b.dueDate);
+      if (a.dueDate) return -1;
+      if (b.dueDate) return 1;
+      return 0;
+    });
+
+    countEl.textContent = pendingCount;
+    if (!items.length){
+      listEl.innerHTML = '<div class="empty-note">아직 별표한 과업이 없습니다. 금주의 과업에서 별을 눌러 담아보세요.</div>';
+      return;
+    }
+    var today = todayObj();
+    listEl.innerHTML = items.map(function(t){
+      var done = t.status === 'done';
+      var tteam = TEAM_DEFS[t.team] || TEAM_DEFS.plan;
+      var dueHtml;
+      if (t.dueDate){
+        var days = daysBetween(parseDateStr(t.dueDate), today);
+        var sev = severityFor(days);
+        dueHtml = '<span class="due-badge' + (sev ? ' sev-' + sev : '') + '">' + shortDateLabel(t.dueDate) + '</span>';
+      } else {
+        dueHtml = '<span class="due-badge">날짜 미정</span>';
+      }
+      return '<div class="task-row' + (done ? ' done' : '') + (t.starred ? ' starred' : '') + '" data-id="' + t.id + '">' +
+        '<div class="task-check' + (done ? ' done' : '') + '" data-action="toggle-task" data-id="' + t.id + '" data-status="' + t.status + '"></div>' +
+        starBtn(t) +
+        '<div class="task-body">' +
+          '<div class="task-title">' + escapeHtml(t.title) + '</div>' +
+          '<div class="task-meta">' +
+            '<span class="team-tag" style="color:var(' + tteam.var + ')">' + tteam.short + '</span>' +
+            dueHtml +
+            (t.assignee ? assigneeBadge(t.assignee) : '') +
+            '<span class="jump-link" data-action="jump-date" data-date="' + t.meetingDate + '">회의로 이동</span>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  /* ---------------- rendering: tables panel ---------------- */
+  function renderTables(){
+    var countEl = document.getElementById('tablesCount');
+    var gridEl = document.getElementById('tableGrid');
+    if (!state.dbReady){
+      countEl.textContent = '0';
+      gridEl.innerHTML = '<div class="empty-note">불러오는 중…</div>';
+      return;
+    }
+    var all = Array.from(state.tablesById.values());
+    all.sort(function(a,b){ return (a.order||0) - (b.order||0); });
+    var items = state.tableFilter === 'all' ? all : all.filter(function(t){ return t.location === state.tableFilter; });
+
+    countEl.textContent = all.length;
+    if (!items.length){
+      gridEl.innerHTML = '<div class="empty-note">등록된 테이블 정보가 없습니다.</div>';
+      return;
+    }
+    gridEl.innerHTML = items.map(function(t){
+      var locKey = t.location || 'undecided';
+      var locLabel = TABLE_LOC_LABELS[locKey] || '미정';
+      var img = t.imageDataUrl ? '<img class="table-card-img" src="' + t.imageDataUrl + '" alt="' + escapeAttr(t.size || '') + '">' : '';
+      var vendorLine = (t.vendor || t.contact) ?
+        '<div class="rental-card-vendor">' + (t.vendor ? escapeHtml(t.vendor) : '업체 미정') + (t.contact ? ' · ' + escapeHtml(t.contact) : '') + '</div>' : '';
+      var scheduleLines = [];
+      if (t.installSchedule) scheduleLines.push('설치 ' + escapeHtml(t.installSchedule));
+      if (t.teardownSchedule) scheduleLines.push('철거 ' + escapeHtml(t.teardownSchedule));
+      var scheduleBlock = scheduleLines.length ? '<div class="rental-card-schedule">' + scheduleLines.join('<br>') + '</div>' : '';
+      return '<div class="table-card">' +
+        img +
+        '<div class="table-card-body">' +
+          '<div class="table-card-top">' +
+            '<span class="table-card-size">' + escapeHtml(t.size || '-') + '</span>' +
+            '<span class="table-loc-badge ' + locKey + '">' + locLabel + '</span>' +
+          '</div>' +
+          '<div class="table-card-usage">' + escapeHtml(t.usage || '사용처 미정') + '</div>' +
+          '<div class="table-card-qty">수량 ' + (t.quantity != null ? t.quantity : '-') + '장</div>' +
+          vendorLine +
+          scheduleBlock +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  /* ---------------- rendering: rentals panel ---------------- */
+  function renderRentals(){
+    var countEl = document.getElementById('rentalsCount');
+    var gridEl = document.getElementById('rentalsGrid');
+    if (!state.dbReady){
+      countEl.textContent = '0';
+      gridEl.innerHTML = '<div class="empty-note">불러오는 중…</div>';
+      return;
+    }
+    var all = Array.from(state.rentalsById.values());
+    all.sort(function(a,b){ return (a.order||0) - (b.order||0); });
+
+    countEl.textContent = all.length;
+    if (!all.length){
+      gridEl.innerHTML = '<div class="empty-note">등록된 대여물품이 없습니다.</div>';
+      return;
+    }
+    gridEl.innerHTML = all.map(function(r){
+      var img = r.imageDataUrl ? '<img class="table-card-img" src="' + r.imageDataUrl + '" alt="' + escapeAttr(r.name || r.size || '') + '">' : '';
+      var vendorLine = (r.vendor || r.contact) ?
+        '<div class="rental-card-vendor">' + (r.vendor ? escapeHtml(r.vendor) : '업체 미정') + (r.contact ? ' · ' + escapeHtml(r.contact) : '') + '</div>' : '';
+      var costLine = (r.cost != null && r.cost !== '') ?
+        '<div class="rental-card-cost">비용 ' + (typeof r.cost === 'number' ? r.cost.toLocaleString('ko-KR') + '원' : escapeHtml(String(r.cost))) + '</div>' : '';
+      var scheduleLines = [];
+      if (r.installSchedule) scheduleLines.push('설치 ' + escapeHtml(r.installSchedule));
+      if (r.teardownSchedule) scheduleLines.push('철거 ' + escapeHtml(r.teardownSchedule));
+      var scheduleBlock = scheduleLines.length ? '<div class="rental-card-schedule">' + scheduleLines.join('<br>') + '</div>' : '';
+      return '<div class="table-card">' +
+        img +
+        '<div class="table-card-body">' +
+          '<div class="table-card-top">' +
+            '<span class="table-card-size">' + escapeHtml(r.size || '-') + '</span>' +
+            (r.location ? '<span class="rental-loc-badge">' + escapeHtml(r.location) + '</span>' : '') +
+          '</div>' +
+          '<div class="table-card-usage">' + escapeHtml(r.name || '대여물품') + '</div>' +
+          '<div class="table-card-qty">수량 ' + (r.quantity != null ? r.quantity : '-') + '개</div>' +
+          vendorLine +
+          costLine +
+          scheduleBlock +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  /* ---------------- rendering: floorplan panel ---------------- */
+  function renderFloorplans(){
+    var subEl = document.getElementById('floorplanSub');
+    var gridEl = document.getElementById('floorplanGrid');
+    if (!state.dbReady){
+      subEl.textContent = '';
+      gridEl.innerHTML = '<div class="empty-note">불러오는 중…</div>';
+      return;
+    }
+    var LOC_RANK = { seoul: 0, cheonan: 1 };
+    var all = Array.from(state.floorplansById.values());
+    all.sort(function(a,b){
+      var la = LOC_RANK[a.location] != null ? LOC_RANK[a.location] : 9;
+      var lb = LOC_RANK[b.location] != null ? LOC_RANK[b.location] : 9;
+      if (la !== lb) return la - lb;
+      return (a.order||0) - (b.order||0);
+    });
+    var items = state.floorplanFilter === 'all' ? all : all.filter(function(f){ return f.location === state.floorplanFilter; });
+
+    var latest = all.reduce(function(acc, f){ return (f.uploadedAt && (!acc || f.uploadedAt > acc)) ? f.uploadedAt : acc; }, null);
+    subEl.textContent = latest ? ('최신 업데이트 · ' + timeOnly(latest)) : '';
+
+    if (!items.length){
+      gridEl.innerHTML = '<div class="empty-note">등록된 배치도면이 없습니다.</div>';
+      return;
+    }
+    gridEl.innerHTML = items.map(function(f){
+      var expanded = state.floorplanExpandedId === f.id;
+      var img = f.imageDataUrl ? '<img class="floorplan-card-img" src="' + f.imageDataUrl + '" alt="' + escapeAttr(f.hallLabel || '') + '">' : '';
+      var locKey = f.location || 'undecided';
+      var locLabel = TABLE_LOC_LABELS[locKey] || '';
+      return '<div class="floorplan-card' + (expanded ? ' expanded' : '') + '" data-action="toggle-floorplan-expand" data-id="' + escapeAttr(f.id) + '">' +
+        '<div class="floorplan-card-imgwrap' + (expanded ? ' expanded' : '') + '">' + img + '</div>' +
+        '<div class="floorplan-card-body">' +
+          '<div class="table-card-top">' +
+            '<div class="floorplan-card-title">' + escapeHtml(f.hallLabel || '-') + '</div>' +
+            (state.floorplanFilter === 'all' ? '<span class="table-loc-badge ' + locKey + '">' + locLabel + '</span>' : '') +
+          '</div>' +
+          '<div class="floorplan-card-version">' + escapeHtml(f.versionLabel || '') + (f.uploadedAt ? ' · ' + timeOnly(f.uploadedAt) : '') + '</div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  /* ---------------- rendering: promo materials panel ---------------- */
+  function promoCategoryRank(cat){
+    var idx = PROMO_CATEGORY_ORDER.indexOf(cat || '기타 · 옥외');
+    return idx === -1 ? PROMO_CATEGORY_ORDER.length : idx;
+  }
+
+  function renderPromoMaterials(){
+    var countEl = document.getElementById('promoCount');
+    var overviewEl = document.getElementById('promoOverviewGrid');
+    var catTabsEl = document.getElementById('promoCategoryTabs');
+    var listEl = document.getElementById('promoGroupList');
+    if (!state.dbReady){
+      countEl.textContent = '0';
+      overviewEl.innerHTML = '';
+      catTabsEl.innerHTML = '';
+      listEl.innerHTML = '<div class="empty-note">불러오는 중…</div>';
+      return;
+    }
+    var overview = Array.from(state.promoOverviewById.values())
+      .filter(function(o){ return o.region === state.promoFilter; })
+      .sort(function(a,b){ return (a.order||0) - (b.order||0); });
+    var allGroups = Array.from(state.promoGroupsById.values())
+      .filter(function(g){ return g.region === state.promoFilter; })
+      .sort(function(a,b){ return (a.order||0) - (b.order||0); });
+
+    var itemCount = allGroups.reduce(function(n,g){ return n + (g.items ? g.items.length : 0); }, 0);
+    countEl.textContent = itemCount;
+
+    overviewEl.innerHTML = overview.map(function(o){
+      var expanded = state.promoOverviewExpandedId === o.id;
+      var img = o.imageDataUrl ? '<img class="promo-overview-img" src="' + o.imageDataUrl + '" alt="' + escapeAttr(o.label || '') + '">' : '';
+      return '<div class="promo-overview-card' + (expanded ? ' expanded' : '') + '" data-action="toggle-promo-overview" data-id="' + escapeAttr(o.id) + '">' +
+        '<div class="promo-overview-imgwrap' + (expanded ? ' expanded' : '') + '">' + img + '</div>' +
+        '<div class="promo-overview-label">' + escapeHtml(o.label || '') + '</div>' +
+      '</div>';
+    }).join('');
+
+    if (!allGroups.length){
+      var msg = state.promoFilter === 'cheonan' ? '천안 홍보물 배치 정보는 아직 등록되지 않았습니다.' : '등록된 홍보물 배치 정보가 없습니다.';
+      catTabsEl.innerHTML = '';
+      listEl.innerHTML = '<div class="empty-note">' + msg + '</div>';
+      return;
+    }
+
+    // Build the category list present in this region, ordered by PROMO_CATEGORY_ORDER
+    // (unknown categories sort to the end). Groups without a category fall into '기타 · 옥외'
+    // so every group always has a home tab.
+    var catCounts = {};
+    allGroups.forEach(function(g){
+      var cat = g.category || '기타 · 옥외';
+      catCounts[cat] = (catCounts[cat] || 0) + 1;
+    });
+    var cats = Object.keys(catCounts).sort(function(a,b){ return promoCategoryRank(a) - promoCategoryRank(b); });
+
+    // Default to the first real category rather than "전체" — with dozens of items across
+    // a venue, showing everything at once is what made this panel hard to scan in the first
+    // place, so start scoped and let the user opt into the full list.
+    if (!state.promoCategory || (state.promoCategory !== 'all' && cats.indexOf(state.promoCategory) === -1)){
+      state.promoCategory = cats[0] || 'all';
+    }
+
+    catTabsEl.innerHTML = '<button type="button" class="table-tab' + (state.promoCategory === 'all' ? ' active' : '') + '" data-action="promo-category-filter" data-cat="all">전체 (' + allGroups.length + ')</button>' +
+      cats.map(function(cat){
+        return '<button type="button" class="table-tab' + (state.promoCategory === cat ? ' active' : '') + '" data-action="promo-category-filter" data-cat="' + escapeAttr(cat) + '">' + escapeHtml(cat) + ' (' + catCounts[cat] + ')</button>';
+      }).join('');
+
+    var groups = state.promoCategory === 'all' ? allGroups : allGroups.filter(function(g){ return (g.category || '기타 · 옥외') === state.promoCategory; });
+
+    listEl.innerHTML = groups.map(function(g){
+      var expanded = state.promoGroupExpandedId === g.id;
+      var img = g.imageDataUrl ? '<img src="' + g.imageDataUrl + '" alt="' + escapeAttr(g.location || '') + '">' : '';
+      var itemsHtml = (g.items || []).map(function(it){
+        return '<div class="promo-item-row">' +
+          '<div class="promo-item-head">' +
+            '<span class="promo-item-badge">' + escapeHtml(String(it.number != null ? it.number : '')) + '</span>' +
+            '<span class="promo-item-size">' + escapeHtml(it.size || '-') + '</span>' +
+            '<span class="promo-item-type">' + escapeHtml(it.type || '') + '</span>' +
+            (it.qty ? '<span class="promo-item-qty">' + escapeHtml(it.qty) + '</span>' : '') +
+          '</div>' +
+          (it.content ? '<div class="promo-item-content">' + escapeHtml(it.content) + '</div>' : '') +
+        '</div>';
+      }).join('');
+      return '<div class="promo-group-card">' +
+        '<div class="promo-group-photo' + (expanded ? ' expanded' : '') + '" data-action="toggle-promo-group" data-id="' + escapeAttr(g.id) + '">' + img + '</div>' +
+        '<div class="promo-group-body">' +
+          '<div class="promo-group-title">' + escapeHtml(g.location || '') + '</div>' +
+          itemsHtml +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  /* ---------------- rendering: issues panel ---------------- */
+  function renderIssues(){
+    var countEl = document.getElementById('issuesCount');
+    var gridEl = document.getElementById('issueGrid');
+    if (!state.dbReady){
+      countEl.textContent = '0';
+      gridEl.innerHTML = '<div class="empty-note">불러오는 중…</div>';
+      return;
+    }
+    var all = Array.from(state.issuesById.values());
+    all.sort(function(a,b){
+      if (a.date && b.date && a.date !== b.date) return b.date.localeCompare(a.date);
+      return (b.order||0) - (a.order||0);
+    });
+
+    countEl.textContent = all.length;
+    if (!all.length){
+      gridEl.innerHTML = '<div class="empty-note">등록된 이슈가 없습니다.</div>';
+      return;
+    }
+    gridEl.innerHTML = all.map(function(it){
+      var expanded = state.issueExpandedId === it.id;
+      var images = it.images || [];
+      var imgsHtml = expanded
+        ? images.map(function(src, i){ return '<img class="issue-card-img" src="' + src + '" alt="첨부 이미지 ' + (i+1) + '">'; }).join('')
+        : (images[0] ? '<img class="issue-card-img" src="' + images[0] + '" alt="' + escapeAttr(it.title || '') + '">' : '');
+      return '<div class="issue-card' + (expanded ? ' expanded' : '') + '" data-action="toggle-issue-expand" data-id="' + escapeAttr(it.id) + '">' +
+        '<div class="issue-card-imgwrap' + (expanded ? ' expanded' : '') + '">' + imgsHtml + '</div>' +
+        '<div class="issue-card-body">' +
+          '<div class="issue-card-top">' +
+            '<span class="issue-card-date">' + escapeHtml(it.date || '') + '</span>' +
+          '</div>' +
+          '<div class="issue-card-title">' + escapeHtml(it.title || '') + '</div>' +
+          (expanded ? '<div class="issue-card-summary">' + escapeHtml(it.summary || '') + '</div>' : '') +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  function studentSortKey(s){ return s.studentId ? ('0_' + s.studentId) : '1_'; }
+
+  function renderStudentCard(s, showTag, studio){
+    var imgHtml = s.photo
+      ? '<img class="roster-card-img" src="' + s.photo + '" alt="' + escapeAttr(s.name || '') + '">'
+      : '<span class="roster-card-noimg">사진 없음</span>';
+    var idHtml = s.studentId
+      ? '<span class="roster-id">' + escapeHtml(s.studentId) + '</span>'
+      : '<span class="roster-id unassigned">학번 미정</span>';
+    var tagHtml = showTag
+      ? '<span class="roster-id">' + escapeHtml(s.studioLabel || '') + ' · ' + escapeHtml(s.profName || '') + '</span>'
+      : '';
+    var clickable = !!(s.studentId && studio);
+    var attrs = clickable
+      ? ' data-action="select-student" data-sid="' + escapeAttr(s.studentId) + '" data-studio="' + escapeAttr(studio) + '" data-name="' + escapeAttr(s.name || '') + '"'
+      : '';
+    return '<div class="roster-card' + (clickable ? ' roster-card--clickable' : '') + '"' + attrs + '>' +
+      '<div class="roster-card-imgwrap">' + imgHtml + '</div>' +
+      '<div class="roster-card-body">' +
+        '<span class="roster-name">' + escapeHtml(s.name || '') + '</span>' +
+        idHtml +
+        tagHtml +
+      '</div>' +
+    '</div>';
+  }
+
+  function renderStudentsPanel(){
+    var crumbEl = document.getElementById('studentsCrumb');
+    var bodyEl = document.getElementById('studentsBody');
+    if (!state.dbReady){
+      crumbEl.textContent = '';
+      bodyEl.innerHTML = '<div class="empty-note">불러오는 중…</div>';
+      return;
+    }
+
+    var query = (state.studentSearch || '').trim();
+    if (query){
+      crumbEl.textContent = '검색 결과';
+      var all = [];
+      state.studentsById.forEach(function(rec, profKey){
+        var pd = PROF_DEFS[profKey];
+        if (!pd || !rec || !rec.roster) return;
+        var sd = STUDIO_DEFS[pd.studio];
+        rec.roster.forEach(function(s){
+          all.push({
+            name: s.name, studentId: s.studentId, photo: s.photo,
+            profName: pd.name, studioLabel: sd ? sd.label : '', studio: pd.studio
+          });
+        });
+      });
+      var qLower = query.toLowerCase();
+      var matched = all.filter(function(s){
+        return (s.name && s.name.toLowerCase().indexOf(qLower) !== -1) ||
+               (s.studentId && s.studentId.indexOf(query) !== -1);
+      });
+      matched.sort(function(a, b){
+        var ak = studentSortKey(a), bk = studentSortKey(b);
+        if (ak === bk) return 0;
+        return ak < bk ? -1 : 1;
+      });
+      bodyEl.innerHTML =
+        '<div class="students-nav">' +
+          '<button type="button" class="navlink-btn" data-action="students-clear-search">← 검색 지우기</button>' +
+          '<span class="students-crumb">검색 결과 ' + matched.length + '명</span>' +
+        '</div>' +
+        (matched.length
+          ? '<div class="roster-grid">' + matched.map(function(s){ return renderStudentCard(s, true, s.studio); }).join('') + '</div>'
+          : '<div class="empty-note">일치하는 학생이 없습니다.</div>');
+      return;
+    }
+
+    var nav = state.studentNav;
+
+    if (nav.level === 'profs' || nav.level === 'roster' || nav.level === 'detail'){
+      var studioDef = STUDIO_DEFS[nav.studio];
+      if (!studioDef){ nav.level = 'studios'; nav.studio = null; nav.profKey = null; nav.studentId = null; nav.studentStudio = null; }
+    }
+
+    if (nav.level === 'roster' || nav.level === 'detail'){
+      var profDef = PROF_DEFS[nav.profKey];
+      if (!profDef){ nav.level = 'profs'; nav.profKey = null; nav.studentId = null; nav.studentStudio = null; }
+    }
+
+    if (nav.level === 'detail'){
+      if (!nav.studentId || !nav.studentStudio){ nav.level = 'roster'; nav.studentId = null; nav.studentStudio = null; }
+    }
+
+    if (nav.level === 'studios'){
+      crumbEl.textContent = '';
+      var studioKeys = Object.keys(STUDIO_DEFS);
+      bodyEl.innerHTML = '<div class="studio-grid">' +
+        studioKeys.map(function(sk){
+          var sd = STUDIO_DEFS[sk];
+          return '<button type="button" class="studio-card" data-action="select-studio" data-studio="' + sk + '">' +
+            '<div class="studio-card-title">' + escapeHtml(sd.label) + '</div>' +
+            '<div class="studio-card-sub">교수 ' + sd.profs.length + '명</div>' +
+          '</button>';
+        }).join('') +
+      '</div>';
+      return;
+    }
+
+    if (nav.level === 'profs'){
+      var sd2 = STUDIO_DEFS[nav.studio];
+      crumbEl.textContent = sd2.label;
+      var html = '<div class="students-nav">' +
+        '<button type="button" class="navlink-btn" data-action="students-home">🏠 처음으로</button>' +
+        '<span class="students-crumb">' + escapeHtml(sd2.label) + '</span>' +
+      '</div>' +
+      '<div class="prof-grid">' +
+        sd2.profs.map(function(pk){
+          var pd = PROF_DEFS[pk];
+          var rec = state.studentsById.get(pk);
+          var count = rec && rec.roster ? rec.roster.length : 0;
+          return '<button type="button" class="prof-card" data-action="select-prof" data-prof="' + pk + '">' +
+            '<div class="prof-card-name">' + escapeHtml(pd.name) + ' 교수님</div>' +
+            '<div class="prof-card-count">학생 ' + count + '명</div>' +
+          '</button>';
+        }).join('') +
+      '</div>';
+      bodyEl.innerHTML = html;
+      return;
+    }
+
+    if (nav.level === 'roster'){
+      var pd2 = PROF_DEFS[nav.profKey];
+      var sd3 = STUDIO_DEFS[pd2.studio];
+      crumbEl.textContent = sd3.label + ' · ' + pd2.name + ' 교수님';
+      var rec2 = state.studentsById.get(nav.profKey);
+      var roster = (rec2 && rec2.roster ? rec2.roster.slice() : []);
+      roster.sort(function(a, b){
+        var ak = studentSortKey(a), bk = studentSortKey(b);
+        if (ak === bk) return 0;
+        return ak < bk ? -1 : 1;
+      });
+      var cards = roster.length
+        ? '<div class="roster-grid">' + roster.map(function(s){ return renderStudentCard(s, false, nav.studio); }).join('') + '</div>'
+        : '<div class="empty-note">등록된 학생 정보가 없습니다.</div>';
+      bodyEl.innerHTML =
+        '<div class="students-nav">' +
+          '<button type="button" class="navlink-btn" data-action="students-back">← 뒤로</button>' +
+          '<button type="button" class="navlink-btn" data-action="students-home">🏠 처음으로</button>' +
+          '<span class="students-crumb">' + escapeHtml(pd2.name) + ' 교수님 · 학생 ' + roster.length + '명</span>' +
+        '</div>' +
+        cards;
+      return;
+    }
+
+    if (nav.level === 'detail'){
+      var pd3 = PROF_DEFS[nav.profKey];
+      var sd4 = STUDIO_DEFS[pd3.studio];
+      crumbEl.textContent = sd4.label + ' · ' + pd3.name + ' 교수님 · ' + (nav.studentName || '');
+      var workId = nav.studentId + '_' + nav.studentStudio;
+      var work = state.studentWorkById.get(workId);
+
+      var artworkImgs = (work && work.artworkImages && work.artworkImages.length)
+        ? work.artworkImages
+        : (work && work.artworkImage ? [work.artworkImage] : []);
+      var artworkHtml = artworkImgs.length
+        ? '<div class="detail-artwork-row">' + artworkImgs.map(function(src, i){
+            return '<img class="detail-img detail-artwork-img" src="' + src + '" alt="본인 작품 이미지 ' + (i+1) + '">';
+          }).join('') + '</div>'
+        : '<div class="detail-empty detail-missing">누락</div>';
+
+      var descImgs = (work && work.descriptionImages) || [];
+      var descHtml = descImgs.length
+        ? '<div class="detail-desc-grid">' + descImgs.map(function(src, i){
+            return '<img class="detail-desc-img" src="' + src + '" alt="작품설명서 ' + (i+1) + '페이지">';
+          }).join('') + '</div>'
+        : '<div class="detail-empty detail-missing">누락</div>';
+
+      bodyEl.innerHTML =
+        '<div class="students-nav">' +
+          '<button type="button" class="navlink-btn" data-action="students-back">← 뒤로</button>' +
+          '<button type="button" class="navlink-btn" data-action="students-home">🏠 처음으로</button>' +
+          '<span class="students-crumb">' + escapeHtml(pd3.name) + ' 교수님 · ' + escapeHtml(nav.studentName || '') + '</span>' +
+        '</div>' +
+        '<div class="student-detail">' +
+          '<div class="detail-head">' +
+            '<span class="detail-name">' + escapeHtml(nav.studentName || '') + '</span>' +
+            '<span class="detail-id">' + escapeHtml(nav.studentId || '') + '</span>' +
+            '<span class="detail-tag">' + escapeHtml(sd4.label) + '</span>' +
+          '</div>' +
+          '<div class="detail-section">' +
+            '<div class="detail-section-title">본인 작품 이미지</div>' +
+            artworkHtml +
+          '</div>' +
+          '<div class="detail-section">' +
+            '<div class="detail-section-title">작품 설명서</div>' +
+            descHtml +
+          '</div>' +
+          '<div class="detail-section">' +
+            '<div class="detail-section-title">기기대여 목록</div>' +
+            renderEquipment(work) +
+          '</div>' +
+        '</div>';
+      return;
+    }
+  }
+
+  function renderEquipment(work){
+    var eq = work && work.equipment;
+    if (!eq) return '<div class="detail-empty">아직 등록된 정보가 없습니다.</div>';
+
+    var rentalItems = [
+      {key:'ipad', label:'아이패드'},
+      {key:'imac', label:'아이맥'},
+      {key:'iphone', label:'아이폰'}
+    ].filter(function(it){ return (eq[it.key] || 0) > 0; });
+    var displayItems = [
+      {key:'mouse', label:'마우스'},
+      {key:'kb', label:'키보드'}
+    ].filter(function(it){ return (eq[it.key] || 0) > 0; });
+
+    if (!rentalItems.length && !displayItems.length){
+      return '<div class="detail-empty">신청한 대여 기기·디피 물품이 없습니다.</div>';
+    }
+
+    var pillsHtml = function(items){
+      return '<div class="equip-list">' + items.map(function(it){
+        return '<span class="equip-pill">' + it.label + ' <b class="num">' + eq[it.key] + '</b>개</span>';
+      }).join('') + '</div>';
+    };
+
+    var html = '';
+    if (rentalItems.length){
+      html += '<div class="equip-group"><div class="equip-group-label">대여 기기</div>' + pillsHtml(rentalItems) + '</div>';
+    }
+    if (displayItems.length){
+      html += '<div class="equip-group"><div class="equip-group-label">테이블 디피 개수</div>' + pillsHtml(displayItems) + '</div>';
+    }
+    return html;
+  }
+
+  /* ---------------- rendering: drawer ---------------- */
+  function renderDrawer(){
+    var dateStr = state.selectedDate;
+    document.getElementById('drawerDate').textContent = shortDateLabel(dateStr) + ' 콜시트';
+    document.getElementById('drawerDow').textContent = DOW_LABELS[parseDateStr(dateStr).getDay()] + '요일';
+
+    var meetings = getMeetingsForDate(dateStr);
+    var body = '';
+
+    if (!meetings.length){
+      body += '<div class="empty-note">이 날짜에 예정된 정기 회의가 없습니다.</div>';
+    } else {
+      meetings.forEach(function(mm){
+        body += renderMeetingCard(mm);
+      });
+    }
+
+    body += '<div class="schedule-hint">이 페이지는 정적으로 배포된 사이트예요. 회의록 작성·일정 변경·새 이슈 등록 같은 내용 변경은 테오(Claude)와의 대화창에서 말씀해주세요 — 레포에 반영하고 다시 배포해드려요.</div>';
+    document.getElementById('drawerBody').innerHTML = body;
+  }
+
+  function mondayOfWeek(dateStr){
+    var d = parseDateStr(dateStr);
+    var dow = d.getDay();
+    var offset = (dow === 0) ? -6 : (1 - dow);
+    return addDays(d, offset);
+  }
+
+  function computeWeeklyPlanRecap(dateStr){
+    var monday = mondayOfWeek(dateStr);
+    var startStr = toDateStr(monday);
+    var endStr = dateStr;
+
+    var planMeetings = [];
+    for (var i = 0; i <= 6; i++){
+      var ds = toDateStr(addDays(monday, i));
+      if (ds > endStr) break;
+      getMeetingsForDate(ds).forEach(function(mm){
+        if (mm.team !== 'plan') return;
+        if (mm.status === 'cancelled') return;
+        var d = mm.data;
+        var hasContent = d && (((d.minutesContent||'').trim()) || ((d.minutes||'').trim()));
+        if (!hasContent) return;
+        planMeetings.push(mm);
+      });
+    }
+    planMeetings.sort(function(a,b){ return (a.data.date + ' ' + a.time).localeCompare(b.data.date + ' ' + b.time); });
+
+    var tasks = [];
+    state.tasksById.forEach(function(t){
+      if (t.team !== 'plan') return;
+      if (!t.meetingDate) return;
+      if (t.meetingDate < startStr || t.meetingDate > endStr) return;
+      tasks.push(t);
+    });
+    tasks.sort(function(a,b){
+      var aDone = a.status === 'done', bDone = b.status === 'done';
+      if (aDone !== bDone) return aDone ? 1 : -1;
+      return (a.meetingDate||'').localeCompare(b.meetingDate||'');
+    });
+
+    return {start:startStr, end:endStr, meetings:planMeetings, tasks:tasks};
+  }
+
+  function renderWeeklyRecap(recap){
+    var rangeLabel = shortDateLabel(recap.start) + (recap.end !== recap.start ? (' ~ ' + shortDateLabel(recap.end)) : '');
+
+    var meetingsHtml;
+    if (!recap.meetings.length){
+      meetingsHtml = '<div class="recap-empty">이번 주 진행된 기획팀 회의 기록이 없습니다.</div>';
+    } else {
+      meetingsHtml = recap.meetings.map(function(mm){
+        var d = mm.data;
+        var body = (d.summary && d.summary.trim()) ? d.summary : (d.minutesContent || d.minutes || '');
+        return '<div class="recap-meeting">' +
+          '<div class="recap-meeting-head"><span class="recap-meeting-date num">' + shortDateLabel(d.date) + '</span><span class="recap-meeting-label">' + escapeHtml(mm.label) + '</span></div>' +
+          '<div class="recap-meeting-body">' + escapeHtml(body).replace(/\n/g,'<br>') + '</div>' +
+        '</div>';
+      }).join('');
+    }
+
+    var tasksHtml;
+    if (!recap.tasks.length){
+      tasksHtml = '<div class="recap-empty">이번 주 기획팀 과업이 없습니다.</div>';
+    } else {
+      tasksHtml = '<div class="recap-tasklist">' + recap.tasks.map(function(t){
+        var done = t.status === 'done';
+        return '<div class="recap-task-row' + (done ? ' done' : '') + '">' +
+          '<span class="recap-task-check' + (done ? ' done' : '') + '"></span>' +
+          '<span class="recap-task-title">' + escapeHtml(t.title) + '</span>' +
+          (t.dueDate ? '<span class="due-badge">' + shortDateLabel(t.dueDate) + '</span>' : '') +
+          (t.assignee ? assigneeBadge(t.assignee) : '') +
+        '</div>';
+      }).join('') + '</div>';
+    }
+
+    return '<div class="weekly-recap">' +
+      '<div class="weekly-recap-head"><span class="weekly-recap-title">이번 주(' + rangeLabel + ') 보고 사항</span><span class="weekly-recap-sub">기획팀 회의·과업 기반 자동 정리</span></div>' +
+      '<div class="weekly-recap-section"><div class="weekly-recap-label">기획팀 회의</div>' + meetingsHtml + '</div>' +
+      '<div class="weekly-recap-section"><div class="weekly-recap-label">관련 과업</div>' + tasksHtml + '</div>' +
+    '</div>';
+  }
+
+  function renderMeetingCard(mm){
+    var team = TEAM_DEFS[mm.team];
+    var data = mm.data;
+
+    if (mm.status === 'cancelled'){
+      return '<div class="meeting-card cancelled-card">' +
+        '<div class="meeting-head">' +
+          '<span class="team-tag" style="color:var(' + team.var + ')">' + team.short + '</span>' +
+          '<span class="meeting-title" style="text-decoration:line-through; color:var(--ink-faint);">' + escapeHtml(mm.label) + '</span>' +
+          '<span class="meeting-time num" style="text-decoration:line-through; color:var(--ink-faint);">' + mm.time + '</span>' +
+        '</div>' +
+        '<div class="empty-note" style="text-align:left; padding:0;">이 회의는 취소되었습니다' + (data && data.cancelReason ? ' — ' + escapeHtml(data.cancelReason) : '') + '.</div>' +
+      '</div>';
+    }
+
+    var minutesId = 'minutes-' + mm.id;
+    var savedNote = data.minutesUpdatedAt ? ('마지막 저장 ' + timeOnly(data.minutesUpdatedAt)) : '아직 저장되지 않음';
+    var genState = state.generating[mm.id];
+
+    var aiInner;
+    if (genState){
+      aiInner = '<div class="ai-status"><span class="spinner"></span>테오가 회의록을 읽고 있어요…</div>';
+    } else if (data.summary){
+      var taskRows = (data.tasks||[]).map(function(t, idx){
+        var taskId = mm.id + '-t' + idx;
+        var stored = state.tasksById.get(taskId);
+        var status = stored ? stored.status : 'pending';
+        var starredTask = {id: taskId, starred: stored ? !!stored.starred : false};
+        var dueHtml = t.dueDate ? '<span class="due-badge">' + shortDateLabel(t.dueDate) + '</span>' : '<span class="due-badge">날짜 미정</span>';
+        return '<div class="task-row' + (status==='done' ? ' done':'') + (starredTask.starred ? ' starred':'') + '">' +
+          '<div class="task-check' + (status==='done' ? ' done':'') + '" data-action="toggle-task" data-id="' + taskId + '" data-status="' + status + '"></div>' +
+          starBtn(starredTask) +
+          '<div class="task-body"><div class="task-title">' + escapeHtml(t.title) + '</div>' +
+          '<div class="task-meta">' + dueHtml + (t.assignee ? assigneeBadge(t.assignee) : '') + '</div></div>' +
+        '</div>';
+      }).join('');
+      aiInner =
+        '<div class="ai-summary">' + escapeHtml(data.summary).replace(/\n/g,'<br>') + '</div>' +
+        (taskRows ? '<div class="ai-tasklist">' + taskRows + '</div>' : '<div class="ai-empty">추출된 다음 과업이 없습니다.</div>') +
+        '<div class="save-note">' + (data.summaryUpdatedAt ? '테오 정리 · ' + timeOnly(data.summaryUpdatedAt) : '') + '</div>';
+    } else {
+      aiInner = '<div class="ai-empty">아직 요약이 없습니다. 회의록을 적고 요약을 요청해 보세요.</div>';
+    }
+
+    var recapBlock = (mm.team === 'plenary') ? renderWeeklyRecap(computeWeeklyPlanRecap(data.date)) : '';
+
+    return '<div class="meeting-card" data-meeting-id="' + mm.id + '" data-team="' + mm.team + '" data-label="' + escapeAttr(mm.label) + '" data-time="' + mm.time + '" data-date="' + mm.data.date + '" data-kind="' + mm.kind + '">' +
+      '<div class="meeting-head">' +
+        '<span class="team-tag" style="color:var(' + team.var + ')">' + team.short + '</span>' +
+        '<span class="meeting-title">' + escapeHtml(mm.label) + '</span>' +
+        '<span class="meeting-time num">' + (mm.timeTBD ? '시간 미정' : mm.time) + '</span>' +
+      '</div>' +
+      recapBlock +
+      '<div class="board-columns">' +
+        '<div class="board-col">' +
+          '<div class="minutes-field-label">회의 내용</div>' +
+          '<textarea class="minutes content" id="' + minutesId + '" placeholder="회의 내용을 자유롭게 적어주세요…" ' + (state.dbReady && state.db ? '' : 'disabled') + '>' + escapeHtml(data.minutesContent != null ? data.minutesContent : (data.minutes || '')) + '</textarea>' +
+        '</div>' +
+        '<div class="board-col">' +
+          '<div class="minutes-field-label">다음주 준비 과업</div>' +
+          '<textarea class="minutes tasks" id="' + minutesId + '-tasks" placeholder="다음주까지 준비할 과업을 적어주세요…" ' + (state.dbReady && state.db ? '' : 'disabled') + '>' + escapeHtml(data.minutesNextTasks || '') + '</textarea>' +
+        '</div>' +
+        '<div class="board-col board-col-ai">' +
+          '<div class="ai-label"><span class="dotmark"></span>테오의 정리</div>' +
+          aiInner +
+        '</div>' +
+      '</div>' +
+      '<div class="row-actions">' +
+        '<button class="btn primary" data-action="save-minutes" ' + (state.dbReady && state.db ? '' : 'disabled') + '>회의록 저장</button>' +
+        '<span class="save-note">' + savedNote + '</span>' +
+      '</div>' +
+    '</div>';
+  }
+
+  function timeOnly(iso){
+    try{
+      var d = new Date(iso);
+      return pad2(d.getMonth()+1) + '/' + pad2(d.getDate()) + ' ' + pad2(d.getHours()) + ':' + pad2(d.getMinutes());
+    } catch(e){ return ''; }
+  }
+
+  function escapeHtml(s){
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function escapeAttr(s){ return escapeHtml(s); }
+
+  function teamKeyFromLabel(text){
+    if (!text) return null;
+    var t = String(text).trim();
+    var keys = Object.keys(TEAM_DEFS);
+    for (var i = 0; i < keys.length; i++){
+      var def = TEAM_DEFS[keys[i]];
+      if (t === def.label || t === def.short) return keys[i];
+    }
+    return null;
+  }
+  function assigneeBadge(text){
+    var key = teamKeyFromLabel(text);
+    if (key){
+      var def = TEAM_DEFS[key];
+      return '<span class="due-badge" style="color:var(' + def.var + '); border:1px solid var(' + def.var + '); background:color-mix(in srgb, var(' + def.var + ') 14%, var(--surface))">' + escapeHtml(text) + '</span>';
+    }
+    return '<span class="due-badge">' + escapeHtml(text) + '</span>';
+  }
+
+  function starBtn(t){
+    var on = !!t.starred;
+    var label = on ? '내가 해야 할 일에서 빼기' : '내가 해야 할 일로 표시';
+    return '<button type="button" class="star-btn' + (on ? ' on' : '') + '" data-action="toggle-star" data-id="' + t.id + '" data-starred="' + (on ? 'true' : 'false') + '" title="' + label + '" aria-label="' + label + '">' + (on ? '★' : '☆') + '</button>';
+  }
+
+  function renderAll(){
+    renderCalendar();
+    renderTodayPanel();
+    renderNextPrepPanel();
+    renderBriefing();
+    renderTaskPanel();
+    renderDrawer();
+    renderTables();
+    renderRentals();
+    renderFloorplans();
+    renderPromoMaterials();
+    renderIssues();
+    renderStudentsPanel();
+  }
+
+  /* ---------------- actions ---------------- */
+  function selectDate(dateStr){
+    state.selectedDate = dateStr;
+    var d = parseDateStr(dateStr);
+    state.viewYear = d.getFullYear();
+    state.viewMonth = d.getMonth();
+    renderAll();
+  }
+
+  function scrollToDrawer(){
+    var el = document.getElementById('drawer');
+    if (!el) return;
+    requestAnimationFrame(function(){
+      el.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  }
+
+  function combineMinutes(contentText, tasksText){
+    var parts = [];
+    if (contentText) parts.push(contentText);
+    if (tasksText) parts.push('[다음주 준비 과업]\n' + tasksText);
+    return parts.join('\n\n');
+  }
+
+  function saveMinutes(meetingId, team, label, time, date, kind, contentText, tasksText){
+    if (!state.db) return;
+    var ref = state.db.doc('meetings/' + meetingId);
+    var now = new Date().toISOString();
+    var combined = combineMinutes(contentText, tasksText);
+    if (state.meetingsById.has(meetingId)){
+      ref.update({minutesContent:contentText, minutesNextTasks:tasksText, minutes:combined, minutesUpdatedAt:now}).catch(function(e){ console.error(e); });
+    } else {
+      var doc = defaultMeetingDoc(date, team, label, time, kind);
+      doc.minutesContent = contentText; doc.minutesNextTasks = tasksText; doc.minutes = combined; doc.minutesUpdatedAt = now; doc.createdAt = now;
+      ref.set(doc).catch(function(e){ console.error(e); });
+    }
+  }
+
+  function buildSummaryPrompt(team, label, date, minutesText){
+    var teamLabel = TEAM_DEFS[team].label;
+    var dow = DOW_LABELS[parseDateStr(date).getDay()];
+    return '당신은 "테오"입니다. 상명대 커뮤니케이션디자인과 졸업준비위원회(졸준위)의 회의록 정리를 돕는 도우미입니다.\n' +
+      '아래는 ' + teamLabel + '의 "' + label + '" 회의록입니다.\n' +
+      '회의 날짜: ' + date + ' (' + dow + '요일), 오늘 날짜: ' + todayStr() + '\n\n' +
+      '회의록:\n"""\n' + minutesText + '\n"""\n\n' +
+      '다음 JSON 형식으로만 답하세요 (다른 텍스트나 코드블록 설명 없이 JSON만):\n' +
+      '{\n' +
+      '  "summary": "회의록의 핵심 내용을 3~5문장의 자연스러운 문단으로 요약",\n' +
+      '  "tasks": [\n' +
+      '    { "title": "과업 내용", "dueDate": "YYYY-MM-DD 또는 null", "assignee": "담당자 이름 또는 null" }\n' +
+      '  ]\n' +
+      '}\n\n' +
+      '규칙: 회의록에 "다음주 화요일까지", "금요일까지" 처럼 상대적인 날짜가 언급되면 회의 날짜(' + date + ', ' + dow + '요일) 기준으로 정확한 YYYY-MM-DD로 환산하세요. ' +
+      '특별한 날짜 언급 없이 막연히 "다음주에" 처리할 일반 과업은 dueDate를 null로 두세요. 언급된 과업이 없으면 tasks는 빈 배열로 답하세요.';
+  }
+
+  function requestSummary(card){
+    var meetingId = card.getAttribute('data-meeting-id');
+    var team = card.getAttribute('data-team');
+    var label = card.getAttribute('data-label');
+    var time = card.getAttribute('data-time');
+    var date = card.getAttribute('data-date');
+    var kind = card.getAttribute('data-kind');
+    var taContent = card.querySelector('textarea.minutes.content');
+    var taTasks = card.querySelector('textarea.minutes.tasks');
+    var contentText = taContent ? taContent.value.trim() : '';
+    var tasksText = taTasks ? taTasks.value.trim() : '';
+    var text = combineMinutes(contentText, tasksText);
+    if (!text || !state.sample || !state.db) return;
+
+    saveMinutes(meetingId, team, label, time, date, kind, contentText, tasksText);
+
+    state.generating[meetingId] = true;
+    renderDrawer();
+
+    var prompt = buildSummaryPrompt(team, label, date, text);
+    state.sample.json(prompt, {modelTier:'default'}).then(function(result){
+      var tasks = Array.isArray(result && result.tasks) ? result.tasks : [];
+      var clean = tasks.slice(0,12).map(function(t){
+        var due = (t && typeof t.dueDate === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(t.dueDate)) ? t.dueDate : null;
+        return {
+          title: String((t && t.title) || '').slice(0,140) || '(제목 없음)',
+          dueDate: due,
+          assignee: (t && t.assignee) ? String(t.assignee).slice(0,40) : null
+        };
+      });
+      var summaryText = String((result && result.summary) || '').slice(0,1200);
+      var now = new Date().toISOString();
+      var ref = state.db.doc('meetings/' + meetingId);
+      var prevCount = ((state.meetingsById.get(meetingId) || {}).tasks || []).length;
+
+      var writeMeeting = state.meetingsById.has(meetingId)
+        ? ref.update({minutesContent:contentText, minutesNextTasks:tasksText, minutes:text, minutesUpdatedAt:now, summary:summaryText, summaryUpdatedAt:now, tasks:clean})
+        : ref.set(Object.assign(defaultMeetingDoc(date, team, label, time, kind), {minutesContent:contentText, minutesNextTasks:tasksText, minutes:text, minutesUpdatedAt:now, summary:summaryText, summaryUpdatedAt:now, tasks:clean, createdAt:now}));
+
+      writeMeeting.then(function(){
+        clean.forEach(function(t, idx){
+          var taskId = meetingId + '-t' + idx;
+          var prevStatus = (state.tasksById.get(taskId) || {}).status || 'pending';
+          var prevCreated = (state.tasksById.get(taskId) || {}).createdAt || now;
+          state.db.doc('tasks/' + taskId).set({
+            title:t.title, dueDate:t.dueDate, assignee:t.assignee, status:prevStatus,
+            meetingId:meetingId, meetingDate:date, team:team, createdAt:prevCreated
+          }).catch(function(e){ console.error(e); });
+        });
+        for (var i = clean.length; i < prevCount; i++){
+          state.db.doc('tasks/' + meetingId + '-t' + i).delete().catch(function(){});
+        }
+      }).catch(function(e){ console.error(e); });
+    }).catch(function(e){
+      console.error(e);
+      var msg = '요약을 가져오지 못했습니다.';
+      if (e && e.code === 'not_granted') msg = 'AI 요약 사용이 허용되지 않았습니다.';
+      else if (e && e.code === 'rate_limited') msg = '잠시 후 다시 시도해주세요.';
+      window.alert('테오: ' + msg);
+    }).finally(function(){
+      delete state.generating[meetingId];
+      renderDrawer();
+    });
+  }
+
+  function toggleTask(id, currentStatus){
+    if (!state.db) return;
+    var next = currentStatus === 'done' ? 'pending' : 'done';
+    state.db.doc('tasks/' + id).update({status:next}).catch(function(e){ console.error(e); });
+  }
+
+  function toggleStar(id, currentlyStarred){
+    if (!state.db) return;
+    state.db.doc('tasks/' + id).update({starred: !currentlyStarred}).catch(function(e){ console.error(e); });
+  }
+
+  /* ---------------- static data loading ----------------
+     테오는 이제 claude.ai 아티펙트의 실시간 db 대신, 이 레포의 data/*.json 정적 파일에서
+     데이터를 읽어옵니다. state.db / state.sample은 계속 null로 남아있고(그래서 회의록 저장 ·
+     과업 체크 · 별표 · AI 요약 요청 같은 "쓰기" 동작은 자동으로 비활성화됩니다), 내용을
+     바꾸고 싶으면 테오(Claude)와의 대화창에서 요청 → 이 레포의 data 파일을 수정해 커밋 →
+     재배포하는 방식으로 반영합니다. */
+  function loadStaticData(){
+    function fetchJson(path){
+      return fetch(path).then(function(res){
+        if (!res.ok) throw new Error('fetch failed: ' + path);
+        return res.json();
+      });
+    }
+
+    Promise.all([
+      fetchJson('data/meetings.json'),
+      fetchJson('data/tasks.json'),
+      fetchJson('data/tables.json'),
+      fetchJson('data/rentals.json'),
+      fetchJson('data/floorplans.json'),
+      fetchJson('data/promoMaterials.json'),
+      fetchJson('data/promoOverview.json'),
+      fetchJson('data/issues.json'),
+      fetchJson('data/students.json'),
+      fetchJson('data/studentWork.json')
+    ]).then(function(results){
+      var meetings = results[0], tasks = results[1], tables = results[2], rentals = results[3],
+          floorplans = results[4], promoMaterials = results[5], promoOverview = results[6],
+          issues = results[7], students = results[8], studentWork = results[9];
+
+      state.meetingsById.clear();
+      Object.keys(meetings).forEach(function(id){ state.meetingsById.set(id, meetings[id]); });
+
+      state.tasksById.clear();
+      Object.keys(tasks).forEach(function(id){ state.tasksById.set(id, tasks[id]); });
+
+      state.tablesById.clear();
+      Object.keys(tables).forEach(function(id){ state.tablesById.set(id, tables[id]); });
+
+      state.rentalsById.clear();
+      Object.keys(rentals).forEach(function(id){ state.rentalsById.set(id, rentals[id]); });
+
+      state.floorplansById.clear();
+      Object.keys(floorplans).forEach(function(id){ state.floorplansById.set(id, floorplans[id]); });
+
+      state.promoGroupsById.clear();
+      Object.keys(promoMaterials).forEach(function(id){ state.promoGroupsById.set(id, promoMaterials[id]); });
+
+      state.promoOverviewById.clear();
+      Object.keys(promoOverview).forEach(function(id){ state.promoOverviewById.set(id, promoOverview[id]); });
+
+      state.issuesById.clear();
+      Object.keys(issues).forEach(function(id){ state.issuesById.set(id, issues[id]); });
+
+      state.studentsById.clear();
+      Object.keys(students).forEach(function(id){ state.studentsById.set(id, students[id]); });
+
+      state.studentWorkById.clear();
+      Object.keys(studentWork).forEach(function(id){ state.studentWorkById.set(id, studentWork[id]); });
+
+      state.recurringRules = JSON.parse(JSON.stringify(DEFAULT_RULES));
+      state.dbReady = true;
+      renderAll();
+    }).catch(function(err){
+      console.error('static data load error', err);
+      state.dbReady = false;
+      renderAll();
+    });
+  }
+
+  /* ---------------- event delegation ---------------- */
+  document.getElementById('app').addEventListener('click', function(e){
+    var el = e.target.closest('[data-action]');
+    if (!el) return;
+    var action = el.getAttribute('data-action');
+
+    if (action === 'prev-month'){
+      var d1 = new Date(state.viewYear, state.viewMonth - 1, 1);
+      state.viewYear = d1.getFullYear(); state.viewMonth = d1.getMonth();
+      renderCalendar();
+    } else if (action === 'next-month'){
+      var d2 = new Date(state.viewYear, state.viewMonth + 1, 1);
+      state.viewYear = d2.getFullYear(); state.viewMonth = d2.getMonth();
+      renderCalendar();
+    } else if (action === 'today'){
+      selectDate(todayStr());
+    } else if (action === 'select-date'){
+      selectDate(el.getAttribute('data-date'));
+      scrollToDrawer();
+    } else if (action === 'jump-date'){
+      selectDate(el.getAttribute('data-date'));
+      scrollToDrawer();
+    } else if (action === 'toggle-task'){
+      toggleTask(el.getAttribute('data-id'), el.getAttribute('data-status'));
+    } else if (action === 'toggle-star'){
+      toggleStar(el.getAttribute('data-id'), el.getAttribute('data-starred') === 'true');
+    } else if (action === 'save-minutes'){
+      var card = el.closest('.meeting-card');
+      var taContent = card.querySelector('textarea.minutes.content');
+      var taTasks = card.querySelector('textarea.minutes.tasks');
+      saveMinutes(
+        card.getAttribute('data-meeting-id'), card.getAttribute('data-team'),
+        card.getAttribute('data-label'), card.getAttribute('data-time'),
+        card.getAttribute('data-date'), card.getAttribute('data-kind'),
+        taContent ? taContent.value.trim() : '', taTasks ? taTasks.value.trim() : ''
+      );
+      var note = card.querySelector('.save-note');
+      if (note) note.textContent = '저장됨 · ' + timeOnly(new Date().toISOString());
+    } else if (action === 'request-summary'){
+      requestSummary(el.closest('.meeting-card'));
+    } else if (action === 'table-filter'){
+      state.tableFilter = el.getAttribute('data-loc');
+      document.querySelectorAll('#tableTabs .table-tab').forEach(function(btn){
+        btn.classList.toggle('active', btn === el);
+      });
+      renderTables();
+    } else if (action === 'floorplan-filter'){
+      state.floorplanFilter = el.getAttribute('data-loc');
+      document.querySelectorAll('#floorplanTabs .table-tab').forEach(function(btn){
+        btn.classList.toggle('active', btn === el);
+      });
+      renderFloorplans();
+    } else if (action === 'toggle-floorplan-expand'){
+      var fpId = el.getAttribute('data-id');
+      state.floorplanExpandedId = (state.floorplanExpandedId === fpId) ? null : fpId;
+      renderFloorplans();
+    } else if (action === 'promo-filter'){
+      state.promoFilter = el.getAttribute('data-loc');
+      document.querySelectorAll('#promoTabs .table-tab').forEach(function(btn){
+        btn.classList.toggle('active', btn === el);
+      });
+      state.promoOverviewExpandedId = null;
+      state.promoGroupExpandedId = null;
+      renderPromoMaterials();
+    } else if (action === 'toggle-promo-overview'){
+      var poId = el.getAttribute('data-id');
+      state.promoOverviewExpandedId = (state.promoOverviewExpandedId === poId) ? null : poId;
+      renderPromoMaterials();
+    } else if (action === 'toggle-promo-group'){
+      var pgId = el.getAttribute('data-id');
+      state.promoGroupExpandedId = (state.promoGroupExpandedId === pgId) ? null : pgId;
+      renderPromoMaterials();
+    } else if (action === 'toggle-issue-expand'){
+      var issId = el.getAttribute('data-id');
+      state.issueExpandedId = (state.issueExpandedId === issId) ? null : issId;
+      renderIssues();
+    } else if (action === 'promo-category-filter'){
+      state.promoCategory = el.getAttribute('data-cat');
+      state.promoGroupExpandedId = null;
+      renderPromoMaterials();
+    } else if (action === 'select-studio'){
+      state.studentNav = { level: 'profs', studio: el.getAttribute('data-studio'), profKey: null };
+      renderStudentsPanel();
+    } else if (action === 'select-prof'){
+      state.studentNav.level = 'roster';
+      state.studentNav.profKey = el.getAttribute('data-prof');
+      state.studentNav.studentId = null;
+      state.studentNav.studentStudio = null;
+      renderStudentsPanel();
+    } else if (action === 'select-student'){
+      var studentStudio = el.getAttribute('data-studio');
+      var sidForStudent = el.getAttribute('data-sid');
+      var profKeyForStudent = null;
+      // Trust the currently-browsed professor only if it actually owns this student
+      // (same studio + studentId present in that roster). Otherwise resolve fresh —
+      // this matters when the card was reached via search after browsing a different
+      // professor, where state.studentNav.profKey would otherwise be stale.
+      if (state.studentNav.profKey){
+        var curPd = PROF_DEFS[state.studentNav.profKey];
+        var curRec = state.studentsById.get(state.studentNav.profKey);
+        if (curPd && curPd.studio === studentStudio && curRec && curRec.roster &&
+            curRec.roster.some(function(s){ return s.studentId === sidForStudent; })){
+          profKeyForStudent = state.studentNav.profKey;
+        }
+      }
+      if (!profKeyForStudent){
+        state.studentsById.forEach(function(rec, pk){
+          var pd = PROF_DEFS[pk];
+          if (pd && pd.studio === studentStudio && rec && rec.roster && rec.roster.some(function(s){ return s.studentId === sidForStudent; })){
+            profKeyForStudent = pk;
+          }
+        });
+      }
+      state.studentNav = {
+        level: 'detail',
+        studio: studentStudio,
+        profKey: profKeyForStudent,
+        studentId: el.getAttribute('data-sid'),
+        studentStudio: studentStudio,
+        studentName: el.getAttribute('data-name')
+      };
+      // Clear any active search so the detail page actually shows — renderStudentsPanel()
+      // renders the search-results view whenever studentSearch is non-empty, regardless
+      // of studentNav.level, so a lingering query would otherwise hide the detail page
+      // behind the search results list.
+      state.studentSearch = '';
+      var clearedSearchInput = document.getElementById('studentsSearchInput');
+      if (clearedSearchInput) clearedSearchInput.value = '';
+      renderStudentsPanel();
+    } else if (action === 'students-back'){
+      if (state.studentNav.level === 'detail'){
+        state.studentNav.level = 'roster';
+        state.studentNav.studentId = null;
+        state.studentNav.studentStudio = null;
+      } else {
+        state.studentNav.level = 'profs';
+        state.studentNav.profKey = null;
+      }
+      renderStudentsPanel();
+    } else if (action === 'students-home'){
+      state.studentNav = { level: 'studios', studio: null, profKey: null, studentId: null, studentStudio: null, studentName: null };
+      renderStudentsPanel();
+    } else if (action === 'students-clear-search'){
+      state.studentSearch = '';
+      var searchInput = document.getElementById('studentsSearchInput');
+      if (searchInput) searchInput.value = '';
+      renderStudentsPanel();
+    }
+  });
+
+  document.getElementById('app').addEventListener('input', function(e){
+    var el = e.target;
+    if (el && el.getAttribute && el.getAttribute('data-role') === 'student-search'){
+      state.studentSearch = el.value;
+      renderStudentsPanel();
+    }
+  });
+
+  /* ---------------- boot ---------------- */
+  renderLegend();
+  renderAll();
+  loadStaticData();
+  setInterval(renderBriefing, 60000);
+})();
+</script>
+
+</body></html>

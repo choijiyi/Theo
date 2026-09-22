@@ -1,0 +1,816 @@
+{
+"p1": {
+"category": "1층 로비 · 5관 입구",
+"imageDataUrl": "images/promoMaterials/p1-imageDataUrl-24.jpg",
+"items": [
+{
+"content": "변형된 사이즈 버전의 전시홍보용 포스터. 1,2,3 포스터가 붙어 있어서 이어지는 느낌이었으면 좋을 것 같음 (1,3은 그래픽 위주로)",
+"number": 1,
+"qty": "1개",
+"size": "1155(h) x 550(w)(mm)",
+"type": "철제 배너"
+},
+{
+"content": "설명 위주 — 포스터 소개문, 관 이름, 설명, 매체, 지도교수",
+"number": 2,
+"qty": "1개",
+"size": "1155(h) x 550(w)(mm)",
+"type": "철제 배너"
+},
+{
+"content": "1,3은 그래픽 위주, 졸업 전시를 알리는 느낌",
+"number": 3,
+"qty": "1개",
+"size": "1155(h) x 550(w)(mm)",
+"type": "철제 배너"
+},
+{
+"content": "포스터 (빨간색으로 표시한 공간까지만 사용 가능)",
+"number": 4,
+"qty": "1개",
+"size": "사이즈 X (비율 맞춰서 마루측에서 수정해줌)",
+"type": "철제 배너"
+}
+],
+"location": "1층 입구 및 5관 입구 (2층)",
+"order": 0,
+"region": "seoul",
+"id": "p1"
+},
+"p10": {
+"category": "신관 (공용)",
+"imageDataUrl": "images/promoMaterials/p10-imageDataUrl-25.jpg",
+"items": [
+{
+"content": "동선 안내용, 동선 순서(3관→4관→2관), 3층 전체 관별 도면 필요, 잠겨있는 문이 있어서 출입문 표시 필요, 그래픽",
+"number": 15,
+"qty": "1장",
+"size": "594(h) x 420(w)(mm)",
+"type": "포스터"
+}
+],
+"location": "3층 신관 기둥",
+"order": 9,
+"region": "seoul",
+"id": "p10"
+},
+"p11": {
+"category": "신관 (공용)",
+"imageDataUrl": "images/promoMaterials/p11-imageDataUrl-26.jpg",
+"items": [
+{
+"content": "그랜드관 동선 안내를 위한 지도",
+"number": 16,
+"qty": "",
+"size": "594(h) x 420(w)(mm)",
+"type": "철제 배너"
+}
+],
+"location": "3층 신관 앞 배너",
+"order": 10,
+"region": "seoul",
+"id": "p11"
+},
+"p12": {
+"category": "3관",
+"imageDataUrl": "images/promoMaterials/p12-imageDataUrl-27.jpg",
+"items": [
+{
+"content": "세로형 그래픽 현수막",
+"number": 17,
+"qty": "1장",
+"size": "2250(h) x 580(w)(mm)",
+"type": "현수막"
+}
+],
+"location": "3관 문 옆 (3층)",
+"order": 11,
+"region": "seoul",
+"id": "p12"
+},
+"p13": {
+"category": "3관",
+"imageDataUrl": "images/promoMaterials/p13-imageDataUrl-28.jpg",
+"items": [
+{
+"content": "3관에 대해 소개하는 문구, 관명, 담당 교수님, 어떤 매체 위주로 묶여있는지에 대한 설명과 포스터 그래픽 이미지",
+"number": 18,
+"qty": "1장",
+"size": "420(h) x 594(w)(mm)",
+"type": "포스터"
+}
+],
+"location": "3관 문 (3층)",
+"order": 12,
+"region": "seoul",
+"id": "p13"
+},
+"p14": {
+"category": "3관",
+"imageDataUrl": "images/promoMaterials/p14-imageDataUrl-29.jpg",
+"items": [
+{
+"content": "메인 전시 포스터",
+"number": 19,
+"qty": "1장",
+"size": "420(h) x 594(w)(mm)",
+"type": "포스터"
+}
+],
+"location": "3관 파티션 (3층)",
+"order": 13,
+"region": "seoul",
+"id": "p14"
+},
+"p15": {
+"category": "2관",
+"imageDataUrl": "images/promoMaterials/p15-imageDataUrl-30.jpg",
+"items": [
+{
+"content": "사용 안하는 문 / 자동문으로 유도(화살표→ 사용 등으로 옆문 유도) · 암실 쪽 출입문 사용X, 출입문 입구 안내 배너",
+"number": 20,
+"qty": "1장",
+"size": "420(h) x 594(w)(mm)",
+"type": "스탠딩 배너"
+}
+],
+"location": "2관 폐쇄 문 앞 (3층)",
+"order": 14,
+"region": "seoul",
+"id": "p15"
+},
+"p16": {
+"category": "4관",
+"imageDataUrl": "images/promoMaterials/p16-imageDataUrl-31.jpg",
+"items": [
+{
+"content": "전시 포스터의 그래픽과 4관 그래픽, 4관 설명, 메인 매체, 담당 교수 · 파티션에 붙이는 포스터",
+"number": 21,
+"qty": "1장",
+"size": "420(h) x 594(w)(mm)",
+"type": "포스터"
+}
+],
+"location": "4관 왼쪽 파티션 (3층)",
+"order": 15,
+"region": "seoul",
+"id": "p16"
+},
+"p17": {
+"category": "4관",
+"imageDataUrl": "images/promoMaterials/p17-imageDataUrl-32.jpg",
+"items": [
+{
+"content": "기존 전시 포스터를 변형한 포스터 그래픽 이미지",
+"number": 22,
+"qty": "1장",
+"size": "420(h) x 594(w)(mm)",
+"type": "포스터"
+}
+],
+"location": "4관 오른쪽 유리창 (3층)",
+"order": 16,
+"region": "seoul",
+"id": "p17"
+},
+"p18": {
+"category": "2관",
+"imageDataUrl": "images/promoMaterials/p18-imageDataUrl-33.jpg",
+"items": [
+{
+"content": "2관에 대해 소개하는 문구 — 관명, 담당 교수님, 어떤 매체 위주로 묶여있는지에 대한 설명과 포스터 그래픽 이미지",
+"number": 23,
+"qty": "1장",
+"size": "420(h) x 594(w)(mm)",
+"type": "포스터"
+}
+],
+"location": "2관 자동문 왼쪽 (3층)",
+"order": 17,
+"region": "seoul",
+"id": "p18"
+},
+"p19": {
+"category": "2관",
+"imageDataUrl": "images/promoMaterials/p19-imageDataUrl-34.jpg",
+"items": [
+{
+"content": "비율에 맞춰 변경된 포스터 · 2,3,4관 전시 안내 배너: 1750x680",
+"number": 24,
+"qty": "1장",
+"size": "1750(h) x 680(w)(mm)",
+"type": "전광판 포스터"
+}
+],
+"location": "2관 자동문 오른쪽 전광판 (3층)",
+"order": 18,
+"region": "seoul",
+"id": "p19"
+},
+"p2": {
+"category": "1층 로비 · 5관 입구",
+"imageDataUrl": "images/promoMaterials/p2-imageDataUrl-35.jpg",
+"items": [
+{
+"content": "기존 전시 포스터 부착 · 몇층/무슨 관으로 가야하는지 표기 (5관으로 이동)",
+"number": 5,
+"qty": "2장",
+"size": "420(h) x 594(w)(mm)",
+"type": "포스터"
+},
+{
+"content": "몇층/무슨 관으로 가야하는지 표기 (5관으로 이동)",
+"number": 6,
+"qty": "1장",
+"size": "420(h) x 594(w)(mm)",
+"type": "포스터"
+}
+],
+"location": "1층 계단 밑 → 오른쪽 엘리베이터 동선 (본관 엘리베이터)",
+"order": 1,
+"region": "seoul",
+"id": "p2"
+},
+"p20": {
+"category": "2관",
+"imageDataUrl": "images/promoMaterials/p20-imageDataUrl-36.jpg",
+"items": [
+{
+"content": "기존 포스터 or 관별로 들어가거나, 관별 그래픽을 활용한 포스터도 좋을 것 같다고 생각",
+"number": 25,
+"qty": "1장",
+"size": "420(h) x 594(w)(mm)",
+"type": "포스터"
+}
+],
+"location": "2관 안내데스크",
+"order": 19,
+"region": "seoul",
+"id": "p20"
+},
+"p21": {
+"category": "신관 (공용)",
+"imageDataUrl": "images/promoMaterials/p21-imageDataUrl-37.jpg",
+"items": [
+{
+"content": "1관 유도용 내용 — 각 관마다 다음 동선 유도하는 내용이나 그래픽(다른 내용)",
+"number": 26,
+"qty": "1장",
+"size": "420(h) x 594(w)(mm)",
+"type": "스탠딩 배너"
+}
+],
+"location": "신관 엘리베이터 옆 — 스탠딩 배너 (4관 옆 엘리베이터)",
+"order": 20,
+"region": "seoul",
+"id": "p21"
+},
+"p22": {
+"category": "신관 (공용)",
+"imageDataUrl": "images/promoMaterials/p22-imageDataUrl-38.jpg",
+"items": [
+{
+"content": "메인 전시 포스터",
+"number": 27,
+"qty": "1장",
+"size": "420(h) x 594(w)(mm)",
+"type": "포스터"
+}
+],
+"location": "신관 엘리베이터 옆 — 포스터 (4관 옆 엘리베이터)",
+"order": 21,
+"region": "seoul",
+"id": "p22"
+},
+"p23": {
+"category": "신관 (공용)",
+"imageDataUrl": "images/promoMaterials/p23-imageDataUrl-39.jpg",
+"items": [
+{
+"content": "각 관별 홍보(1장당 한 관에 대한), 신관/본관 4층 8장 · 총 8장의 A4에 관별 이름/간단한 소개/그래픽 · 엘리베이터 2개(4x2=8)",
+"number": 28,
+"qty": "8장",
+"size": "210(h) x 297(w)(mm)",
+"type": "포스터"
+}
+],
+"location": "본관 / 신관 엘리베이터 내부",
+"order": 22,
+"region": "seoul",
+"id": "p23"
+},
+"p24": {
+"category": "1관",
+"imageDataUrl": "images/promoMaterials/p24-imageDataUrl-40.jpg",
+"items": [
+{
+"content": "전시 메인 포스터 부착 (정문+후문: A2 2장)",
+"number": 29,
+"qty": "",
+"size": "420(h) x 594(w)(mm)",
+"type": "포스터"
+},
+{
+"content": "1관에 대해 소개하는 문구 · 1관도 상명대 전시임을 알리기 · 전시 공간이 아닌 리셉션 공간(휴식공간, 방명록, 굿즈판매 공간)이라는 걸 전달할 필요가 있음",
+"number": 30,
+"qty": "",
+"size": "2200(h) x 565(w)(mm)",
+"type": "현수막"
+}
+],
+"location": "1관 문 / 문 옆 세로 배너",
+"order": 23,
+"region": "seoul",
+"id": "p24"
+},
+"p25": {
+"category": "1관",
+"imageDataUrl": "images/promoMaterials/p25-imageDataUrl-41.jpg",
+"items": [
+{
+"content": "기존 전시 포스터의 비율을 변경한 그래픽 — 전시 이름, 학교이름, 장소, 날짜 · 가벽 설치 예정(4000(W)x1900(H)), 서울 포토월 위치, 1000(W) 4개 배치 예정",
+"number": 31,
+"qty": "1장",
+"size": "1900(h) x 4000(w)(mm)",
+"type": "현수막"
+}
+],
+"location": "1관 내부 가벽",
+"order": 24,
+"region": "seoul",
+"id": "p25"
+},
+"p26": {
+"category": "1관",
+"imageDataUrl": "images/promoMaterials/p26-imageDataUrl-42.jpg",
+"items": [
+{
+"content": "기존 포스터 or 관별로 들어가거나, 관별 그래픽을 활용한 포스터도 좋을 것 같다고 생각 (사진이 없어서 5관 사진으로 대체)",
+"number": 32,
+"qty": "",
+"size": "420(h) x 594(w)(mm)",
+"type": "포스터"
+}
+],
+"location": "1관 안내데스크 (사진이 없어서 5관으로 대체)",
+"order": 25,
+"region": "seoul",
+"id": "p26"
+},
+"p27": {
+"category": "기타 · 옥외",
+"imageDataUrl": "images/promoMaterials/p27-imageDataUrl-43.jpg",
+"items": [
+{
+"content": "가로형 그래픽 포스터",
+"number": 33,
+"qty": "",
+"size": "900(h) x 6000(w)(mm)",
+"type": "현수막"
+}
+],
+"location": "3층 난간 현수막 (외부에서 보이는 방향)",
+"order": 26,
+"region": "seoul",
+"id": "p27"
+},
+"p28": {
+"category": "기타 · 옥외",
+"imageDataUrl": "images/promoMaterials/p28-imageDataUrl-44.jpg",
+"items": [
+{
+"content": "관별 네이밍 현수막 — 각 관별로 2장씩 걸 수 있음(총 6관 x 2장 = 12)",
+"number": 34,
+"qty": "",
+"size": "690(h) x 280(w)(mm)",
+"type": "현수막"
+}
+],
+"location": "관별 네이밍 현수막",
+"order": 27,
+"region": "seoul",
+"id": "p28"
+},
+"p29": {
+"category": "한누리관",
+"imageDataUrl": "images/promoMaterials/p29-imageDataUrl-45.jpg",
+"items": [
+{
+"content": "한누리관 1층 게시판 (엘리베이터 옆)",
+"number": 1,
+"qty": "1장",
+"size": "A3",
+"type": "포스터"
+}
+],
+"location": "한누리관 1층",
+"order": 0,
+"region": "cheonan",
+"id": "p29"
+},
+"p3": {
+"category": "5관",
+"imageDataUrl": "images/promoMaterials/p3-imageDataUrl-46.jpg",
+"items": [
+{
+"content": "비율에 맞춰 변경된 무빙 포스터",
+"number": 7,
+"qty": "1개",
+"size": "1660(h) x 700(w)(mm)",
+"type": "전광판 포스터"
+}
+],
+"location": "5관 엘리베이터 앞 (2층)",
+"order": 2,
+"region": "seoul",
+"id": "p3"
+},
+"p30": {
+"category": "한누리관",
+"imageDataUrl": "images/promoMaterials/p30-imageDataUrl-47.jpg",
+"items": [
+{
+"content": "한누리관 카페 입구 유리문 앞",
+"number": 2,
+"qty": "1장",
+"size": "A3",
+"type": "포스터"
+}
+],
+"location": "한누리관 카페",
+"order": 1,
+"region": "cheonan",
+"id": "p30"
+},
+"p31": {
+"category": "KB홀 · 노천극장",
+"imageDataUrl": "images/promoMaterials/p31-imageDataUrl-48.jpg",
+"items": [
+{
+"content": "KB홀 앞 게시판",
+"number": 3,
+"qty": "1장",
+"size": "A3",
+"type": "포스터"
+}
+],
+"location": "KB홀 게시판",
+"order": 2,
+"region": "cheonan",
+"id": "p31"
+},
+"p32": {
+"category": "KB홀 · 노천극장",
+"imageDataUrl": "images/promoMaterials/p32-imageDataUrl-49.jpg",
+"items": [
+{
+"content": "노천 극장 옆 옥외 게시판(초록색)",
+"number": 4,
+"qty": "1장",
+"size": "A3",
+"type": "포스터"
+}
+],
+"location": "노천 극장 옆 게시판",
+"order": 3,
+"region": "cheonan",
+"id": "p32"
+},
+"p33": {
+"category": "정문 · 학생식당",
+"imageDataUrl": "images/promoMaterials/p33-imageDataUrl-50.jpg",
+"items": [
+{
+"content": "정문 입구 옥외 게시판(초록색)",
+"number": 5,
+"qty": "1장",
+"size": "A3",
+"type": "포스터"
+}
+],
+"location": "정문 입구 게시판",
+"order": 4,
+"region": "cheonan",
+"id": "p33"
+},
+"p34": {
+"category": "정문 · 학생식당",
+"imageDataUrl": "images/promoMaterials/p34-imageDataUrl-51.jpg",
+"items": [
+{
+"content": "학생 식당 옆 옥외 게시판(초록색)",
+"number": 6,
+"qty": "1장",
+"size": "A3",
+"type": "포스터"
+}
+],
+"location": "학생 식당 옆 게시판",
+"order": 5,
+"region": "cheonan",
+"id": "p34"
+},
+"p35": {
+"category": "갤러리",
+"imageDataUrl": "images/promoMaterials/p35-imageDataUrl-52.jpg",
+"items": [
+{
+"content": "갤러리 앞 원형 기둥에 부착(기둥 특성상 2장)",
+"number": 7,
+"qty": "2장",
+"size": "A2",
+"type": "포스터"
+},
+{
+"content": "갤러리 자동문에 부착",
+"number": 8,
+"qty": "1장",
+"size": "A2",
+"type": "포스터"
+}
+],
+"location": "갤러리 앞 기둥 · 자동문",
+"order": 6,
+"region": "cheonan",
+"id": "p35"
+},
+"p36": {
+"category": "디자인대학(디대)",
+"imageDataUrl": "images/promoMaterials/p36-imageDataUrl-53.jpg",
+"items": [
+{
+"content": "디자인대학 1층 엘리베이터 옆 벽면",
+"number": 9,
+"qty": "1장",
+"size": "A2",
+"type": "포스터"
+}
+],
+"location": "디대 1층 엘리베이터 옆",
+"order": 7,
+"region": "cheonan",
+"id": "p36"
+},
+"p37": {
+"category": "디자인대학(디대)",
+"imageDataUrl": "images/promoMaterials/p37-imageDataUrl-54.jpg",
+"items": [
+{
+"content": "디자인대학 엘리베이터 내부 벽면",
+"number": 10,
+"qty": "1장",
+"size": "A2",
+"type": "포스터"
+}
+],
+"location": "디대 엘리베이터 내부",
+"order": 8,
+"region": "cheonan",
+"id": "p37"
+},
+"p38": {
+"category": "디자인대학(디대)",
+"imageDataUrl": "images/promoMaterials/p38-imageDataUrl-55.jpg",
+"items": [
+{
+"content": "디자인대학 4층 복도 게시판",
+"number": 11,
+"qty": "1장",
+"size": "A2",
+"type": "포스터"
+}
+],
+"location": "4층 게시판",
+"order": 9,
+"region": "cheonan",
+"id": "p38"
+},
+"p39": {
+"category": "디자인대학(디대)",
+"imageDataUrl": null,
+"items": [
+{
+"content": "디자인대학 내 카페(별도 참고 사진 없음)",
+"number": 12,
+"qty": "1장",
+"size": "A2",
+"type": "포스터"
+}
+],
+"location": "디대 카페",
+"order": 10,
+"region": "cheonan",
+"id": "p39"
+},
+"p4": {
+"category": "5관",
+"imageDataUrl": "images/promoMaterials/p4-imageDataUrl-56.jpg",
+"items": [
+{
+"content": "사용하지 않는 문이라는 걸 알려주는 텍스트 · 출입구가 어디인지 알려줄 수 있으면 좋겠음",
+"number": 8,
+"qty": "",
+"size": "420(h) x 594(w)(mm)",
+"type": "포스터"
+},
+{
+"content": "5관에 대해 소개하는 문구 — 관명, 담당 교수님, 어떤 매체 위주로 묶여있는지에 대한 설명과 포스터 그래픽 이미지",
+"number": 9,
+"qty": "",
+"size": "420(h) x 594(w)(mm)",
+"type": "포스터"
+}
+],
+"location": "5관 입구 (2층)",
+"order": 3,
+"region": "seoul",
+"id": "p4"
+},
+"p40": {
+"category": "디자인대학(디대)",
+"imageDataUrl": "images/promoMaterials/p40-imageDataUrl-57.jpg",
+"items": [
+{
+"content": "4층 랩실 앞 타공판(유리 파티션)에 부착",
+"number": 13,
+"qty": "",
+"size": "A2",
+"type": "포스터"
+}
+],
+"location": "4층 랩실 앞 타공판",
+"order": 11,
+"region": "cheonan",
+"id": "p40"
+},
+"p41": {
+"category": "옥외 현수막",
+"imageDataUrl": "images/promoMaterials/p41-imageDataUrl-58.jpg",
+"items": [
+{
+"content": "정문 옥외 현수막(가로 게시대)",
+"number": 14,
+"qty": "1장",
+"size": "5000×900mm",
+"type": "현수막"
+}
+],
+"location": "정문 현수막",
+"order": 12,
+"region": "cheonan",
+"id": "p41"
+},
+"p42": {
+"category": "실내 현수막",
+"imageDataUrl": null,
+"items": [
+{
+"content": "전시장 1층 내부, 위 \"전시장 내부 현수막 위치 참고도\" 도면의 붉은 점 위치에 게시",
+"number": 15,
+"qty": "5장",
+"size": "600×4000mm",
+"type": "현수막"
+}
+],
+"location": "전시장 1층 내부 현수막",
+"order": 13,
+"region": "cheonan",
+"id": "p42"
+},
+"p43": {
+"category": "옥외 현수막",
+"imageDataUrl": null,
+"items": [
+{
+"content": "디자인대학 정문 위 대형 현수막(별도 참고 사진 없음, 위 도면 참고)",
+"number": 16,
+"qty": "1장",
+"size": "10000×1200mm",
+"type": "현수막"
+}
+],
+"location": "디대 정문 위 현수막",
+"order": 14,
+"region": "cheonan",
+"id": "p43"
+},
+"p44": {
+"category": "옥외 현수막",
+"imageDataUrl": null,
+"items": [
+{
+"content": "디자인대학 계단 옆 현수막 존(별도 참고 사진 없음, 위 도면 참고)",
+"number": 17,
+"qty": "",
+"size": "7400×900mm",
+"type": "현수막"
+}
+],
+"location": "디대 계단 옆 현수막 존",
+"order": 15,
+"region": "cheonan",
+"id": "p44"
+},
+"p45": {
+"category": "전광판",
+"imageDataUrl": "images/promoMaterials/p45-imageDataUrl-59.jpg",
+"items": [
+{
+"content": "계당관 건물 외벽 전광판",
+"number": 18,
+"qty": "1장",
+"size": "1152×864",
+"type": "전광판"
+}
+],
+"location": "계당관 전광판",
+"order": 16,
+"region": "cheonan",
+"id": "p45"
+},
+"p5": {
+"category": "5관",
+"imageDataUrl": "images/promoMaterials/p5-imageDataUrl-60.jpg",
+"items": [
+{
+"content": "5관을 표현할 수 있는 그래픽 포스터",
+"number": 10,
+"qty": "1장",
+"size": "420(h) x 594(w)(mm)",
+"type": "포스터"
+}
+],
+"location": "5관 안내데스크",
+"order": 4,
+"region": "seoul",
+"id": "p5"
+},
+"p6": {
+"category": "그랜드관",
+"imageDataUrl": "images/promoMaterials/p6-imageDataUrl-61.jpg",
+"items": [
+{
+"content": "그랜드관에 대해 소개하는 문구 — 관명, 담당 교수님, 어떤 매체 위주로 묶여있는지에 대한 설명과 포스터 그래픽 이미지",
+"number": 11,
+"qty": "1장",
+"size": "1800(h) x 800(w)(mm)",
+"type": "현수막"
+}
+],
+"location": "그랜드관 엘리베이터 옆 (3층)",
+"order": 5,
+"region": "seoul",
+"id": "p6"
+},
+"p7": {
+"category": "그랜드관",
+"imageDataUrl": "images/promoMaterials/p7-imageDataUrl-62.jpg",
+"items": [
+{
+"content": "각 관마다 다음 동선 유도하는 내용이나 그래픽(다른 내용) · 입구/출구 다름 명시(그랜드관 동선 인포그래픽 필요)",
+"number": 12,
+"qty": "1장",
+"size": "400(h) x 600(w)(mm)",
+"type": "스탠딩 배너"
+}
+],
+"location": "그랜드관 엘리베이터 앞 (3층)",
+"order": 6,
+"region": "seoul",
+"id": "p7"
+},
+"p8": {
+"category": "그랜드관",
+"imageDataUrl": "images/promoMaterials/p8-imageDataUrl-63.jpg",
+"items": [
+{
+"content": "그랜드관을 표현할 수 있는 그래픽 포스터 — 기존 포스터 or 관별로 들어가거나, 관별 그래픽을 활용한 포스터여도 좋을 것 같다고 생각",
+"number": 13,
+"qty": "1장",
+"size": "420(h) x 594(w)(mm)",
+"type": "포스터"
+}
+],
+"location": "그랜드관 안내데스크",
+"order": 7,
+"region": "seoul",
+"id": "p8"
+},
+"p9": {
+"category": "그랜드관",
+"imageDataUrl": "images/promoMaterials/p9-imageDataUrl-64.jpg",
+"items": [
+{
+"content": "그랜드관에 대한 설명 텍스트 + 출구임을 명시",
+"number": 14,
+"qty": "1장",
+"size": "420(h) x 594(w)(mm)",
+"type": "포스터"
+}
+],
+"location": "그랜드관 출구 (신관으로 연결되는 계단 앞)",
+"order": 8,
+"region": "seoul",
+"id": "p9"
+}
+}

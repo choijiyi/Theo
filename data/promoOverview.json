@@ -1,0 +1,58 @@
+{
+"floor1": {
+"imageDataUrl": "images/promoOverview/floor1-imageDataUrl-65.jpg",
+"label": "1층 도면",
+"order": 2,
+"region": "seoul",
+"id": "floor1"
+},
+"floor2": {
+"imageDataUrl": "images/promoOverview/floor2-imageDataUrl-66.jpg",
+"label": "2층 도면",
+"order": 3,
+"region": "seoul",
+"id": "floor2"
+},
+"floor3": {
+"imageDataUrl": "images/promoOverview/floor3-imageDataUrl-67.jpg",
+"label": "3층 도면",
+"order": 4,
+"region": "seoul",
+"id": "floor3"
+},
+"ov-floorplan-c": {
+"imageDataUrl": "images/promoOverview/ov-floorplan-c-imageDataUrl-68.jpg",
+"label": "전시장 내부 현수막 위치 참고도",
+"order": 2,
+"region": "cheonan",
+"id": "ov-floorplan-c"
+},
+"ov-legend-c": {
+"imageDataUrl": "images/promoOverview/ov-legend-c-imageDataUrl-69.jpg",
+"label": "포스터 사이즈 분류표",
+"order": 0,
+"region": "cheonan",
+"id": "ov-legend-c"
+},
+"ov-legend": {
+"imageDataUrl": "images/promoOverview/ov-legend-imageDataUrl-70.jpg",
+"label": "부착 위치 참고 (마루아트센터 안내 화면)",
+"order": 1,
+"region": "seoul",
+"id": "ov-legend"
+},
+"ov-map-c": {
+"imageDataUrl": "images/promoOverview/ov-map-c-imageDataUrl-71.jpg",
+"label": "천안 캠퍼스 부착 위치 참고",
+"order": 1,
+"region": "cheonan",
+"id": "ov-map-c"
+},
+"ov-types": {
+"imageDataUrl": "images/promoOverview/ov-types-imageDataUrl-72.jpg",
+"label": "홍보물 종류·사이즈 요약",
+"order": 0,
+"region": "seoul",
+"id": "ov-types"
+}
+}
