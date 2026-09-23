@@ -1781,7 +1781,7 @@
             '<span class="issue-card-date">' + escapeHtml(it.date || '') + '</span>' +
           '</div>' +
           '<div class="issue-card-title">' + escapeHtml(it.title || '') + '</div>' +
-          (expanded ? '<div class="issue-card-summary">' + escapeHtml(it.summary || '') + '</div>' : '') +
+          (expanded ? '<div class="issue-card-summary">' + formatIssueSummary(it.summary || '') + '</div>' : '') +
         '</div>' +
       '</div>';
     }).join('');
@@ -2211,6 +2211,16 @@
     });
   }
   function escapeAttr(s){ return escapeHtml(s); }
+
+  // Issue summaries are plain escaped text, except for one markdown-style link syntax:
+  // [label](https://...) becomes a real clickable link. Text is escaped first, so this
+  // is safe even though the result is injected as innerHTML.
+  function formatIssueSummary(s){
+    var escaped = escapeHtml(s);
+    return escaped.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, function(_, label, url){
+      return '<a href="' + url + '" target="_blank" rel="noopener">' + label + '</a>';
+    });
+  }
 
   function teamKeyFromLabel(text){
     if (!text) return null;
