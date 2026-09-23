@@ -12,7 +12,23 @@
 
 ## 데이터 갱신 방법
 
-이 사이트는 정적 사이트라 브라우저에서 직접 편집·저장이 안 됩니다. 회의록 작성, 과업 추가/완료, 일정 변경, 새 이슈·자료 등록 같은 내용 변경은 테오(Claude)와의 대화창에서 요청하면:
+### 회의록 작성·저장 — 페이지에서 직접
+
+이 사이트는 정적 사이트지만, 회의록만큼은 브라우저에서 바로 쓰고 저장할 수 있습니다. 우측 상단 **"저장 연결"** 버튼(또는 회의록 저장 시 처음 한 번)을 누르면 깃허브 토큰을 입력하라는 창이 뜹니다.
+
+1. [github.com/settings/personal-access-tokens/new](https://github.com/settings/personal-access-tokens/new) 에서 **Fine-grained token** 발급
+   - Resource owner: `choijiyi`
+   - Repository access: **Only select repositories** → `Theo`
+   - Repository permissions → **Contents: Read and write**
+   - 발급된 `github_pat_...` 토큰 값을 복사
+2. 사이트의 "저장 연결" 창에 붙여넣기 — 이 브라우저(이 기기)의 `localStorage`에만 저장되고, 깃허브 API 호출 외에는 어디로도 전송되지 않습니다
+3. 이후로는 회의록 텍스트를 쓰고 **"회의록 저장"** 버튼만 누르면 `data/meetings.json`에 바로 커밋되고, 약 1분 뒤 깃허브 페이지에 반영됩니다
+
+토큰이 만료/무효화되면 저장 시 에러 메시지가 뜨고, "저장 연결"에서 새로 입력하면 됩니다. 다른 브라우저·기기에서는 토큰을 따로 등록해야 합니다.
+
+### 그 외 데이터 (과업, 일정, 이슈·자료, 배치도면 등)
+
+회의록 이외의 내용 변경(과업 추가/완료, 일정 변경, 새 이슈·자료 등록, 이미지 교체 등)은 테오(Claude)와의 대화창에서 요청하면:
 
 1. Claude가 `data/*.json`(필요하면 `images/`)을 수정
 2. 이 레포에 커밋

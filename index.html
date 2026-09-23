@@ -846,6 +846,7 @@
     </div>
     <div class="topbar-right">
       <a class="nav-btn" href="https://claude.ai/code/artifact/dc7d7d03-9743-48f0-9b7f-e66fdf9418c4" target="_blank" rel="noopener">세피아로 이동 →</a>
+      <button class="todaybtn" id="ghTokenBtn" data-action="gh-token" title="회의록 저장용 깃허브 토큰 설정" style="margin-right:6px;">저장 연결</button>
       <div class="month-nav">
         <button class="navbtn" data-action="prev-month" aria-label="이전 달">←</button>
         <div class="month-label num" id="monthLabel">2026년 9월</div>
@@ -1030,7 +1031,7 @@
   <p class="foot-note">
     <b>테오</b>는 매주 <b>월요일 19:00 기획팀 회의</b>와 <b>수요일 17:00 졸준위 전체 대면회의</b>를 기본 일정으로 캘린더에 표시합니다.
     날짜가 지정된 과업은 자동으로 캘린더에 등록되어 7일·3일·1일 전에 리마인드 표시가 뜨고, 날짜가 없는 과업은 다음 과업 목록으로만 남습니다.
-    이 페이지는 깃허브 페이지로 배포된 정적 사이트예요. 회의록 작성, 과업 추가·완료 표시, 일정 변경, 새 이슈·자료 등록 같은 <b>내용을 바꾸는 요청은 이 페이지 안이 아니라 테오와의 대화창에서</b> 해주세요 — 말씀하시면 레포 데이터를 수정해서 커밋하고 다시 배포해드려요.
+    이 페이지는 깃허브 페이지로 배포된 정적 사이트예요. <b>회의록 작성·저장은 우측 상단의 "저장 연결"로 깃허브 토큰을 한 번 등록해두면 이 페이지에서 바로</b> 할 수 있어요(저장 후 배포까지 약 1분 정도 걸려요). 과업 추가·완료 표시, 일정 변경, 새 이슈·자료 등록처럼 그 밖의 내용을 바꾸는 요청은 테오(Claude)와의 대화창에서 말씀해주세요 — 레포 데이터를 수정해서 커밋하고 다시 배포해드려요.
     실시간 푸시 알림은 없어서, 열 때마다 위 브리핑 바에서 다가오는 일정과 마감을 바로 확인하는 방식으로 리마인드를 대신합니다. 자주 들어오신다면 브라우저 메뉴의 "바로가기 만들기"로 바탕화면에 아이콘을 만들어두면 편해요.
   </p>
 </div>
@@ -2037,7 +2038,7 @@
       });
     }
 
-    body += '<div class="schedule-hint">이 페이지는 정적으로 배포된 사이트예요. 회의록 작성·일정 변경·새 이슈 등록 같은 내용 변경은 테오(Claude)와의 대화창에서 말씀해주세요 — 레포에 반영하고 다시 배포해드려요.</div>';
+    body += '<div class="schedule-hint">이 페이지는 정적으로 배포된 사이트예요. 회의록은 아래에서 바로 작성·저장할 수 있어요(우측 상단 "저장 연결"에서 토큰 등록 필요, 저장 후 반영까지 약 1분). 일정 변경·새 이슈 등록 같은 다른 내용 변경은 테오(Claude)와의 대화창에서 말씀해주세요 — 레포에 반영하고 다시 배포해드려요.</div>';
     document.getElementById('drawerBody').innerHTML = body;
   }
 
@@ -2164,7 +2165,7 @@
         (taskRows ? '<div class="ai-tasklist">' + taskRows + '</div>' : '<div class="ai-empty">추출된 다음 과업이 없습니다.</div>') +
         '<div class="save-note">' + (data.summaryUpdatedAt ? '테오 정리 · ' + timeOnly(data.summaryUpdatedAt) : '') + '</div>';
     } else {
-      aiInner = '<div class="ai-empty">아직 요약이 없습니다. 회의록을 적고 요약을 요청해 보세요.</div>';
+      aiInner = '<div class="ai-empty">아직 요약이 없습니다. 회의록을 저장한 뒤, 테오(Claude)와의 대화창에 붙여넣어 요약을 요청해보세요.</div>';
     }
 
     var recapBlock = (mm.team === 'plenary') ? renderWeeklyRecap(computeWeeklyPlanRecap(data.date)) : '';
@@ -2179,11 +2180,11 @@
       '<div class="board-columns">' +
         '<div class="board-col">' +
           '<div class="minutes-field-label">회의 내용</div>' +
-          '<textarea class="minutes content" id="' + minutesId + '" placeholder="회의 내용을 자유롭게 적어주세요…" ' + (state.dbReady && state.db ? '' : 'disabled') + '>' + escapeHtml(data.minutesContent != null ? data.minutesContent : (data.minutes || '')) + '</textarea>' +
+          '<textarea class="minutes content" id="' + minutesId + '" placeholder="회의 내용을 자유롭게 적어주세요…">' + escapeHtml(data.minutesContent != null ? data.minutesContent : (data.minutes || '')) + '</textarea>' +
         '</div>' +
         '<div class="board-col">' +
           '<div class="minutes-field-label">다음주 준비 과업</div>' +
-          '<textarea class="minutes tasks" id="' + minutesId + '-tasks" placeholder="다음주까지 준비할 과업을 적어주세요…" ' + (state.dbReady && state.db ? '' : 'disabled') + '>' + escapeHtml(data.minutesNextTasks || '') + '</textarea>' +
+          '<textarea class="minutes tasks" id="' + minutesId + '-tasks" placeholder="다음주까지 준비할 과업을 적어주세요…">' + escapeHtml(data.minutesNextTasks || '') + '</textarea>' +
         '</div>' +
         '<div class="board-col board-col-ai">' +
           '<div class="ai-label"><span class="dotmark"></span>테오의 정리</div>' +
@@ -2191,7 +2192,7 @@
         '</div>' +
       '</div>' +
       '<div class="row-actions">' +
-        '<button class="btn primary" data-action="save-minutes" ' + (state.dbReady && state.db ? '' : 'disabled') + '>회의록 저장</button>' +
+        '<button class="btn primary" data-action="save-minutes">회의록 저장</button>' +
         '<span class="save-note">' + savedNote + '</span>' +
       '</div>' +
     '</div>';
@@ -2275,18 +2276,97 @@
     return parts.join('\n\n');
   }
 
+  /* ---------------- github direct-save (static site, no backend) ---------------- */
+  var GH_OWNER = 'choijiyi';
+  var GH_REPO = 'Theo';
+  var GH_BRANCH = 'main';
+  var GH_TOKEN_KEY = 'theo_gh_token';
+
+  function ghToken(){
+    try { return localStorage.getItem(GH_TOKEN_KEY) || ''; } catch(e){ return ''; }
+  }
+  function setGhToken(t){
+    try { if (t) localStorage.setItem(GH_TOKEN_KEY, t); else localStorage.removeItem(GH_TOKEN_KEY); } catch(e){}
+  }
+  function b64EncodeUtf8(str){ return btoa(unescape(encodeURIComponent(str))); }
+  function b64DecodeUtf8(str){ return decodeURIComponent(escape(atob(str))); }
+  // matches the repo's existing json.dumps(..., indent=0) style: newline per token, no indentation
+  function stringifyLikeSource(obj){
+    return JSON.stringify(obj, null, 1).replace(/^[ \t]+/gm, '');
+  }
+  function ghContentsUrl(path){
+    return 'https://api.github.com/repos/' + GH_OWNER + '/' + GH_REPO + '/contents/' + path;
+  }
+
+  function promptForGhToken(){
+    var t = window.prompt(
+      '회의록 저장용 깃허브 토큰을 입력해주세요.\n' +
+      '(github.com → Settings → Developer settings → Fine-grained tokens에서\n' +
+      GH_REPO + ' 저장소에만 Contents: Read and write 권한으로 발급)\n\n' +
+      '이 토큰은 이 브라우저에만 저장되고 어디로도 전송되지 않습니다(깃허브 API 호출에만 사용).'
+    );
+    if (t) setGhToken(t.trim());
+    return ghToken();
+  }
+
+  function updateGhTokenBtn(){
+    var btn = document.getElementById('ghTokenBtn');
+    if (!btn) return;
+    btn.textContent = ghToken() ? '저장 연결됨' : '저장 연결';
+  }
+
+  // Fetches the current file, lets mutateFn edit the parsed JSON in place, then commits it back.
+  function commitJsonFile(path, mutateFn, message){
+    var token = ghToken() || promptForGhToken();
+    if (!token) return Promise.reject({code:'no_token'});
+
+    return fetch(ghContentsUrl(path) + '?ref=' + GH_BRANCH, {
+      headers: { 'Authorization': 'token ' + token, 'Accept': 'application/vnd.github+json' }
+    }).then(function(res){
+      if (res.status === 401){ setGhToken(''); updateGhTokenBtn(); return Promise.reject({code:'unauthorized'}); }
+      if (!res.ok) return Promise.reject({code:'fetch_failed', status:res.status});
+      return res.json();
+    }).then(function(fileMeta){
+      var current = JSON.parse(b64DecodeUtf8(fileMeta.content.replace(/\n/g, '')));
+      mutateFn(current);
+      var newContent = stringifyLikeSource(current);
+      return fetch(ghContentsUrl(path), {
+        method: 'PUT',
+        headers: { 'Authorization': 'token ' + token, 'Accept': 'application/vnd.github+json', 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: message, content: b64EncodeUtf8(newContent), sha: fileMeta.sha, branch: GH_BRANCH })
+      });
+    }).then(function(res){
+      if (res.status === 401){ setGhToken(''); updateGhTokenBtn(); return Promise.reject({code:'unauthorized'}); }
+      if (res.status === 409) return Promise.reject({code:'conflict'});
+      if (!res.ok) return Promise.reject({code:'commit_failed', status:res.status});
+      return res.json();
+    });
+  }
+
   function saveMinutes(meetingId, team, label, time, date, kind, contentText, tasksText){
-    if (!state.db) return;
-    var ref = state.db.doc('meetings/' + meetingId);
     var now = new Date().toISOString();
     var combined = combineMinutes(contentText, tasksText);
-    if (state.meetingsById.has(meetingId)){
-      ref.update({minutesContent:contentText, minutesNextTasks:tasksText, minutes:combined, minutesUpdatedAt:now}).catch(function(e){ console.error(e); });
+
+    // optimistic local update so the page reflects the save immediately
+    var existing = state.meetingsById.get(meetingId);
+    if (existing){
+      existing.minutesContent = contentText; existing.minutesNextTasks = tasksText;
+      existing.minutes = combined; existing.minutesUpdatedAt = now;
     } else {
-      var doc = defaultMeetingDoc(date, team, label, time, kind);
-      doc.minutesContent = contentText; doc.minutesNextTasks = tasksText; doc.minutes = combined; doc.minutesUpdatedAt = now; doc.createdAt = now;
-      ref.set(doc).catch(function(e){ console.error(e); });
+      var localDoc = defaultMeetingDoc(date, team, label, time, kind);
+      localDoc.minutesContent = contentText; localDoc.minutesNextTasks = tasksText;
+      localDoc.minutes = combined; localDoc.minutesUpdatedAt = now; localDoc.createdAt = now;
+      state.meetingsById.set(meetingId, localDoc);
     }
+
+    return commitJsonFile('data/meetings.json', function(meetings){
+      var isNew = !meetings[meetingId];
+      var d = meetings[meetingId] || defaultMeetingDoc(date, team, label, time, kind);
+      d.minutesContent = contentText; d.minutesNextTasks = tasksText;
+      d.minutes = combined; d.minutesUpdatedAt = now;
+      if (isNew) d.createdAt = now;
+      meetings[meetingId] = d;
+    }, '회의록 저장: ' + label + ' (' + date + ')');
   }
 
   function buildSummaryPrompt(team, label, date, minutesText){
@@ -2479,18 +2559,35 @@
       toggleTask(el.getAttribute('data-id'), el.getAttribute('data-status'));
     } else if (action === 'toggle-star'){
       toggleStar(el.getAttribute('data-id'), el.getAttribute('data-starred') === 'true');
+    } else if (action === 'gh-token'){
+      promptForGhToken();
+      updateGhTokenBtn();
     } else if (action === 'save-minutes'){
       var card = el.closest('.meeting-card');
       var taContent = card.querySelector('textarea.minutes.content');
       var taTasks = card.querySelector('textarea.minutes.tasks');
+      var note = card.querySelector('.save-note');
+      el.disabled = true;
+      if (note) note.textContent = '저장 중…';
       saveMinutes(
         card.getAttribute('data-meeting-id'), card.getAttribute('data-team'),
         card.getAttribute('data-label'), card.getAttribute('data-time'),
         card.getAttribute('data-date'), card.getAttribute('data-kind'),
         taContent ? taContent.value.trim() : '', taTasks ? taTasks.value.trim() : ''
-      );
-      var note = card.querySelector('.save-note');
-      if (note) note.textContent = '저장됨 · ' + timeOnly(new Date().toISOString());
+      ).then(function(){
+        updateGhTokenBtn();
+        if (note) note.textContent = '저장됨 · ' + timeOnly(new Date().toISOString()) + ' (배포까지 약 1분)';
+      }).catch(function(err){
+        updateGhTokenBtn();
+        var msg = '저장 실패';
+        if (err && err.code === 'no_token') msg = '저장 취소됨(토큰 미입력)';
+        else if (err && err.code === 'unauthorized') msg = '저장 실패 — 토큰이 유효하지 않습니다. "저장 연결"에서 다시 입력해주세요.';
+        else if (err && err.code === 'conflict') msg = '저장 실패 — 다른 곳에서 방금 수정되었어요. 새로고침 후 다시 시도해주세요.';
+        if (note) note.textContent = msg + ' · 다시 시도하려면 저장 버튼을 눌러주세요';
+        console.error(err);
+      }).finally(function(){
+        el.disabled = false;
+      });
     } else if (action === 'request-summary'){
       requestSummary(el.closest('.meeting-card'));
     } else if (action === 'table-filter'){
@@ -2615,6 +2712,7 @@
   renderLegend();
   renderAll();
   loadStaticData();
+  updateGhTokenBtn();
   setInterval(renderBriefing, 60000);
 })();
 </script>
