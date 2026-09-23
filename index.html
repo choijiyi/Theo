@@ -2316,10 +2316,13 @@
   }
 
   // Fetches the current file, lets mutateFn edit the parsed JSON in place, then commits it back.
-  function commitJsonFile(path, mutateFn, message){
-    var token = ghToken() || promptForGhToken();
-    if (!token) return Promise.reject({code:'no_token'});
+  // Writes to the SAME path are queued one-at-a-time (never fired concurrently), and each
+  // one retries a few times on 409 (its sha went stale while it waited its turn — e.g. two
+  // task toggles clicked in quick succession). This is what keeps rapid clicks from racing
+  // each other and failing with "다른 곳에서 방금 수정되었어요".
+  var ghWriteQueues = {};
 
+  function commitJsonFileOnce(path, mutateFn, message, token){
     return fetch(ghContentsUrl(path) + '?ref=' + GH_BRANCH, {
       headers: { 'Authorization': 'token ' + token, 'Accept': 'application/vnd.github+json' }
     }).then(function(res){
@@ -2341,6 +2344,27 @@
       if (!res.ok) return Promise.reject({code:'commit_failed', status:res.status});
       return res.json();
     });
+  }
+
+  function commitJsonFileWithRetry(path, mutateFn, message, token, attemptsLeft){
+    return commitJsonFileOnce(path, mutateFn, message, token).catch(function(err){
+      if (err && err.code === 'conflict' && attemptsLeft > 0){
+        return commitJsonFileWithRetry(path, mutateFn, message, token, attemptsLeft - 1);
+      }
+      return Promise.reject(err);
+    });
+  }
+
+  function commitJsonFile(path, mutateFn, message){
+    var token = ghToken() || promptForGhToken();
+    if (!token) return Promise.reject({code:'no_token'});
+
+    var prev = ghWriteQueues[path] || Promise.resolve();
+    var run = prev.catch(function(){ /* a prior write's failure shouldn't block this one */ }).then(function(){
+      return commitJsonFileWithRetry(path, mutateFn, message, token, 3);
+    });
+    ghWriteQueues[path] = run;
+    return run;
   }
 
   function saveMinutes(meetingId, team, label, time, date, kind, contentText, tasksText){
