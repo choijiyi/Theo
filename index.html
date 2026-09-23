@@ -2452,23 +2452,60 @@
     });
   }
 
+  function ghErrorMessage(err, defaultMsg){
+    if (err && err.code === 'no_token') return '저장 취소됨(토큰 미입력)';
+    if (err && err.code === 'unauthorized') return '저장 실패 — 토큰이 유효하지 않습니다. "저장 연결"에서 다시 입력해주세요.';
+    if (err && err.code === 'conflict') return '저장 실패 — 다른 곳에서 방금 수정되었어요. 새로고침 후 다시 시도해주세요.';
+    return defaultMsg || '저장 실패';
+  }
+
   function toggleTask(id, currentStatus){
-    if (!state.db) return;
     var next = currentStatus === 'done' ? 'pending' : 'done';
-    state.db.doc('tasks/' + id).update({status:next}).catch(function(e){ console.error(e); });
+    var t = state.tasksById.get(id);
+    var prevStatus = t ? t.status : currentStatus;
+    if (t) t.status = next;
+    renderAll();
+    updateGhTokenBtn();
+    commitJsonFile('data/tasks.json', function(tasks){
+      if (tasks[id]) tasks[id].status = next;
+    }, (next === 'done' ? '과업 완료 처리: ' : '과업 완료 취소: ') + id).then(function(){
+      updateGhTokenBtn();
+    }).catch(function(err){
+      if (t) t.status = prevStatus;
+      renderAll();
+      updateGhTokenBtn();
+      console.error(err);
+      window.alert('테오: ' + ghErrorMessage(err, '과업 상태 저장 실패'));
+    });
   }
 
   function toggleStar(id, currentlyStarred){
-    if (!state.db) return;
-    state.db.doc('tasks/' + id).update({starred: !currentlyStarred}).catch(function(e){ console.error(e); });
+    var next = !currentlyStarred;
+    var t = state.tasksById.get(id);
+    var prevStarred = t ? !!t.starred : currentlyStarred;
+    if (t) t.starred = next;
+    renderAll();
+    updateGhTokenBtn();
+    commitJsonFile('data/tasks.json', function(tasks){
+      if (tasks[id]) tasks[id].starred = next;
+    }, (next ? '중요 표시: ' : '중요 표시 해제: ') + id).then(function(){
+      updateGhTokenBtn();
+    }).catch(function(err){
+      if (t) t.starred = prevStarred;
+      renderAll();
+      updateGhTokenBtn();
+      console.error(err);
+      window.alert('테오: ' + ghErrorMessage(err, '중요 표시 저장 실패'));
+    });
   }
 
   /* ---------------- static data loading ----------------
      테오는 이제 claude.ai 아티펙트의 실시간 db 대신, 이 레포의 data/*.json 정적 파일에서
-     데이터를 읽어옵니다. state.db / state.sample은 계속 null로 남아있고(그래서 회의록 저장 ·
-     과업 체크 · 별표 · AI 요약 요청 같은 "쓰기" 동작은 자동으로 비활성화됩니다), 내용을
-     바꾸고 싶으면 테오(Claude)와의 대화창에서 요청 → 이 레포의 data 파일을 수정해 커밋 →
-     재배포하는 방식으로 반영합니다. */
+     데이터를 읽어옵니다. state.db / state.sample은 항상 null이라 원래 db에 기대던 코드 경로는
+     쓰지 않고, 회의록 저장 · 과업 체크 · 별표는 대신 commitJsonFile()로 깃허브 Contents API를
+     직접 호출해 data/*.json에 커밋합니다(브라우저에 저장한 개인 토큰 필요). AI 요약 요청과
+     그 외 데이터(일정·이슈·자료 등) 변경은 여전히 테오(Claude)와의 대화창에서 요청 → 이 레포의
+     data 파일을 수정해 커밋 → 재배포하는 방식으로 반영합니다. */
   function loadStaticData(){
     function fetchJson(path){
       return fetch(path).then(function(res){
@@ -2579,10 +2616,7 @@
         if (note) note.textContent = '저장됨 · ' + timeOnly(new Date().toISOString()) + ' (배포까지 약 1분)';
       }).catch(function(err){
         updateGhTokenBtn();
-        var msg = '저장 실패';
-        if (err && err.code === 'no_token') msg = '저장 취소됨(토큰 미입력)';
-        else if (err && err.code === 'unauthorized') msg = '저장 실패 — 토큰이 유효하지 않습니다. "저장 연결"에서 다시 입력해주세요.';
-        else if (err && err.code === 'conflict') msg = '저장 실패 — 다른 곳에서 방금 수정되었어요. 새로고침 후 다시 시도해주세요.';
+        var msg = ghErrorMessage(err, '저장 실패');
         if (note) note.textContent = msg + ' · 다시 시도하려면 저장 버튼을 눌러주세요';
         console.error(err);
       }).finally(function(){
