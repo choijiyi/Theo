@@ -493,6 +493,7 @@
   .table-loc-badge.seoul{color:var(--accent);}
   .table-loc-badge.cheonan{color:var(--crimson);}
   .table-loc-badge.undecided{color:var(--ink-faint);}
+  .issue-name-m{color:var(--accent); font-weight:700;}
   .table-card-usage{font-size:12.5px; color:var(--ink);}
   .table-card-qty{font-size:12px; color:var(--ink-soft);}
 
@@ -2212,14 +2213,19 @@
   }
   function escapeAttr(s){ return escapeHtml(s); }
 
-  // Issue summaries are plain escaped text, except for one markdown-style link syntax:
-  // [label](https://...) becomes a real clickable link. Text is escaped first, so this
-  // is safe even though the result is injected as innerHTML.
+  // Issue summaries are plain escaped text, except for two markdown-style syntaxes:
+  // [label](https://...) becomes a real clickable link, and {{text}} becomes a colored
+  // highlight span (used e.g. to mark names by role/gender in a staff list). Text is
+  // escaped first, so both are safe even though the result is injected as innerHTML.
   function formatIssueSummary(s){
     var escaped = escapeHtml(s);
-    return escaped.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, function(_, label, url){
+    escaped = escaped.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, function(_, label, url){
       return '<a href="' + url + '" target="_blank" rel="noopener">' + label + '</a>';
     });
+    escaped = escaped.replace(/\{\{([^}]+)\}\}/g, function(_, text){
+      return '<span class="issue-name-m">' + text + '</span>';
+    });
+    return escaped;
   }
 
   function teamKeyFromLabel(text){
@@ -2289,7 +2295,7 @@
   /* ---------------- update checker (github pages caches this page for 10min,
      so a tab left open — or reloaded within that window — can silently show
      stale content; this polls a tiny always-fresh file and offers a banner) ---------------- */
-  var SITE_BUILD_VERSION = '2026-09-23T07:25:43Z';
+  var SITE_BUILD_VERSION = '2026-09-23T07:36:16Z';
   var VERSION_CHECK_URL = 'data/version.json';
   var versionBannerShown = false;
 
