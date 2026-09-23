@@ -2286,6 +2286,54 @@
     return parts.join('\n\n');
   }
 
+  /* ---------------- update checker (github pages caches this page for 10min,
+     so a tab left open — or reloaded within that window — can silently show
+     stale content; this polls a tiny always-fresh file and offers a banner) ---------------- */
+  var SITE_BUILD_VERSION = '2026-09-23T06:39:00Z';
+  var VERSION_CHECK_URL = 'data/version.json';
+  var versionBannerShown = false;
+
+  function checkForNewVersion(){
+    if (versionBannerShown) return;
+    fetch(VERSION_CHECK_URL + '?t=' + Date.now(), { cache: 'no-store' })
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(data){
+        if (data && data.version && data.version !== SITE_BUILD_VERSION) {
+          showUpdateBanner();
+        }
+      })
+      .catch(function(){});
+  }
+
+  function showUpdateBanner(){
+    if (versionBannerShown || document.getElementById('updateBanner')) return;
+    versionBannerShown = true;
+    var banner = document.createElement('div');
+    banner.id = 'updateBanner';
+    banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#b3261e;color:#fff;text-align:center;padding:9px 12px;font-size:13px;font-family:inherit;box-shadow:0 1px 4px rgba(0,0,0,.2);';
+    var text = document.createElement('span');
+    text.textContent = '새 내용이 반영되었습니다. ';
+    var link = document.createElement('a');
+    link.href = '#';
+    link.textContent = '새로고침';
+    link.style.cssText = 'color:#fff;text-decoration:underline;font-weight:600;';
+    link.addEventListener('click', function(e){
+      e.preventDefault();
+      location.href = location.pathname + '?v=' + Date.now();
+    });
+    banner.appendChild(text);
+    banner.appendChild(link);
+    document.body.appendChild(banner);
+  }
+
+  function initUpdateChecker(){
+    setTimeout(checkForNewVersion, 3000);
+    setInterval(checkForNewVersion, 120000);
+    document.addEventListener('visibilitychange', function(){
+      if (!document.hidden) checkForNewVersion();
+    });
+  }
+
   /* ---------------- github direct-save (static site, no backend) ---------------- */
   var GH_OWNER = 'choijiyi';
   var GH_REPO = 'Theo';
@@ -2781,6 +2829,7 @@
   renderAll();
   loadStaticData();
   updateGhTokenBtn();
+  initUpdateChecker();
   setInterval(renderBriefing, 60000);
 })();
 </script>
