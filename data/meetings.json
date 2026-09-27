@@ -324,5 +324,35 @@
 "team": "plenary",
 "time": "17:00",
 "timeTBD": false
+},
+"rec-plan-2026-09-28": {
+"cancelReason": null,
+"createdAt": "2026-09-27T10:03:16.000Z",
+"date": "2026-09-28",
+"kind": "recurring",
+"label": "기획팀 회의",
+"minutes": "",
+"minutesUpdatedAt": null,
+"status": "cancelled",
+"summary": "",
+"summaryUpdatedAt": null,
+"tasks": [],
+"team": "plan",
+"time": "19:00"
+},
+"rec-plenary-2026-09-30": {
+"cancelReason": null,
+"createdAt": "2026-09-27T10:03:16.000Z",
+"date": "2026-09-30",
+"kind": "recurring",
+"label": "졸준위 전체 대면회의",
+"minutes": "",
+"minutesUpdatedAt": null,
+"status": "cancelled",
+"summary": "",
+"summaryUpdatedAt": null,
+"tasks": [],
+"team": "plenary",
+"time": "17:00"
 }
 }
