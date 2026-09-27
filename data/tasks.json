@@ -564,5 +564,16 @@
 "team": "plan",
 "title": "작품설명서 3차 수합 마감 (자정)",
 "id": "task-2026-09-26-desc3rd-deadline"
+},
+"task-2026-09-27-worksheet3-nonsubmitters": {
+"assignee": null,
+"createdAt": "2026-09-27T08:18:22.000Z",
+"dueDate": null,
+"meetingDate": "2026-09-27",
+"meetingId": null,
+"status": "pending",
+"team": "plan",
+"title": "3차 작품설명서 미제출자 명단 작성",
+"id": "task-2026-09-27-worksheet3-nonsubmitters"
 }
 }
