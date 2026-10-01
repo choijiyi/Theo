@@ -25,10 +25,10 @@
 ]
 },
 "201990028_innov": {
-"artworkImage": "images/studentWork/201990028_innov-artworkImage-283.jpg",
+"artworkImage": "images/studentWork/201990028_innov-art3-i0.jpg",
 "artworkImages": [
-"images/studentWork/201990028_innov-artworkImages-i0-284.jpg",
-"images/studentWork/201990028_innov-artworkImages-i1-285.jpg"
+"images/studentWork/201990028_innov-art3-i0.jpg",
+"images/studentWork/201990028_innov-art3-i1.jpg"
 ],
 "descriptionImages": [
 "images/studentWork/201990028_innov-descriptionImages-i0-286.jpg"
@@ -71,7 +71,7 @@
 "id": "202020183_fusion"
 },
 "202020183_innov": {
-"artworkImage": "images/studentWork/202020183_innov-artworkImage-289.jpg",
+"artworkImage": "images/studentWork/202020183_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202020183_innov-descriptionImages-i0-290.jpg"
 ],
@@ -113,11 +113,7 @@
 "id": "202020259_fusion"
 },
 "202020259_innov": {
-"artworkImage": "images/studentWork/202020259_innov-artworkImage-293.jpg",
-"artworkImages": [
-"images/studentWork/202020259_innov-artworkImages-i0-294.jpg",
-"images/studentWork/202020259_innov-artworkImages-i1-295.jpg"
-],
+"artworkImage": "images/studentWork/202020259_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202020259_innov-descriptionImages-i0-296.jpg"
 ],
@@ -163,7 +159,7 @@
 ]
 },
 "202020309_innov": {
-"artworkImage": "images/studentWork/202020309_innov-artworkImage-299.jpg",
+"artworkImage": "images/studentWork/202020309_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202020309_innov-descriptionImages-i0-300.jpg"
 ],
@@ -205,7 +201,7 @@
 "id": "202020408_fusion"
 },
 "202020408_innov": {
-"artworkImage": "images/studentWork/202020408_innov-artworkImage-303.jpg",
+"artworkImage": "images/studentWork/202020408_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202020408_innov-descriptionImages-i0-304.jpg"
 ],
@@ -223,7 +219,11 @@
 "professor": "김한솔",
 "studentId": "202020408",
 "studio": "innov",
-"id": "202020408_innov"
+"id": "202020408_innov",
+"artworkImages": [
+"images/studentWork/202020408_innov-art3-i0.jpg",
+"images/studentWork/202020408_innov-art3-i1.jpg"
+]
 },
 "202120226_fusion": {
 "artworkImage": "images/studentWork/202120226_fusion-art3-i0.jpg",
@@ -251,7 +251,7 @@
 ]
 },
 "202120226_innov": {
-"artworkImage": "images/studentWork/202120226_innov-artworkImage-307.jpg",
+"artworkImage": "images/studentWork/202120226_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202120226_innov-descriptionImages-i0-308.jpg"
 ],
@@ -293,7 +293,7 @@
 "id": "202120243_fusion"
 },
 "202120243_innov": {
-"artworkImage": "images/studentWork/202120243_innov-artworkImage-311.jpg",
+"artworkImage": "images/studentWork/202120243_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202120243_innov-descriptionImages-i0-312.jpg"
 ],
@@ -335,7 +335,7 @@
 "id": "202120253_fusion"
 },
 "202120253_innov": {
-"artworkImage": "images/studentWork/202120253_innov-artworkImage-315.jpg",
+"artworkImage": "images/studentWork/202120253_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202120253_innov-descriptionImages-i0-316.jpg"
 ],
@@ -353,7 +353,11 @@
 "professor": "안혜선",
 "studentId": "202120253",
 "studio": "innov",
-"id": "202120253_innov"
+"id": "202120253_innov",
+"artworkImages": [
+"images/studentWork/202120253_innov-art3-i0.jpg",
+"images/studentWork/202120253_innov-art3-i1.jpg"
+]
 },
 "202120257_fusion": {
 "artworkImage": "images/studentWork/202120257_fusion-art3-i0.jpg",
@@ -377,7 +381,7 @@
 "id": "202120257_fusion"
 },
 "202120257_innov": {
-"artworkImage": "images/studentWork/202120257_innov-artworkImage-319.jpg",
+"artworkImage": "images/studentWork/202120257_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202120257_innov-descriptionImages-i0-320.jpg"
 ],
@@ -423,7 +427,7 @@
 ]
 },
 "202120285_innov": {
-"artworkImage": "images/studentWork/202120285_innov-artworkImage-323.jpg",
+"artworkImage": "images/studentWork/202120285_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202120285_innov-descriptionImages-i0-324.jpg"
 ],
@@ -441,7 +445,11 @@
 "professor": "박소연",
 "studentId": "202120285",
 "studio": "innov",
-"id": "202120285_innov"
+"id": "202120285_innov",
+"artworkImages": [
+"images/studentWork/202120285_innov-art3-i0.jpg",
+"images/studentWork/202120285_innov-art3-i1.jpg"
+]
 },
 "202120294_fusion": {
 "artworkImage": "images/studentWork/202120294_fusion-art3-i0.jpg",
@@ -465,7 +473,7 @@
 "id": "202120294_fusion"
 },
 "202120294_innov": {
-"artworkImage": "images/studentWork/202120294_innov-artworkImage-327.jpg",
+"artworkImage": "images/studentWork/202120294_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202120294_innov-descriptionImages-i0-328.jpg"
 ],
@@ -507,7 +515,7 @@
 "id": "202120315_fusion"
 },
 "202120315_innov": {
-"artworkImage": "images/studentWork/202120315_innov-artworkImage-331.jpg",
+"artworkImage": "images/studentWork/202120315_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202120315_innov-descriptionImages-i0-332.jpg"
 ],
@@ -553,7 +561,7 @@
 ]
 },
 "202120316_innov": {
-"artworkImage": "images/studentWork/202120316_innov-artworkImage-335.jpg",
+"artworkImage": "images/studentWork/202120316_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202120316_innov-descriptionImages-i0-336.jpg"
 ],
@@ -599,7 +607,7 @@
 "id": "202120324_fusion"
 },
 "202120324_innov": {
-"artworkImage": "images/studentWork/202120324_innov-artworkImage-341.jpg",
+"artworkImage": "images/studentWork/202120324_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202120324_innov-descriptionImages-i0-342.jpg"
 ],
@@ -617,7 +625,11 @@
 "professor": "박소연",
 "studentId": "202120324",
 "studio": "innov",
-"id": "202120324_innov"
+"id": "202120324_innov",
+"artworkImages": [
+"images/studentWork/202120324_innov-art3-i0.jpg",
+"images/studentWork/202120324_innov-art3-i1.jpg"
+]
 },
 "202120328_fusion": {
 "artworkImage": "images/studentWork/202120328_fusion-art3-i0.jpg",
@@ -645,7 +657,7 @@
 ]
 },
 "202120328_innov": {
-"artworkImage": "images/studentWork/202120328_innov-artworkImage-345.jpg",
+"artworkImage": "images/studentWork/202120328_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202120328_innov-descriptionImages-i0-346.jpg"
 ],
@@ -691,11 +703,7 @@
 ]
 },
 "202120335_innov": {
-"artworkImage": "images/studentWork/202120335_innov-artworkImage-349.jpg",
-"artworkImages": [
-"images/studentWork/202120335_innov-artworkImages-i0-350.jpg",
-"images/studentWork/202120335_innov-artworkImages-i1-351.jpg"
-],
+"artworkImage": "images/studentWork/202120335_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202120335_innov-descriptionImages-i0-352.jpg"
 ],
@@ -741,7 +749,7 @@
 "id": "202120336_fusion"
 },
 "202120336_innov": {
-"artworkImage": "images/studentWork/202120336_innov-artworkImage-357.jpg",
+"artworkImage": "images/studentWork/202120336_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202120336_innov-descriptionImages-i0-358.jpg"
 ],
@@ -783,7 +791,7 @@
 "id": "202120342_fusion"
 },
 "202120342_innov": {
-"artworkImage": "images/studentWork/202120342_innov-artworkImage-361.jpg",
+"artworkImage": "images/studentWork/202120342_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202120342_innov-descriptionImages-i0-362.jpg"
 ],
@@ -825,7 +833,7 @@
 "id": "202120376_fusion"
 },
 "202120376_innov": {
-"artworkImage": "images/studentWork/202120376_innov-artworkImage-365.jpg",
+"artworkImage": "images/studentWork/202120376_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202120376_innov-descriptionImages-i0-366.jpg"
 ],
@@ -843,7 +851,11 @@
 "professor": "박소연",
 "studentId": "202120376",
 "studio": "innov",
-"id": "202120376_innov"
+"id": "202120376_innov",
+"artworkImages": [
+"images/studentWork/202120376_innov-art3-i0.jpg",
+"images/studentWork/202120376_innov-art3-i1.jpg"
+]
 },
 "202120391_fusion": {
 "artworkImage": "images/studentWork/202120391_fusion-art3-i0.jpg",
@@ -871,7 +883,7 @@
 ]
 },
 "202120391_innov": {
-"artworkImage": "images/studentWork/202120391_innov-artworkImage-369.jpg",
+"artworkImage": "images/studentWork/202120391_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202120391_innov-descriptionImages-i0-370.jpg"
 ],
@@ -913,11 +925,7 @@
 "id": "202121457_fusion"
 },
 "202121457_innov": {
-"artworkImage": "images/studentWork/202121457_innov-artworkImage-373.jpg",
-"artworkImages": [
-"images/studentWork/202121457_innov-artworkImages-i0-374.jpg",
-"images/studentWork/202121457_innov-artworkImages-i1-375.jpg"
-],
+"artworkImage": "images/studentWork/202121457_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202121457_innov-descriptionImages-i0-376.jpg"
 ],
@@ -1013,11 +1021,7 @@
 ]
 },
 "202220197_innov": {
-"artworkImage": "images/studentWork/202220197_innov-artworkImage-385.jpg",
-"artworkImages": [
-"images/studentWork/202220197_innov-artworkImages-i0-386.jpg",
-"images/studentWork/202220197_innov-artworkImages-i1-387.jpg"
-],
+"artworkImage": "images/studentWork/202220197_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220197_innov-descriptionImages-i0-388.jpg"
 ],
@@ -1059,7 +1063,7 @@
 "id": "202220200_fusion"
 },
 "202220200_innov": {
-"artworkImage": "images/studentWork/202220200_innov-artworkImage-393.jpg",
+"artworkImage": "images/studentWork/202220200_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220200_innov-descriptionImages-i0-394.jpg"
 ],
@@ -1101,7 +1105,7 @@
 "id": "202220201_fusion"
 },
 "202220201_innov": {
-"artworkImage": "images/studentWork/202220201_innov-artworkImage-397.jpg",
+"artworkImage": "images/studentWork/202220201_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220201_innov-descriptionImages-i0-398.jpg"
 ],
@@ -1147,7 +1151,7 @@
 ]
 },
 "202220203_innov": {
-"artworkImage": "images/studentWork/202220203_innov-artworkImage-401.jpg",
+"artworkImage": "images/studentWork/202220203_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220203_innov-descriptionImages-i0-402.jpg"
 ],
@@ -1165,7 +1169,11 @@
 "professor": "박소연",
 "studentId": "202220203",
 "studio": "innov",
-"id": "202220203_innov"
+"id": "202220203_innov",
+"artworkImages": [
+"images/studentWork/202220203_innov-art3-i0.jpg",
+"images/studentWork/202220203_innov-art3-i1.jpg"
+]
 },
 "202220205_fusion": {
 "artworkImage": "images/studentWork/202220205_fusion-art3-i0.jpg",
@@ -1187,7 +1195,7 @@
 "id": "202220205_fusion"
 },
 "202220205_innov": {
-"artworkImage": "images/studentWork/202220205_innov-artworkImage-404.jpg",
+"artworkImage": "images/studentWork/202220205_innov-art3-i0.jpg",
 "descriptionImages": [],
 "equipment": {
 "imac": 2,
@@ -1227,7 +1235,7 @@
 "id": "202220210_fusion"
 },
 "202220210_innov": {
-"artworkImage": "images/studentWork/202220210_innov-artworkImage-407.jpg",
+"artworkImage": "images/studentWork/202220210_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220210_innov-descriptionImages-i0-408.jpg"
 ],
@@ -1273,7 +1281,7 @@
 ]
 },
 "202220218_innov": {
-"artworkImage": "images/studentWork/202220218_innov-artworkImage-411.jpg",
+"artworkImage": "images/studentWork/202220218_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220218_innov-descriptionImages-i0-412.jpg"
 ],
@@ -1315,7 +1323,7 @@
 "id": "202220222_fusion"
 },
 "202220222_innov": {
-"artworkImage": "images/studentWork/202220222_innov-artworkImage-415.jpg",
+"artworkImage": "images/studentWork/202220222_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220222_innov-descriptionImages-i0-416.jpg"
 ],
@@ -1333,7 +1341,12 @@
 "professor": "박소연",
 "studentId": "202220222",
 "studio": "innov",
-"id": "202220222_innov"
+"id": "202220222_innov",
+"artworkImages": [
+"images/studentWork/202220222_innov-art3-i0.jpg",
+"images/studentWork/202220222_innov-art3-i1.jpg",
+"images/studentWork/202220222_innov-art3-i2.jpg"
+]
 },
 "202220223_fusion": {
 "artworkImage": "images/studentWork/202220223_fusion-art3-i0.jpg",
@@ -1361,7 +1374,7 @@
 ]
 },
 "202220223_innov": {
-"artworkImage": "images/studentWork/202220223_innov-artworkImage-419.jpg",
+"artworkImage": "images/studentWork/202220223_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220223_innov-descriptionImages-i0-420.jpg"
 ],
@@ -1379,7 +1392,11 @@
 "professor": "김한솔",
 "studentId": "202220223",
 "studio": "innov",
-"id": "202220223_innov"
+"id": "202220223_innov",
+"artworkImages": [
+"images/studentWork/202220223_innov-art3-i0.jpg",
+"images/studentWork/202220223_innov-art3-i1.jpg"
+]
 },
 "202220231_fusion": {
 "artworkImage": "images/studentWork/202220231_fusion-art3-i0.jpg",
@@ -1407,7 +1424,7 @@
 ]
 },
 "202220231_innov": {
-"artworkImage": "images/studentWork/202220231_innov-artworkImage-423.jpg",
+"artworkImage": "images/studentWork/202220231_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220231_innov-descriptionImages-i0-424.jpg"
 ],
@@ -1453,11 +1470,7 @@
 ]
 },
 "202220232_innov": {
-"artworkImage": "images/studentWork/202220232_innov-artworkImage-427.jpg",
-"artworkImages": [
-"images/studentWork/202220232_innov-artworkImages-i0-428.jpg",
-"images/studentWork/202220232_innov-artworkImages-i1-429.jpg"
-],
+"artworkImage": "images/studentWork/202220232_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220232_innov-descriptionImages-i0-430.jpg"
 ],
@@ -1503,7 +1516,7 @@
 ]
 },
 "202220242_innov": {
-"artworkImage": "images/studentWork/202220242_innov-artworkImage-433.jpg",
+"artworkImage": "images/studentWork/202220242_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220242_innov-descriptionImages-i0-434.jpg"
 ],
@@ -1549,7 +1562,7 @@
 ]
 },
 "202220253_innov": {
-"artworkImage": "images/studentWork/202220253_innov-artworkImage-437.jpg",
+"artworkImage": "images/studentWork/202220253_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220253_innov-descriptionImages-i0-438.jpg"
 ],
@@ -1567,7 +1580,11 @@
 "professor": "김한솔",
 "studentId": "202220253",
 "studio": "innov",
-"id": "202220253_innov"
+"id": "202220253_innov",
+"artworkImages": [
+"images/studentWork/202220253_innov-art3-i0.jpg",
+"images/studentWork/202220253_innov-art3-i1.jpg"
+]
 },
 "202220255_fusion": {
 "artworkImage": "images/studentWork/202220255_fusion-art3-i0.jpg",
@@ -1595,7 +1612,7 @@
 ]
 },
 "202220255_innov": {
-"artworkImage": "images/studentWork/202220255_innov-artworkImage-441.jpg",
+"artworkImage": "images/studentWork/202220255_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220255_innov-descriptionImages-i0-442.jpg"
 ],
@@ -1613,7 +1630,11 @@
 "professor": "김한솔",
 "studentId": "202220255",
 "studio": "innov",
-"id": "202220255_innov"
+"id": "202220255_innov",
+"artworkImages": [
+"images/studentWork/202220255_innov-art3-i0.jpg",
+"images/studentWork/202220255_innov-art3-i1.jpg"
+]
 },
 "202220261_fusion": {
 "artworkImage": "images/studentWork/202220261_fusion-art3-i0.jpg",
@@ -1683,7 +1704,7 @@
 "id": "202220266_fusion"
 },
 "202220266_innov": {
-"artworkImage": "images/studentWork/202220266_innov-artworkImage-451.jpg",
+"artworkImage": "images/studentWork/202220266_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220266_innov-descriptionImages-i0-452.jpg"
 ],
@@ -1729,11 +1750,7 @@
 ]
 },
 "202220267_innov": {
-"artworkImage": "images/studentWork/202220267_innov-artworkImage-455.jpg",
-"artworkImages": [
-"images/studentWork/202220267_innov-artworkImages-i0-456.jpg",
-"images/studentWork/202220267_innov-artworkImages-i1-457.jpg"
-],
+"artworkImage": "images/studentWork/202220267_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220267_innov-descriptionImages-i0-458.jpg"
 ],
@@ -1779,7 +1796,7 @@
 "id": "202220269_fusion"
 },
 "202220269_innov": {
-"artworkImage": "images/studentWork/202220269_innov-artworkImage-463.jpg",
+"artworkImage": "images/studentWork/202220269_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220269_innov-descriptionImages-i0-464.jpg"
 ],
@@ -1797,7 +1814,11 @@
 "professor": "박소연",
 "studentId": "202220269",
 "studio": "innov",
-"id": "202220269_innov"
+"id": "202220269_innov",
+"artworkImages": [
+"images/studentWork/202220269_innov-art3-i0.jpg",
+"images/studentWork/202220269_innov-art3-i1.jpg"
+]
 },
 "202220272_fusion": {
 "artworkImage": "images/studentWork/202220272_fusion-art3-i0.jpg",
@@ -1821,7 +1842,7 @@
 "id": "202220272_fusion"
 },
 "202220272_innov": {
-"artworkImage": "images/studentWork/202220272_innov-artworkImage-467.jpg",
+"artworkImage": "images/studentWork/202220272_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220272_innov-descriptionImages-i0-468.jpg"
 ],
@@ -1909,7 +1930,7 @@
 "id": "202220280_fusion"
 },
 "202220280_innov": {
-"artworkImage": "images/studentWork/202220280_innov-artworkImage-477.jpg",
+"artworkImage": "images/studentWork/202220280_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220280_innov-descriptionImages-i0-478.jpg"
 ],
@@ -1951,7 +1972,7 @@
 "id": "202220291_fusion"
 },
 "202220291_innov": {
-"artworkImage": "images/studentWork/202220291_innov-artworkImage-481.jpg",
+"artworkImage": "images/studentWork/202220291_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220291_innov-descriptionImages-i0-482.jpg"
 ],
@@ -1997,7 +2018,7 @@
 ]
 },
 "202220293_innov": {
-"artworkImage": "images/studentWork/202220293_innov-artworkImage-485.jpg",
+"artworkImage": "images/studentWork/202220293_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220293_innov-descriptionImages-i0-486.jpg"
 ],
@@ -2043,11 +2064,7 @@
 "id": "202220295_fusion"
 },
 "202220295_innov": {
-"artworkImage": "images/studentWork/202220295_innov-artworkImage-491.jpg",
-"artworkImages": [
-"images/studentWork/202220295_innov-artworkImages-i0-492.jpg",
-"images/studentWork/202220295_innov-artworkImages-i1-493.jpg"
-],
+"artworkImage": "images/studentWork/202220295_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220295_innov-descriptionImages-i0-494.jpg"
 ],
@@ -2089,7 +2106,7 @@
 "id": "202220299_fusion"
 },
 "202220299_innov": {
-"artworkImage": "images/studentWork/202220299_innov-artworkImage-497.jpg",
+"artworkImage": "images/studentWork/202220299_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220299_innov-descriptionImages-i0-498.jpg"
 ],
@@ -2131,7 +2148,7 @@
 "id": "202220300_fusion"
 },
 "202220300_innov": {
-"artworkImage": "images/studentWork/202220300_innov-artworkImage-501.jpg",
+"artworkImage": "images/studentWork/202220300_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220300_innov-descriptionImages-i0-502.jpg"
 ],
@@ -2173,7 +2190,7 @@
 "id": "202220301_fusion"
 },
 "202220301_innov": {
-"artworkImage": "images/studentWork/202220301_innov-artworkImage-505.jpg",
+"artworkImage": "images/studentWork/202220301_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220301_innov-descriptionImages-i0-506.jpg"
 ],
@@ -2219,7 +2236,7 @@
 ]
 },
 "202220305_innov": {
-"artworkImage": "images/studentWork/202220305_innov-artworkImage-509.jpg",
+"artworkImage": "images/studentWork/202220305_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220305_innov-descriptionImages-i0-510.jpg"
 ],
@@ -2265,7 +2282,7 @@
 ]
 },
 "202220315_innov": {
-"artworkImage": "images/studentWork/202220315_innov-artworkImage-513.jpg",
+"artworkImage": "images/studentWork/202220315_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220315_innov-descriptionImages-i0-514.jpg"
 ],
@@ -2357,7 +2374,7 @@
 ]
 },
 "202220325_innov": {
-"artworkImage": "images/studentWork/202220325_innov-artworkImage-521.jpg",
+"artworkImage": "images/studentWork/202220325_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220325_innov-descriptionImages-i0-522.jpg"
 ],
@@ -2445,7 +2462,7 @@
 "id": "202220336_fusion"
 },
 "202220336_innov": {
-"artworkImage": "images/studentWork/202220336_innov-artworkImage-531.jpg",
+"artworkImage": "images/studentWork/202220336_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220336_innov-descriptionImages-i0-532.jpg"
 ],
@@ -2491,11 +2508,7 @@
 ]
 },
 "202220337_innov": {
-"artworkImage": "images/studentWork/202220337_innov-artworkImage-535.jpg",
-"artworkImages": [
-"images/studentWork/202220337_innov-artworkImages-i0-536.jpg",
-"images/studentWork/202220337_innov-artworkImages-i1-537.jpg"
-],
+"artworkImage": "images/studentWork/202220337_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220337_innov-descriptionImages-i0-538.jpg"
 ],
@@ -2583,7 +2596,7 @@
 "id": "202220364_fusion"
 },
 "202220364_innov": {
-"artworkImage": "images/studentWork/202220364_innov-artworkImage-547.jpg",
+"artworkImage": "images/studentWork/202220364_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220364_innov-descriptionImages-i0-548.jpg"
 ],
@@ -2667,11 +2680,7 @@
 "id": "202220373_fusion"
 },
 "202220373_innov": {
-"artworkImage": "images/studentWork/202220373_innov-artworkImage-555.jpg",
-"artworkImages": [
-"images/studentWork/202220373_innov-artworkImages-i0-556.jpg",
-"images/studentWork/202220373_innov-artworkImages-i1-557.jpg"
-],
+"artworkImage": "images/studentWork/202220373_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220373_innov-descriptionImages-i0-558.jpg"
 ],
@@ -2713,7 +2722,7 @@
 "id": "202220375_fusion"
 },
 "202220375_innov": {
-"artworkImage": "images/studentWork/202220375_innov-artworkImage-561.jpg",
+"artworkImage": "images/studentWork/202220375_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220375_innov-descriptionImages-i0-562.jpg"
 ],
@@ -2731,7 +2740,11 @@
 "professor": "김한솔",
 "studentId": "202220375",
 "studio": "innov",
-"id": "202220375_innov"
+"id": "202220375_innov",
+"artworkImages": [
+"images/studentWork/202220375_innov-art3-i0.jpg",
+"images/studentWork/202220375_innov-art3-i1.jpg"
+]
 },
 "202220382_fusion": {
 "artworkImage": "images/studentWork/202220382_fusion-art3-i0.jpg",
@@ -2759,7 +2772,7 @@
 ]
 },
 "202220382_innov": {
-"artworkImage": "images/studentWork/202220382_innov-artworkImage-565.jpg",
+"artworkImage": "images/studentWork/202220382_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220382_innov-descriptionImages-i0-566.jpg"
 ],
@@ -2805,11 +2818,7 @@
 ]
 },
 "202220384_innov": {
-"artworkImage": "images/studentWork/202220384_innov-artworkImage-569.jpg",
-"artworkImages": [
-"images/studentWork/202220384_innov-artworkImages-i0-570.jpg",
-"images/studentWork/202220384_innov-artworkImages-i1-571.jpg"
-],
+"artworkImage": "images/studentWork/202220384_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220384_innov-descriptionImages-i0-572.jpg"
 ],
@@ -2855,7 +2864,7 @@
 ]
 },
 "202220385_innov": {
-"artworkImage": "images/studentWork/202220385_innov-artworkImage-575.jpg",
+"artworkImage": "images/studentWork/202220385_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220385_innov-descriptionImages-i0-576.jpg"
 ],
@@ -2873,7 +2882,11 @@
 "professor": "김한솔",
 "studentId": "202220385",
 "studio": "innov",
-"id": "202220385_innov"
+"id": "202220385_innov",
+"artworkImages": [
+"images/studentWork/202220385_innov-art3-i0.jpg",
+"images/studentWork/202220385_innov-art3-i1.jpg"
+]
 },
 "202220386_fusion": {
 "artworkImage": "images/studentWork/202220386_fusion-art3-i0.jpg",
@@ -2901,7 +2914,7 @@
 ]
 },
 "202220386_innov": {
-"artworkImage": "images/studentWork/202220386_innov-artworkImage-579.jpg",
+"artworkImage": "images/studentWork/202220386_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220386_innov-descriptionImages-i0-580.jpg"
 ],
@@ -2919,7 +2932,11 @@
 "professor": "남정",
 "studentId": "202220386",
 "studio": "innov",
-"id": "202220386_innov"
+"id": "202220386_innov",
+"artworkImages": [
+"images/studentWork/202220386_innov-art3-i0.jpg",
+"images/studentWork/202220386_innov-art3-i1.jpg"
+]
 },
 "202220389_fusion": {
 "artworkImage": "images/studentWork/202220389_fusion-art3-i0.jpg",
@@ -2947,7 +2964,7 @@
 ]
 },
 "202220389_innov": {
-"artworkImage": "images/studentWork/202220389_innov-artworkImage-583.jpg",
+"artworkImage": "images/studentWork/202220389_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220389_innov-descriptionImages-i0-584.jpg"
 ],
@@ -2989,11 +3006,7 @@
 "id": "202220391_fusion"
 },
 "202220391_innov": {
-"artworkImage": "images/studentWork/202220391_innov-artworkImage-589.jpg",
-"artworkImages": [
-"images/studentWork/202220391_innov-artworkImages-i0-590.jpg",
-"images/studentWork/202220391_innov-artworkImages-i1-591.jpg"
-],
+"artworkImage": "images/studentWork/202220391_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220391_innov-descriptionImages-i0-592.jpg"
 ],
@@ -3081,11 +3094,7 @@
 "id": "202220398_fusion"
 },
 "202220398_innov": {
-"artworkImage": "images/studentWork/202220398_innov-artworkImage-599.jpg",
-"artworkImages": [
-"images/studentWork/202220398_innov-artworkImages-i0-600.jpg",
-"images/studentWork/202220398_innov-artworkImages-i1-601.jpg"
-],
+"artworkImage": "images/studentWork/202220398_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220398_innov-descriptionImages-i0-602.jpg"
 ],
@@ -3131,7 +3140,7 @@
 ]
 },
 "202220403_innov": {
-"artworkImage": "images/studentWork/202220403_innov-artworkImage-605.jpg",
+"artworkImage": "images/studentWork/202220403_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220403_innov-descriptionImages-i0-606.jpg"
 ],
@@ -3173,7 +3182,7 @@
 "id": "202220405_fusion"
 },
 "202220405_innov": {
-"artworkImage": "images/studentWork/202220405_innov-artworkImage-609.jpg",
+"artworkImage": "images/studentWork/202220405_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202220405_innov-descriptionImages-i0-610.jpg"
 ],
@@ -3219,7 +3228,7 @@
 ]
 },
 "202221446_innov": {
-"artworkImage": "images/studentWork/202221446_innov-artworkImage-613.jpg",
+"artworkImage": "images/studentWork/202221446_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202221446_innov-descriptionImages-i0-614.jpg"
 ],
@@ -3265,7 +3274,7 @@
 ]
 },
 "202221495_innov": {
-"artworkImage": "images/studentWork/202221495_innov-artworkImage-617.jpg",
+"artworkImage": "images/studentWork/202221495_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202221495_innov-descriptionImages-i0-618.jpg"
 ],
@@ -3311,7 +3320,7 @@
 "id": "202221496_fusion"
 },
 "202221496_innov": {
-"artworkImage": "images/studentWork/202221496_innov-artworkImage-623.jpg",
+"artworkImage": "images/studentWork/202221496_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202221496_innov-descriptionImages-i0-624.jpg"
 ],
@@ -3353,7 +3362,7 @@
 "id": "202320033_fusion"
 },
 "202320033_innov": {
-"artworkImage": "images/studentWork/202320033_innov-artworkImage-627.jpg",
+"artworkImage": "images/studentWork/202320033_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202320033_innov-descriptionImages-i0-628.jpg"
 ],
@@ -3399,7 +3408,7 @@
 ]
 },
 "202320198_innov": {
-"artworkImage": "images/studentWork/202320198_innov-artworkImage-631.jpg",
+"artworkImage": "images/studentWork/202320198_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202320198_innov-descriptionImages-i0-632.jpg"
 ],
@@ -3417,7 +3426,11 @@
 "professor": "김한솔",
 "studentId": "202320198",
 "studio": "innov",
-"id": "202320198_innov"
+"id": "202320198_innov",
+"artworkImages": [
+"images/studentWork/202320198_innov-art3-i0.jpg",
+"images/studentWork/202320198_innov-art3-i1.jpg"
+]
 },
 "202320214_fusion": {
 "artworkImage": "images/studentWork/202320214_fusion-art3-i0.jpg",
@@ -3441,7 +3454,7 @@
 "id": "202320214_fusion"
 },
 "202320214_innov": {
-"artworkImage": "images/studentWork/202320214_innov-artworkImage-635.jpg",
+"artworkImage": "images/studentWork/202320214_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202320214_innov-descriptionImages-i0-636.jpg"
 ],
@@ -3487,7 +3500,7 @@
 ]
 },
 "202320219_innov": {
-"artworkImage": "images/studentWork/202320219_innov-artworkImage-639.jpg",
+"artworkImage": "images/studentWork/202320219_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202320219_innov-descriptionImages-i0-640.jpg"
 ],
@@ -3533,11 +3546,7 @@
 ]
 },
 "202320230_innov": {
-"artworkImage": "images/studentWork/202320230_innov-artworkImage-643.jpg",
-"artworkImages": [
-"images/studentWork/202320230_innov-artworkImages-i0-644.jpg",
-"images/studentWork/202320230_innov-artworkImages-i1-645.jpg"
-],
+"artworkImage": "images/studentWork/202320230_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202320230_innov-descriptionImages-i0-646.jpg"
 ],
@@ -3583,7 +3592,7 @@
 ]
 },
 "202320253_innov": {
-"artworkImage": "images/studentWork/202320253_innov-artworkImage-649.jpg",
+"artworkImage": "images/studentWork/202320253_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202320253_innov-descriptionImages-i0-650.jpg"
 ],
@@ -3601,7 +3610,11 @@
 "professor": "박소연",
 "studentId": "202320253",
 "studio": "innov",
-"id": "202320253_innov"
+"id": "202320253_innov",
+"artworkImages": [
+"images/studentWork/202320253_innov-art3-i0.jpg",
+"images/studentWork/202320253_innov-art3-i1.jpg"
+]
 },
 "202320287_fusion": {
 "artworkImage": "images/studentWork/202320287_fusion-art3-i0.jpg",
@@ -3625,7 +3638,7 @@
 "id": "202320287_fusion"
 },
 "202320287_innov": {
-"artworkImage": "images/studentWork/202320287_innov-artworkImage-653.jpg",
+"artworkImage": "images/studentWork/202320287_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202320287_innov-descriptionImages-i0-654.jpg"
 ],
@@ -3671,7 +3684,7 @@
 ]
 },
 "202320310_innov": {
-"artworkImage": "images/studentWork/202320310_innov-artworkImage-657.jpg",
+"artworkImage": "images/studentWork/202320310_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202320310_innov-descriptionImages-i0-658.jpg"
 ],
@@ -3689,7 +3702,11 @@
 "professor": "김한솔",
 "studentId": "202320310",
 "studio": "innov",
-"id": "202320310_innov"
+"id": "202320310_innov",
+"artworkImages": [
+"images/studentWork/202320310_innov-art3-i0.jpg",
+"images/studentWork/202320310_innov-art3-i1.jpg"
+]
 },
 "202320312_fusion": {
 "artworkImage": "images/studentWork/202320312_fusion-art3-i0.jpg",
@@ -3713,11 +3730,7 @@
 "id": "202320312_fusion"
 },
 "202320312_innov": {
-"artworkImage": "images/studentWork/202320312_innov-artworkImage-661.jpg",
-"artworkImages": [
-"images/studentWork/202320312_innov-artworkImages-i0-662.jpg",
-"images/studentWork/202320312_innov-artworkImages-i1-663.jpg"
-],
+"artworkImage": "images/studentWork/202320312_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202320312_innov-descriptionImages-i0-664.jpg"
 ],
@@ -3759,7 +3772,7 @@
 "id": "202320343_fusion"
 },
 "202320343_innov": {
-"artworkImage": "images/studentWork/202320343_innov-artworkImage-667.jpg",
+"artworkImage": "images/studentWork/202320343_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202320343_innov-descriptionImages-i0-668.jpg"
 ],
@@ -3805,7 +3818,7 @@
 ]
 },
 "202320347_innov": {
-"artworkImage": "images/studentWork/202320347_innov-artworkImage-671.jpg",
+"artworkImage": "images/studentWork/202320347_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202320347_innov-descriptionImages-i0-672.jpg"
 ],
@@ -3847,7 +3860,7 @@
 "id": "202320357_fusion"
 },
 "202320357_innov": {
-"artworkImage": "images/studentWork/202320357_innov-artworkImage-675.jpg",
+"artworkImage": "images/studentWork/202320357_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202320357_innov-descriptionImages-i0-676.jpg"
 ],
@@ -3893,11 +3906,7 @@
 ]
 },
 "202320359_innov": {
-"artworkImage": "images/studentWork/202320359_innov-artworkImage-679.jpg",
-"artworkImages": [
-"images/studentWork/202320359_innov-artworkImages-i0-680.jpg",
-"images/studentWork/202320359_innov-artworkImages-i1-681.jpg"
-],
+"artworkImage": "images/studentWork/202320359_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202320359_innov-descriptionImages-i0-682.jpg"
 ],
@@ -3943,7 +3952,7 @@
 ]
 },
 "202320365_innov": {
-"artworkImage": "images/studentWork/202320365_innov-artworkImage-685.jpg",
+"artworkImage": "images/studentWork/202320365_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202320365_innov-descriptionImages-i0-686.jpg"
 ],
@@ -3985,11 +3994,7 @@
 "id": "202320367_fusion"
 },
 "202320367_innov": {
-"artworkImage": "images/studentWork/202320367_innov-artworkImage-689.jpg",
-"artworkImages": [
-"images/studentWork/202320367_innov-artworkImages-i0-690.jpg",
-"images/studentWork/202320367_innov-artworkImages-i1-691.jpg"
-],
+"artworkImage": "images/studentWork/202320367_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202320367_innov-descriptionImages-i0-692.jpg"
 ],
@@ -4035,7 +4040,7 @@
 ]
 },
 "202320382_innov": {
-"artworkImage": "images/studentWork/202320382_innov-artworkImage-695.jpg",
+"artworkImage": "images/studentWork/202320382_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202320382_innov-descriptionImages-i0-696.jpg"
 ],
@@ -4127,7 +4132,7 @@
 ]
 },
 "202320401_innov": {
-"artworkImage": "images/studentWork/202320401_innov-artworkImage-705.jpg",
+"artworkImage": "images/studentWork/202320401_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202320401_innov-descriptionImages-i0-706.jpg"
 ],
@@ -4173,11 +4178,7 @@
 ]
 },
 "202320413_innov": {
-"artworkImage": "images/studentWork/202320413_innov-artworkImage-709.jpg",
-"artworkImages": [
-"images/studentWork/202320413_innov-artworkImages-i0-710.jpg",
-"images/studentWork/202320413_innov-artworkImages-i1-711.jpg"
-],
+"artworkImage": "images/studentWork/202320413_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202320413_innov-descriptionImages-i0-712.jpg"
 ],
@@ -4223,7 +4224,7 @@
 "id": "202321452_fusion"
 },
 "202321452_innov": {
-"artworkImage": "images/studentWork/202321452_innov-artworkImage-717.jpg",
+"artworkImage": "images/studentWork/202321452_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202321452_innov-descriptionImages-i0-718.jpg"
 ],
@@ -4269,7 +4270,7 @@
 ]
 },
 "202321453_innov": {
-"artworkImage": "images/studentWork/202321453_innov-artworkImage-721.jpg",
+"artworkImage": "images/studentWork/202321453_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202321453_innov-descriptionImages-i0-722.jpg"
 ],
@@ -4311,7 +4312,7 @@
 "id": "202321454_fusion"
 },
 "202321454_innov": {
-"artworkImage": "images/studentWork/202321454_innov-artworkImage-725.jpg",
+"artworkImage": "images/studentWork/202321454_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202321454_innov-descriptionImages-i0-726.jpg"
 ],
@@ -4353,7 +4354,7 @@
 "id": "202321455_fusion"
 },
 "202321455_innov": {
-"artworkImage": "images/studentWork/202321455_innov-artworkImage-731.jpg",
+"artworkImage": "images/studentWork/202321455_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202321455_innov-descriptionImages-i0-732.jpg"
 ],
@@ -4371,7 +4372,11 @@
 "professor": "박소연",
 "studentId": "202321455",
 "studio": "innov",
-"id": "202321455_innov"
+"id": "202321455_innov",
+"artworkImages": [
+"images/studentWork/202321455_innov-art3-i0.jpg",
+"images/studentWork/202321455_innov-art3-i1.jpg"
+]
 },
 "202321456_fusion": {
 "artworkImage": "images/studentWork/202321456_fusion-art3-i0.jpg",
@@ -4399,11 +4404,7 @@
 ]
 },
 "202321456_innov": {
-"artworkImage": "images/studentWork/202321456_innov-artworkImage-735.jpg",
-"artworkImages": [
-"images/studentWork/202321456_innov-artworkImages-i0-736.jpg",
-"images/studentWork/202321456_innov-artworkImages-i1-737.jpg"
-],
+"artworkImage": "images/studentWork/202321456_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202321456_innov-descriptionImages-i0-738.jpg"
 ],
@@ -4449,7 +4450,7 @@
 ]
 },
 "202321582_innov": {
-"artworkImage": "images/studentWork/202321582_innov-artworkImage-741.jpg",
+"artworkImage": "images/studentWork/202321582_innov-art3-i0.jpg",
 "descriptionImages": [
 "images/studentWork/202321582_innov-descriptionImages-i0-742.jpg"
 ],
@@ -4467,6 +4468,10 @@
 "professor": "김한솔",
 "studentId": "202321582",
 "studio": "innov",
-"id": "202321582_innov"
+"id": "202321582_innov",
+"artworkImages": [
+"images/studentWork/202321582_innov-art3-i0.jpg",
+"images/studentWork/202321582_innov-art3-i1.jpg"
+]
 }
 }
