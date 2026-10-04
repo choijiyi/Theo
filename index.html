@@ -606,6 +606,8 @@
   .roster-name{font-weight:600; font-size:13px;}
   .roster-id{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-soft);}
   .roster-id.unassigned{color:var(--ink-faint); font-style:italic;}
+  .roster-title{font-size:12px; line-height:1.35; color:var(--ink); margin-top:3px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; word-break:keep-all;}
+  .roster-title.unassigned{color:var(--ink-faint); font-style:italic;}
 
   /* ---------- promo materials panel ---------- */
   .promo-panel{border-top:2px solid var(--team-pr); margin-top:16px;}
@@ -698,6 +700,7 @@
   .detail-head{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; border-bottom:1px solid var(--line); padding-bottom:10px;}
   .detail-name{font-family:'Gothic A1',sans-serif; font-weight:800; font-size:19px;}
   .detail-id{font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--ink-soft);}
+  .detail-title{font-size:15px; font-weight:600; color:var(--ink); line-height:1.45; word-break:keep-all;}
   .detail-tag{font-size:12px; color:var(--ink-faint); background:var(--surface-soft); border-radius:999px; padding:3px 10px;}
   .detail-section{display:flex; flex-direction:column; gap:8px;}
   .detail-section-title{font-weight:700; font-size:13px; color:var(--team-design);}
@@ -980,7 +983,7 @@
       <span class="sub" id="studentsCrumb"></span>
     </div>
     <div class="roster-search-wrap">
-      <input type="text" id="studentsSearchInput" class="roster-search" data-role="student-search" placeholder="이름 또는 학번으로 학생 검색" autocomplete="off">
+      <input type="text" id="studentsSearchInput" class="roster-search" data-role="student-search" placeholder="이름 · 학번 · 작품 제목으로 학생 검색" autocomplete="off">
     </div>
     <div id="studentsBody"><div class="empty-note">불러오는 중…</div></div>
   </section>
@@ -1800,6 +1803,10 @@
     var tagHtml = showTag
       ? '<span class="roster-id">' + escapeHtml(s.studioLabel || '') + ' · ' + escapeHtml(s.profName || '') + '</span>'
       : '';
+    var swork = (s.studentId && studio) ? state.studentWorkById.get(s.studentId + '_' + studio) : null;
+    var titleHtml = (swork && swork.title)
+      ? '<span class="roster-title" title="' + escapeAttr(swork.title) + '">' + escapeHtml(swork.title) + '</span>'
+      : '<span class="roster-title unassigned">작품 제목 미정</span>';
     var clickable = !!(s.studentId && studio);
     var attrs = clickable
       ? ' data-action="select-student" data-sid="' + escapeAttr(s.studentId) + '" data-studio="' + escapeAttr(studio) + '" data-name="' + escapeAttr(s.name || '') + '"'
@@ -1809,6 +1816,7 @@
       '<div class="roster-card-body">' +
         '<span class="roster-name">' + escapeHtml(s.name || '') + '</span>' +
         idHtml +
+        titleHtml +
         tagHtml +
       '</div>' +
     '</div>';
@@ -1840,8 +1848,10 @@
       });
       var qLower = query.toLowerCase();
       var matched = all.filter(function(s){
+        var sw = s.studentId ? state.studentWorkById.get(s.studentId + '_' + s.studio) : null;
         return (s.name && s.name.toLowerCase().indexOf(qLower) !== -1) ||
-               (s.studentId && s.studentId.indexOf(query) !== -1);
+               (s.studentId && s.studentId.indexOf(query) !== -1) ||
+               (sw && sw.title && sw.title.toLowerCase().indexOf(qLower) !== -1);
       });
       matched.sort(function(a, b){
         var ak = studentSortKey(a), bk = studentSortKey(b);
@@ -1970,6 +1980,12 @@
             '<span class="detail-name">' + escapeHtml(nav.studentName || '') + '</span>' +
             '<span class="detail-id">' + escapeHtml(nav.studentId || '') + '</span>' +
             '<span class="detail-tag">' + escapeHtml(sd4.label) + '</span>' +
+          '</div>' +
+          '<div class="detail-section">' +
+            '<div class="detail-section-title">작품 제목</div>' +
+            ((work && work.title)
+              ? '<div class="detail-title">' + escapeHtml(work.title) + '</div>'
+              : '<div class="detail-empty detail-missing">누락</div>') +
           '</div>' +
           '<div class="detail-section">' +
             '<div class="detail-section-title">본인 작품 이미지</div>' +
