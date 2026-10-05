@@ -616,6 +616,13 @@
   .hall-badge.unassigned{font-weight:400; color:var(--ink-faint); font-style:italic;}
   .prof-card{border-left-width:5px; border-left-style:solid;}
   .detail-hall{font-size:15px; font-weight:700;}
+  .hall-map{position:relative; display:inline-block; max-width:100%; margin-top:8px; border:1px solid var(--line); border-radius:10px; overflow:hidden; background:#fff; line-height:0;}
+  .hall-map img{display:block; max-width:100%; max-height:70vh; width:auto; height:auto;}
+  .hall-pin{position:absolute; width:26px; height:26px; margin:-13px 0 0 -13px; border-radius:50%; border:4px solid var(--pin); box-shadow:0 0 0 2px #fff, 0 0 0 4px rgba(0,0,0,.35); pointer-events:none;}
+  .hall-pin::after{content:''; position:absolute; inset:-4px; border-radius:50%; border:3px solid var(--pin); animation:hallPinPulse 1.6s ease-out infinite;}
+  @keyframes hallPinPulse{0%{transform:scale(1); opacity:.9;} 100%{transform:scale(2.6); opacity:0;}}
+  @media (prefers-reduced-motion: reduce){ .hall-pin::after{animation:none;} }
+  .hall-map-note{font-size:11px; color:var(--ink-faint); margin-top:4px;}
 
   /* ---------- promo materials panel ---------- */
   .promo-panel{border-top:2px solid var(--team-pr); margin-top:16px;}
@@ -1799,6 +1806,20 @@
     }).join('');
   }
 
+  function renderHallMap(work, color){
+    if (!work || !work.hall || !work.hallPos || !work.hallPos.length) return '';
+    var plan = null;
+    state.floorplansById.forEach(function(f){
+      if (!plan && f.location === 'seoul' && f.hallLabel === work.hall && f.imageDataUrl) plan = f;
+    });
+    if (!plan) return '';
+    var pins = work.hallPos.map(function(p){
+      return '<span class="hall-pin" style="left:' + p.x + '%; top:' + p.y + '%; --pin:' + (color || '#e11') + '"></span>';
+    }).join('');
+    return '<div><div class="hall-map"><img src="' + plan.imageDataUrl + '" alt="' + escapeAttr(work.hall) + ' 도면">' + pins + '</div>' +
+      '<div class="hall-map-note">' + escapeHtml(plan.versionLabel || '') + ' 기준 · 표시된 자리가 이 작품의 배치 위치입니다' + (work.hallPos.length > 1 ? ' (' + work.hallPos.length + '곳)' : '') + '</div></div>';
+  }
+
   function profColorByName(name){
     for (var k in PROF_DEFS){ if (PROF_DEFS[k].name === name) return PROF_DEFS[k].color; }
     return null;
@@ -2009,7 +2030,7 @@
           '<div class="detail-section">' +
             '<div class="detail-section-title">배치 관</div>' +
             ((work && work.hall)
-              ? '<div class="detail-hall">' + escapeHtml(work.hall) + '</div>'
+              ? '<div class="detail-hall">' + escapeHtml(work.hall) + '</div>' + renderHallMap(work, pd3.color)
               : '<div class="detail-empty">아직 배치 정보가 없습니다.</div>') +
           '</div>' +
           '<div class="detail-section">' +
@@ -2342,7 +2363,7 @@
   /* ---------------- update checker (github pages caches this page for 10min,
      so a tab left open — or reloaded within that window — can silently show
      stale content; this polls a tiny always-fresh file and offers a banner) ---------------- */
-  var SITE_BUILD_VERSION = '2026-10-05T17:30:00Z';
+  var SITE_BUILD_VERSION = '2026-10-05T17:45:00Z';
   var VERSION_CHECK_URL = 'data/version.json';
   var versionBannerShown = false;
 

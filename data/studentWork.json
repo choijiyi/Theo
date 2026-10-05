@@ -24,7 +24,13 @@
 "images/studentWork/201990028_fusion-art3-i1.jpg"
 ],
 "title": "SHANGHAI ARCHITECTURE",
-"hall": "4관"
+"hall": "4관",
+"hallPos": [
+{
+"x": 86.39,
+"y": 58.45
+}
+]
 },
 "201990028_innov": {
 "artworkImage": "images/studentWork/201990028_innov-art3-i0.jpg",
@@ -51,7 +57,13 @@
 "studio": "innov",
 "id": "201990028_innov",
 "title": "<심심+>",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 29.85,
+"y": 53.21
+}
+]
 },
 "202020183_fusion": {
 "artworkImage": "images/studentWork/202020183_fusion-art3-i0.jpg",
@@ -74,7 +86,13 @@
 "studio": "fusion",
 "id": "202020183_fusion",
 "title": "나 되기:Becoming I",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 34.66,
+"y": 76.89
+}
+]
 },
 "202020183_innov": {
 "artworkImage": "images/studentWork/202020183_innov-art3-i0.jpg",
@@ -97,7 +115,13 @@
 "studio": "innov",
 "id": "202020183_innov",
 "title": "군집행동",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 23.24,
+"y": 29.74
+}
+]
 },
 "202020259_fusion": {
 "artworkImage": "images/studentWork/202020259_fusion-art3-i0.jpg",
@@ -120,7 +144,13 @@
 "studio": "fusion",
 "id": "202020259_fusion",
 "title": "약물의 일상화",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 37.88,
+"y": 34.38
+}
+]
 },
 "202020259_innov": {
 "artworkImage": "images/studentWork/202020259_innov-art3-i0.jpg",
@@ -143,7 +173,13 @@
 "studio": "innov",
 "id": "202020259_innov",
 "title": "THE CLUB UNDERCRAFT",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 39.16,
+"y": 67.02
+}
+]
 },
 "202020309_fusion": {
 "artworkImage": "images/studentWork/202020309_fusion-art3-i0.jpg",
@@ -170,7 +206,13 @@
 "images/studentWork/202020309_fusion-art3-i1.jpg"
 ],
 "title": "당근 마켓",
-"hall": "4관"
+"hall": "4관",
+"hallPos": [
+{
+"x": 16.92,
+"y": 69.11
+}
+]
 },
 "202020309_innov": {
 "artworkImage": "images/studentWork/202020309_innov-art3-i0.jpg",
@@ -193,7 +235,13 @@
 "studio": "innov",
 "id": "202020309_innov",
 "title": "검은 시선",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 47.55,
+"y": 50.01
+}
+]
 },
 "202020408_fusion": {
 "artworkImage": "images/studentWork/202020408_fusion-art3-i0.jpg",
@@ -216,7 +264,13 @@
 "studio": "fusion",
 "id": "202020408_fusion",
 "title": "기억별 숲의 치치",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 32.06,
+"y": 43.76
+}
+]
 },
 "202020408_innov": {
 "artworkImage": "images/studentWork/202020408_innov-art3-i0.jpg",
@@ -243,7 +297,13 @@
 "images/studentWork/202020408_innov-art3-i1.jpg"
 ],
 "title": "살아있음의 감각: 단편영화 <미유키짱>",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 50.31,
+"y": 18.25
+}
+]
 },
 "202120226_fusion": {
 "artworkImage": "images/studentWork/202120226_fusion-art3-i0.jpg",
@@ -270,7 +330,13 @@
 "images/studentWork/202120226_fusion-art3-i1.jpg"
 ],
 "title": "TWELVE",
-"hall": "4관"
+"hall": "4관",
+"hallPos": [
+{
+"x": 16.7,
+"y": 30.68
+}
+]
 },
 "202120226_innov": {
 "artworkImage": "images/studentWork/202120226_innov-art3-i0.jpg",
@@ -293,7 +359,13 @@
 "studio": "innov",
 "id": "202120226_innov",
 "title": "PAY OFF",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 45.15,
+"y": 43.04
+}
+]
 },
 "202120243_fusion": {
 "artworkImage": "images/studentWork/202120243_fusion-art3-i0.jpg",
@@ -316,7 +388,13 @@
 "studio": "fusion",
 "id": "202120243_fusion",
 "title": "REBOUT",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 27.57,
+"y": 76.96
+}
+]
 },
 "202120243_innov": {
 "artworkImage": "images/studentWork/202120243_innov-art3-i0.jpg",
@@ -339,7 +417,13 @@
 "studio": "innov",
 "id": "202120243_innov",
 "title": "CHURCH OF SOLVATISM",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 22.23,
+"y": 61.84
+}
+]
 },
 "202120253_fusion": {
 "artworkImage": "images/studentWork/202120253_fusion-art3-i0.jpg",
@@ -362,7 +446,13 @@
 "studio": "fusion",
 "id": "202120253_fusion",
 "title": "Daste",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 47.55,
+"y": 46.33
+}
+]
 },
 "202120253_innov": {
 "artworkImage": "images/studentWork/202120253_innov-art3-i0.jpg",
@@ -389,7 +479,13 @@
 "images/studentWork/202120253_innov-art3-i1.jpg"
 ],
 "title": "KYOL 액땜 페스티벌",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 33.23,
+"y": 76.28
+}
+]
 },
 "202120257_fusion": {
 "artworkImage": "images/studentWork/202120257_fusion-art3-i0.jpg",
@@ -412,7 +508,13 @@
 "studio": "fusion",
 "id": "202120257_fusion",
 "title": "UNWANTED",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 46.02,
+"y": 36.42
+}
+]
 },
 "202120257_innov": {
 "artworkImage": "images/studentWork/202120257_innov-art3-i0.jpg",
@@ -435,7 +537,13 @@
 "studio": "innov",
 "id": "202120257_innov",
 "title": "BEAN VOYAGE",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 46.02,
+"y": 56.0
+}
+]
 },
 "202120285_fusion": {
 "artworkImage": "images/studentWork/202120285_fusion-art3-i0.jpg",
@@ -462,7 +570,13 @@
 "images/studentWork/202120285_fusion-art3-i1.jpg"
 ],
 "title": "때찌때찌",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 16.73,
+"y": 26.65
+}
+]
 },
 "202120285_innov": {
 "artworkImage": "images/studentWork/202120285_innov-art3-i0.jpg",
@@ -489,7 +603,13 @@
 "images/studentWork/202120285_innov-art3-i1.jpg"
 ],
 "title": "박창선",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 51.78,
+"y": 39.13
+}
+]
 },
 "202120294_fusion": {
 "artworkImage": "images/studentWork/202120294_fusion-art3-i0.jpg",
@@ -512,7 +632,13 @@
 "studio": "fusion",
 "id": "202120294_fusion",
 "title": "최적화 인간",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 36.25,
+"y": 50.0
+}
+]
 },
 "202120294_innov": {
 "artworkImage": "images/studentWork/202120294_innov-art3-i0.jpg",
@@ -535,7 +661,13 @@
 "studio": "innov",
 "id": "202120294_innov",
 "title": "5억년 버튼: 자기연속성의 결핍",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 55.59,
+"y": 39.13
+}
+]
 },
 "202120315_fusion": {
 "artworkImage": "images/studentWork/202120315_fusion-art3-i0.jpg",
@@ -558,7 +690,13 @@
 "studio": "fusion",
 "id": "202120315_fusion",
 "title": "비아젬 : Viagem",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 56.36,
+"y": 44.34
+}
+]
 },
 "202120315_innov": {
 "artworkImage": "images/studentWork/202120315_innov-art3-i0.jpg",
@@ -581,7 +719,21 @@
 "studio": "innov",
 "id": "202120315_innov",
 "title": "미루기 의식 수련서",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 64.21,
+"y": 24.14
+},
+{
+"x": 81.72,
+"y": 24.2
+},
+{
+"x": 80.86,
+"y": 38.49
+}
+]
 },
 "202120316_fusion": {
 "artworkImage": "images/studentWork/202120316_fusion-art3-i0.jpg",
@@ -608,7 +760,13 @@
 "images/studentWork/202120316_fusion-art3-i1.jpg"
 ],
 "title": "nadi",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 34.63,
+"y": 36.42
+}
+]
 },
 "202120316_innov": {
 "artworkImage": "images/studentWork/202120316_innov-art3-i0.jpg",
@@ -631,7 +789,13 @@
 "studio": "innov",
 "id": "202120316_innov",
 "title": "소소",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 81.96,
+"y": 30.95
+}
+]
 },
 "202120324_fusion": {
 "artworkImage": "images/studentWork/202120324_fusion-art3-i0.jpg",
@@ -658,7 +822,13 @@
 "studio": "fusion",
 "id": "202120324_fusion",
 "title": "Jelly Vera",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 26.05,
+"y": 22.99
+}
+]
 },
 "202120324_innov": {
 "artworkImage": "images/studentWork/202120324_innov-art3-i0.jpg",
@@ -686,7 +856,13 @@
 "images/studentWork/202120324_innov-art3-i2.jpg"
 ],
 "title": "짝사랑 수련단",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 41.09,
+"y": 52.15
+}
+]
 },
 "202120328_fusion": {
 "artworkImage": "images/studentWork/202120328_fusion-art3-i0.jpg",
@@ -713,7 +889,13 @@
 "images/studentWork/202120328_fusion-art3-i1.jpg"
 ],
 "title": "lychee on",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 37.29,
+"y": 36.42
+}
+]
 },
 "202120328_innov": {
 "artworkImage": "images/studentWork/202120328_innov-art3-i0.jpg",
@@ -736,7 +918,13 @@
 "studio": "innov",
 "id": "202120328_innov",
 "title": "영알사계",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 50.57,
+"y": 56.0
+}
+]
 },
 "202120335_fusion": {
 "artworkImage": "images/studentWork/202120335_fusion-art3-i0.jpg",
@@ -763,7 +951,13 @@
 "images/studentWork/202120335_fusion-art3-i1.jpg"
 ],
 "title": "반짝반짝한 집을 만들래",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 73.41,
+"y": 57.57
+}
+]
 },
 "202120335_innov": {
 "artworkImage": "images/studentWork/202120335_innov-art3-i0.jpg",
@@ -786,7 +980,13 @@
 "studio": "innov",
 "id": "202120335_innov",
 "title": "밍기적 클럽",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 29.87,
+"y": 38.57
+}
+]
 },
 "202120336_fusion": {
 "artworkImage": "images/studentWork/202120336_fusion-art3-i0.jpg",
@@ -813,7 +1013,13 @@
 "studio": "fusion",
 "id": "202120336_fusion",
 "title": "한줄 결산",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 18.13,
+"y": 34.87
+}
+]
 },
 "202120336_innov": {
 "artworkImage": "images/studentWork/202120336_innov-art3-i0.jpg",
@@ -836,7 +1042,13 @@
 "studio": "innov",
 "id": "202120336_innov",
 "title": "분노해방연구소",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 59.66,
+"y": 24.81
+}
+]
 },
 "202120342_fusion": {
 "artworkImage": "images/studentWork/202120342_fusion-art3-i0.jpg",
@@ -859,7 +1071,13 @@
 "studio": "fusion",
 "id": "202120342_fusion",
 "title": "비주류연합",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 91.44,
+"y": 32.78
+}
+]
 },
 "202120342_innov": {
 "artworkImage": "images/studentWork/202120342_innov-art3-i0.jpg",
@@ -882,7 +1100,13 @@
 "studio": "innov",
 "id": "202120342_innov",
 "title": "RAWDIO",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 75.51,
+"y": 37.99
+}
+]
 },
 "202120376_fusion": {
 "artworkImage": "images/studentWork/202120376_fusion-art3-i0.jpg",
@@ -905,7 +1129,13 @@
 "studio": "fusion",
 "id": "202120376_fusion",
 "title": "네가 원하는 건 그 안에 있어",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 29.85,
+"y": 46.32
+}
+]
 },
 "202120376_innov": {
 "artworkImage": "images/studentWork/202120376_innov-art3-i0.jpg",
@@ -933,7 +1163,13 @@
 "images/studentWork/202120376_innov-art3-i2.jpg"
 ],
 "title": "Read Me Wrong",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 63.22,
+"y": 39.13
+}
+]
 },
 "202120391_fusion": {
 "artworkImage": "images/studentWork/202120391_fusion-art3-i0.jpg",
@@ -960,7 +1196,13 @@
 "images/studentWork/202120391_fusion-art3-i1.jpg"
 ],
 "title": "뮤빛리코더",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 46.02,
+"y": 32.84
+}
+]
 },
 "202120391_innov": {
 "artworkImage": "images/studentWork/202120391_innov-art3-i0.jpg",
@@ -983,7 +1225,13 @@
 "studio": "innov",
 "id": "202120391_innov",
 "title": "그림으로 보고, 손으로 표현해요! 수어 단어장 시리즈(총 3권)",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 19.9,
+"y": 86.69
+}
+]
 },
 "202121457_fusion": {
 "artworkImage": "images/studentWork/202121457_fusion-art3-i0.jpg",
@@ -1006,7 +1254,13 @@
 "studio": "fusion",
 "id": "202121457_fusion",
 "title": "비구름 보관소",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 45.47,
+"y": 17.3
+}
+]
 },
 "202121457_innov": {
 "artworkImage": "images/studentWork/202121457_innov-art3-i0.jpg",
@@ -1029,7 +1283,13 @@
 "studio": "innov",
 "id": "202121457_innov",
 "title": "취미노마드 매칭 서비스 the-Root",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 27.39,
+"y": 38.57
+}
+]
 },
 "202220194_fusion": {
 "artworkImage": "images/studentWork/202220194_fusion-art3-i0.jpg",
@@ -1056,7 +1316,13 @@
 "images/studentWork/202220194_fusion-art3-i1.jpg"
 ],
 "title": "다과한상",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 47.72,
+"y": 50.51
+}
+]
 },
 "202220194_innov": {
 "artworkImage": "images/studentWork/202220194_innov-art3-i0.jpg",
@@ -1079,7 +1345,13 @@
 "studio": "innov",
 "id": "202220194_innov",
 "title": "Space Games: 우주스포츠",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 15.01,
+"y": 85.43
+}
+]
 },
 "202220197_fusion": {
 "artworkImage": "images/studentWork/202220197_fusion-art3-i0.jpg",
@@ -1106,7 +1378,13 @@
 "images/studentWork/202220197_fusion-art3-i1.jpg"
 ],
 "title": "Kenopsia Archive : 2040",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 91.44,
+"y": 21.38
+}
+]
 },
 "202220197_innov": {
 "artworkImage": "images/studentWork/202220197_innov-art3-i0.jpg",
@@ -1129,7 +1407,13 @@
 "studio": "innov",
 "id": "202220197_innov",
 "title": "From Nest to Next",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 47.27,
+"y": 76.37
+}
+]
 },
 "202220200_fusion": {
 "artworkImage": "images/studentWork/202220200_fusion-art3-i0.jpg",
@@ -1152,7 +1436,13 @@
 "studio": "fusion",
 "id": "202220200_fusion",
 "title": "땀 흘리는 디자이너 연대",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 40.55,
+"y": 71.26
+}
+]
 },
 "202220200_innov": {
 "artworkImage": "images/studentWork/202220200_innov-art3-i0.jpg",
@@ -1175,7 +1465,13 @@
 "studio": "innov",
 "id": "202220200_innov",
 "title": "사회적 화성 Social Harmony",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 45.6,
+"y": 26.22
+}
+]
 },
 "202220201_fusion": {
 "artworkImage": "images/studentWork/202220201_fusion-art3-i0.jpg",
@@ -1198,7 +1494,13 @@
 "studio": "fusion",
 "id": "202220201_fusion",
 "title": "DICELOG",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 27.37,
+"y": 53.22
+}
+]
 },
 "202220201_innov": {
 "artworkImage": "images/studentWork/202220201_innov-art3-i0.jpg",
@@ -1221,7 +1523,13 @@
 "studio": "innov",
 "id": "202220201_innov",
 "title": "SESI : 경계 밖의 교란종",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 30.26,
+"y": 80.92
+}
+]
 },
 "202220203_fusion": {
 "artworkImage": "images/studentWork/202220203_fusion-art3-i0.jpg",
@@ -1248,7 +1556,13 @@
 "images/studentWork/202220203_fusion-art3-i1.jpg"
 ],
 "title": "PRUVE (UV Protection Kit for Tennis player)",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 18.13,
+"y": 29.83
+}
+]
 },
 "202220203_innov": {
 "artworkImage": "images/studentWork/202220203_innov-art3-i0.jpg",
@@ -1275,7 +1589,13 @@
 "images/studentWork/202220203_innov-art3-i1.jpg"
 ],
 "title": "FeelLog(필로그) - 이름 붙이지 못한 감정에 이름을 붙이다",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 55.86,
+"y": 24.81
+}
+]
 },
 "202220205_fusion": {
 "artworkImage": "images/studentWork/202220205_fusion-art3-i0.jpg",
@@ -1296,7 +1616,13 @@
 "studio": "fusion",
 "id": "202220205_fusion",
 "title": "정보 없음",
-"hall": "4관"
+"hall": "4관",
+"hallPos": [
+{
+"x": 86.39,
+"y": 69.38
+}
+]
 },
 "202220205_innov": {
 "artworkImage": "images/studentWork/202220205_innov-art3-i0.jpg",
@@ -1317,7 +1643,13 @@
 "studio": "innov",
 "id": "202220205_innov",
 "title": "FIORE",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 19.73,
+"y": 33.3
+}
+]
 },
 "202220210_fusion": {
 "artworkImage": "images/studentWork/202220210_fusion-art3-i0.jpg",
@@ -1340,7 +1672,13 @@
 "studio": "fusion",
 "id": "202220210_fusion",
 "title": "Gen S : Sync Generation",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 54.55,
+"y": 23.02
+}
+]
 },
 "202220210_innov": {
 "artworkImage": "images/studentWork/202220210_innov-art3-i0.jpg",
@@ -1363,7 +1701,13 @@
 "studio": "innov",
 "id": "202220210_innov",
 "title": "Cresenta",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 69.84,
+"y": 23.94
+}
+]
 },
 "202220218_fusion": {
 "artworkImage": "images/studentWork/202220218_fusion-art3-i0.jpg",
@@ -1390,7 +1734,13 @@
 "images/studentWork/202220218_fusion-art3-i1.jpg"
 ],
 "title": "생각의 정원",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 52.75,
+"y": 17.3
+}
+]
 },
 "202220218_innov": {
 "artworkImage": "images/studentWork/202220218_innov-art3-i0.jpg",
@@ -1413,7 +1763,13 @@
 "studio": "innov",
 "id": "202220218_innov",
 "title": "고품격meme",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 30.27,
+"y": 22.6
+}
+]
 },
 "202220222_fusion": {
 "artworkImage": "images/studentWork/202220222_fusion-art3-i0.jpg",
@@ -1436,7 +1792,13 @@
 "studio": "fusion",
 "id": "202220222_fusion",
 "title": "데이터 근친",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 27.12,
+"y": 50.01
+}
+]
 },
 "202220222_innov": {
 "artworkImage": "images/studentWork/202220222_innov-art3-i0.jpg",
@@ -1464,7 +1826,13 @@
 "images/studentWork/202220222_innov-art3-i2.jpg"
 ],
 "title": "무한의 준비",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 67.23,
+"y": 10.67
+}
+]
 },
 "202220223_fusion": {
 "artworkImage": "images/studentWork/202220223_fusion-art3-i0.jpg",
@@ -1491,7 +1859,13 @@
 "images/studentWork/202220223_fusion-art3-i1.jpg"
 ],
 "title": "Alt Text",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 47.6,
+"y": 38.1
+}
+]
 },
 "202220223_innov": {
 "artworkImage": "images/studentWork/202220223_innov-art3-i0.jpg",
@@ -1518,7 +1892,13 @@
 "images/studentWork/202220223_innov-art3-i1.jpg"
 ],
 "title": "설계된 거절: 보이지 않는 가이드라인",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 85.67,
+"y": 15.76
+}
+]
 },
 "202220231_fusion": {
 "artworkImage": "images/studentWork/202220231_fusion-art3-i0.jpg",
@@ -1545,7 +1925,13 @@
 "images/studentWork/202220231_fusion-art3-i1.jpg"
 ],
 "title": "일상 속 비공식",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 27.54,
+"y": 18.25
+}
+]
 },
 "202220231_innov": {
 "artworkImage": "images/studentWork/202220231_innov-art3-i0.jpg",
@@ -1568,7 +1954,13 @@
 "studio": "innov",
 "id": "202220231_innov",
 "title": "신병 연구소",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 36.2,
+"y": 71.65
+}
+]
 },
 "202220232_fusion": {
 "artworkImage": "images/studentWork/202220232_fusion-art3-i0.jpg",
@@ -1595,7 +1987,13 @@
 "images/studentWork/202220232_fusion-art3-i1.jpg"
 ],
 "title": "MY HOME : 라이프스타일 중개 서비스",
-"hall": "4관"
+"hall": "4관",
+"hallPos": [
+{
+"x": 34.67,
+"y": 17.14
+}
+]
 },
 "202220232_innov": {
 "artworkImage": "images/studentWork/202220232_innov-art3-i0.jpg",
@@ -1618,7 +2016,13 @@
 "studio": "innov",
 "id": "202220232_innov",
 "title": "SLO-X",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 36.3,
+"y": 43.07
+}
+]
 },
 "202220242_fusion": {
 "artworkImage": "images/studentWork/202220242_fusion-art3-i0.jpg",
@@ -1645,7 +2049,13 @@
 "images/studentWork/202220242_fusion-art3-i1.jpg"
 ],
 "title": "Multiplicity",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 24.03,
+"y": 76.96
+}
+]
 },
 "202220242_innov": {
 "artworkImage": "images/studentWork/202220242_innov-art3-i0.jpg",
@@ -1668,7 +2078,13 @@
 "studio": "innov",
 "id": "202220242_innov",
 "title": "Greening",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 45.15,
+"y": 50.0
+}
+]
 },
 "202220253_fusion": {
 "artworkImage": "images/studentWork/202220253_fusion-art3-i0.jpg",
@@ -1695,7 +2111,13 @@
 "images/studentWork/202220253_fusion-art3-i1.jpg"
 ],
 "title": "Under the Aegis",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 37.29,
+"y": 32.84
+}
+]
 },
 "202220253_innov": {
 "artworkImage": "images/studentWork/202220253_innov-art3-i0.jpg",
@@ -1722,7 +2144,13 @@
 "images/studentWork/202220253_innov-art3-i1.jpg"
 ],
 "title": "SEROTINY: 15 Structures of Destruction and Becoming",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 41.39,
+"y": 26.16
+}
+]
 },
 "202220255_fusion": {
 "artworkImage": "images/studentWork/202220255_fusion-art3-i0.jpg",
@@ -1749,7 +2177,13 @@
 "images/studentWork/202220255_fusion-art3-i1.jpg"
 ],
 "title": "키오스크 가이드라인",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 47.8,
+"y": 71.26
+}
+]
 },
 "202220255_innov": {
 "artworkImage": "images/studentWork/202220255_innov-art3-i0.jpg",
@@ -1776,7 +2210,13 @@
 "images/studentWork/202220255_innov-art3-i1.jpg"
 ],
 "title": "다시쓰는 광장 : 빛의 연대",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 42.72,
+"y": 18.25
+}
+]
 },
 "202220261_fusion": {
 "artworkImage": "images/studentWork/202220261_fusion-art3-i0.jpg",
@@ -1803,7 +2243,13 @@
 "studio": "fusion",
 "id": "202220261_fusion",
 "title": "Melto",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 18.13,
+"y": 39.92
+}
+]
 },
 "202220261_innov": {
 "artworkImage": "images/studentWork/202220261_innov-art3-i0.jpg",
@@ -1826,7 +2272,13 @@
 "studio": "innov",
 "id": "202220261_innov",
 "title": "Phone Niche",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 63.48,
+"y": 24.81
+}
+]
 },
 "202220266_fusion": {
 "artworkImage": "images/studentWork/202220266_fusion-art3-i0.jpg",
@@ -1849,7 +2301,13 @@
 "studio": "fusion",
 "id": "202220266_fusion",
 "title": "디자인대학 다시쓰기",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 48.67,
+"y": 36.42
+}
+]
 },
 "202220266_innov": {
 "artworkImage": "images/studentWork/202220266_innov-art3-i0.jpg",
@@ -1872,7 +2330,13 @@
 "studio": "innov",
 "id": "202220266_innov",
 "title": "Ctrl Key",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 12.71,
+"y": 40.46
+}
+]
 },
 "202220267_fusion": {
 "artworkImage": "images/studentWork/202220267_fusion-art3-i0.jpg",
@@ -1899,7 +2363,13 @@
 "images/studentWork/202220267_fusion-art3-i1.jpg"
 ],
 "title": "Playlist",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 51.29,
+"y": 76.33
+}
+]
 },
 "202220267_innov": {
 "artworkImage": "images/studentWork/202220267_innov-art3-i0.jpg",
@@ -1922,7 +2392,13 @@
 "studio": "innov",
 "id": "202220267_innov",
 "title": "감정 세탁소 330",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 29.85,
+"y": 50.0
+}
+]
 },
 "202220269_fusion": {
 "artworkImage": "images/studentWork/202220269_fusion-art3-i0.jpg",
@@ -1949,7 +2425,13 @@
 "studio": "fusion",
 "id": "202220269_fusion",
 "title": "odenior",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 37.15,
+"y": 26.21
+}
+]
 },
 "202220269_innov": {
 "artworkImage": "images/studentWork/202220269_innov-art3-i0.jpg",
@@ -1976,7 +2458,13 @@
 "images/studentWork/202220269_innov-art3-i1.jpg"
 ],
 "title": "NODE:00",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 63.48,
+"y": 10.24
+}
+]
 },
 "202220272_fusion": {
 "artworkImage": "images/studentWork/202220272_fusion-art3-i0.jpg",
@@ -1999,7 +2487,13 @@
 "studio": "fusion",
 "id": "202220272_fusion",
 "title": "물건 데이팅 앱 ‘반짝’",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 45.12,
+"y": 38.58
+}
+]
 },
 "202220272_innov": {
 "artworkImage": "images/studentWork/202220272_innov-art3-i0.jpg",
@@ -2022,7 +2516,13 @@
 "studio": "innov",
 "id": "202220272_innov",
 "title": "한국 귀신 인식 개선 프로젝트",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 24.02,
+"y": 58.77
+}
+]
 },
 "202220275_fusion": {
 "artworkImage": "images/studentWork/202220275_fusion-art3-i0.jpg",
@@ -2049,7 +2549,13 @@
 "studio": "fusion",
 "id": "202220275_fusion",
 "title": "QR++",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 61.91,
+"y": 14.97
+}
+]
 },
 "202220275_innov": {
 "artworkImage": "images/studentWork/202220275_innov-art3-i0.jpg",
@@ -2076,7 +2582,13 @@
 "images/studentWork/202220275_innov-art3-i1.jpg"
 ],
 "title": "귀여워 죽겠네!",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 52.04,
+"y": 24.81
+}
+]
 },
 "202220280_fusion": {
 "artworkImage": "images/studentWork/202220280_fusion-art3-i0.jpg",
@@ -2099,7 +2611,13 @@
 "studio": "fusion",
 "id": "202220280_fusion",
 "title": "지식의 해상도",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 48.67,
+"y": 32.84
+}
+]
 },
 "202220280_innov": {
 "artworkImage": "images/studentWork/202220280_innov-art3-i0.jpg",
@@ -2122,7 +2640,13 @@
 "studio": "innov",
 "id": "202220280_innov",
 "title": "민망함에서 살아남기",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 34.69,
+"y": 38.59
+}
+]
 },
 "202220291_fusion": {
 "artworkImage": "images/studentWork/202220291_fusion-art3-i0.jpg",
@@ -2145,7 +2669,13 @@
 "studio": "fusion",
 "id": "202220291_fusion",
 "title": "sai sai",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 31.12,
+"y": 76.96
+}
+]
 },
 "202220291_innov": {
 "artworkImage": "images/studentWork/202220291_innov-art3-i0.jpg",
@@ -2168,7 +2698,13 @@
 "studio": "innov",
 "id": "202220291_innov",
 "title": "Slow Down, Focus On",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 20.48,
+"y": 76.96
+}
+]
 },
 "202220293_fusion": {
 "artworkImage": "images/studentWork/202220293_fusion-art3-i0.jpg",
@@ -2195,7 +2731,13 @@
 "images/studentWork/202220293_fusion-art3-i1.jpg"
 ],
 "title": "Drummy",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 35.57,
+"y": 50.51
+}
+]
 },
 "202220293_innov": {
 "artworkImage": "images/studentWork/202220293_innov-art3-i0.jpg",
@@ -2218,7 +2760,13 @@
 "studio": "innov",
 "id": "202220293_innov",
 "title": "데굴데굴 벼룩시장",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 22.7,
+"y": 65.76
+}
+]
 },
 "202220295_fusion": {
 "artworkImage": "images/studentWork/202220295_fusion-art3-i0.jpg",
@@ -2245,7 +2793,13 @@
 "studio": "fusion",
 "id": "202220295_fusion",
 "title": "루루의 꿈사탕 가게",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 74.47,
+"y": 17.3
+}
+]
 },
 "202220295_innov": {
 "artworkImage": "images/studentWork/202220295_innov-art3-i0.jpg",
@@ -2268,7 +2822,13 @@
 "studio": "innov",
 "id": "202220295_innov",
 "title": "Furmily",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 27.37,
+"y": 46.32
+}
+]
 },
 "202220299_fusion": {
 "artworkImage": "images/studentWork/202220299_fusion-art3-i0.jpg",
@@ -2291,7 +2851,13 @@
 "studio": "fusion",
 "id": "202220299_fusion",
 "title": "DOT SHIFT",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 23.74,
+"y": 18.25
+}
+]
 },
 "202220299_innov": {
 "artworkImage": "images/studentWork/202220299_innov-art3-i0.jpg",
@@ -2314,7 +2880,13 @@
 "studio": "innov",
 "id": "202220299_innov",
 "title": "ARM CANDY PROGRAM",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 26.08,
+"y": 55.25
+}
+]
 },
 "202220300_fusion": {
 "artworkImage": "images/studentWork/202220300_fusion-art3-i0.jpg",
@@ -2337,7 +2909,13 @@
 "studio": "fusion",
 "id": "202220300_fusion",
 "title": "겁쟁이 고양이 치치",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 49.11,
+"y": 44.34
+}
+]
 },
 "202220300_innov": {
 "artworkImage": "images/studentWork/202220300_innov-art3-i0.jpg",
@@ -2360,7 +2938,13 @@
 "studio": "innov",
 "id": "202220300_innov",
 "title": "이용약관을 읽지 않아서",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 20.32,
+"y": 59.14
+}
+]
 },
 "202220301_fusion": {
 "artworkImage": "images/studentWork/202220301_fusion-art3-i0.jpg",
@@ -2383,7 +2967,13 @@
 "studio": "fusion",
 "id": "202220301_fusion",
 "title": "모모의 꿈 우체국",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 73.41,
+"y": 44.34
+}
+]
 },
 "202220301_innov": {
 "artworkImage": "images/studentWork/202220301_innov-art3-i0.jpg",
@@ -2406,7 +2996,13 @@
 "studio": "innov",
 "id": "202220301_innov",
 "title": "The little things",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 22.1,
+"y": 56.05
+}
+]
 },
 "202220305_fusion": {
 "artworkImage": "images/studentWork/202220305_fusion-art3-i0.jpg",
@@ -2433,7 +3029,13 @@
 "images/studentWork/202220305_fusion-art3-i1.jpg"
 ],
 "title": "헤리아저씨",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 59.97,
+"y": 17.3
+}
+]
 },
 "202220305_innov": {
 "artworkImage": "images/studentWork/202220305_innov-art3-i0.jpg",
@@ -2456,7 +3058,13 @@
 "studio": "innov",
 "id": "202220305_innov",
 "title": "ANTIFOMO",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 47.55,
+"y": 43.12
+}
+]
 },
 "202220315_fusion": {
 "artworkImage": "images/studentWork/202220315_fusion-art3-i0.jpg",
@@ -2483,7 +3091,13 @@
 "images/studentWork/202220315_fusion-art3-i1.jpg"
 ],
 "title": "별이 사라진 밤",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 39.31,
+"y": 44.05
+}
+]
 },
 "202220315_innov": {
 "artworkImage": "images/studentWork/202220315_innov-art3-i0.jpg",
@@ -2506,7 +3120,13 @@
 "studio": "innov",
 "id": "202220315_innov",
 "title": "미담: 쌀에 담긴 이야기",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 62.81,
+"y": 45.71
+}
+]
 },
 "202220324_fusion": {
 "artworkImage": "images/studentWork/202220324_fusion-art3-i0.jpg",
@@ -2533,7 +3153,13 @@
 "images/studentWork/202220324_fusion-art3-i1.jpg"
 ],
 "title": "CODEN",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 36.25,
+"y": 46.33
+}
+]
 },
 "202220324_innov": {
 "artworkImage": "images/studentWork/202220324_innov-art3-i0.jpg",
@@ -2556,7 +3182,13 @@
 "studio": "innov",
 "id": "202220324_innov",
 "title": "통제의 환상",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 59.41,
+"y": 39.13
+}
+]
 },
 "202220325_fusion": {
 "artworkImage": "images/studentWork/202220325_fusion-art3-i0.jpg",
@@ -2583,7 +3215,13 @@
 "images/studentWork/202220325_fusion-art3-i1.jpg"
 ],
 "title": "Figma",
-"hall": "4관"
+"hall": "4관",
+"hallPos": [
+{
+"x": 86.36,
+"y": 30.79
+}
+]
 },
 "202220325_innov": {
 "artworkImage": "images/studentWork/202220325_innov-art3-i0.jpg",
@@ -2606,7 +3244,13 @@
 "studio": "innov",
 "id": "202220325_innov",
 "title": "Psychedelic",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 52.04,
+"y": 10.24
+}
+]
 },
 "202220329_fusion": {
 "artworkImage": "images/studentWork/202220329_fusion-art3-i0.jpg",
@@ -2633,7 +3277,13 @@
 "images/studentWork/202220329_fusion-art3-i1.jpg"
 ],
 "title": "ttt:점진적 대화 키트",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 16.73,
+"y": 32.92
+}
+]
 },
 "202220329_innov": {
 "artworkImage": "images/studentWork/202220329_innov-art3-i0.jpg",
@@ -2660,7 +3310,13 @@
 "images/studentWork/202220329_innov-art3-i1.jpg"
 ],
 "title": "좌뇌해석기의 과열: 비인지적 인지 전환 방법의 모색",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 81.22,
+"y": 14.33
+}
+]
 },
 "202220336_fusion": {
 "artworkImage": "images/studentWork/202220336_fusion-art3-i0.jpg",
@@ -2683,7 +3339,13 @@
 "studio": "fusion",
 "id": "202220336_fusion",
 "title": "LOURMES",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 77.43,
+"y": 35.56
+}
+]
 },
 "202220336_innov": {
 "artworkImage": "images/studentWork/202220336_innov-art3-i0.jpg",
@@ -2706,7 +3368,13 @@
 "studio": "innov",
 "id": "202220336_innov",
 "title": "이음새 북페어",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 75.51,
+"y": 23.94
+}
+]
 },
 "202220337_fusion": {
 "artworkImage": "images/studentWork/202220337_fusion-art3-i0.jpg",
@@ -2733,7 +3401,13 @@
 "images/studentWork/202220337_fusion-art3-i1.jpg"
 ],
 "title": "Airbnb X 오늘의 집 콜라보 브랜드",
-"hall": "4관"
+"hall": "4관",
+"hallPos": [
+{
+"x": 68.39,
+"y": 17.36
+}
+]
 },
 "202220337_innov": {
 "artworkImage": "images/studentWork/202220337_innov-art3-i0.jpg",
@@ -2756,7 +3430,13 @@
 "studio": "innov",
 "id": "202220337_innov",
 "title": "MomOS",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 38.78,
+"y": 53.21
+}
+]
 },
 "202220353_fusion": {
 "artworkImage": "images/studentWork/202220353_fusion-art3-i0.jpg",
@@ -2783,7 +3463,13 @@
 "studio": "fusion",
 "id": "202220353_fusion",
 "title": "AUVIA",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 29.59,
+"y": 22.99
+}
+]
 },
 "202220353_innov": {
 "artworkImage": "images/studentWork/202220353_innov-art3-i0.jpg",
@@ -2810,7 +3496,13 @@
 "images/studentWork/202220353_innov-art3-i1.jpg"
 ],
 "title": "TMT: Too Much Thinking",
-"hall": "1관"
+"hall": "1관",
+"hallPos": [
+{
+"x": 41.22,
+"y": 41.17
+}
+]
 },
 "202220364_fusion": {
 "artworkImage": "images/studentWork/202220364_fusion-art3-i0.jpg",
@@ -2833,7 +3525,13 @@
 "studio": "fusion",
 "id": "202220364_fusion",
 "title": "오른쪽에서 왼쪽으로, 위에서 아래로",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 36.07,
+"y": 38.58
+}
+]
 },
 "202220364_innov": {
 "artworkImage": "images/studentWork/202220364_innov-art3-i0.jpg",
@@ -2856,7 +3554,13 @@
 "studio": "innov",
 "id": "202220364_innov",
 "title": "믿음의 서",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 76.86,
+"y": 14.31
+}
+]
 },
 "202220366_fusion": {
 "artworkImage": "images/studentWork/202220366_fusion-art3-i0.jpg",
@@ -2879,7 +3583,13 @@
 "studio": "fusion",
 "id": "202220366_fusion",
 "title": "멋진 색을 갖고 싶어",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 67.22,
+"y": 17.3
+}
+]
 },
 "202220366_innov": {
 "artworkImage": "images/studentWork/202220366_innov-art3-i0.jpg",
@@ -2902,7 +3612,13 @@
 "studio": "innov",
 "id": "202220366_innov",
 "title": "Hamartia",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 48.24,
+"y": 24.81
+}
+]
 },
 "202220373_fusion": {
 "artworkImage": "images/studentWork/202220373_fusion-art3-i0.jpg",
@@ -2925,7 +3641,13 @@
 "studio": "fusion",
 "id": "202220373_fusion",
 "title": "문 너머의 세계들",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 6.92,
+"y": 37.23
+}
+]
 },
 "202220373_innov": {
 "artworkImage": "images/studentWork/202220373_innov-art3-i0.jpg",
@@ -2948,7 +3670,13 @@
 "studio": "innov",
 "id": "202220373_innov",
 "title": "같은 순간을 함께",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 85.02,
+"y": 35.56
+}
+]
 },
 "202220375_fusion": {
 "artworkImage": "images/studentWork/202220375_fusion-art3-i0.jpg",
@@ -2971,7 +3699,13 @@
 "studio": "fusion",
 "id": "202220375_fusion",
 "title": "Variable Humans,2049: 가변하는 인간, 2049",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 47.6,
+"y": 53.22
+}
+]
 },
 "202220375_innov": {
 "artworkImage": "images/studentWork/202220375_innov-art3-i0.jpg",
@@ -2998,7 +3732,13 @@
 "images/studentWork/202220375_innov-art3-i1.jpg"
 ],
 "title": "삼재관",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 31.33,
+"y": 18.25
+}
+]
 },
 "202220382_fusion": {
 "artworkImage": "images/studentWork/202220382_fusion-art3-i0.jpg",
@@ -3025,7 +3765,13 @@
 "images/studentWork/202220382_fusion-art3-i1.jpg"
 ],
 "title": "Geagin Sans",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 65.71,
+"y": 14.93
+}
+]
 },
 "202220382_innov": {
 "artworkImage": "images/studentWork/202220382_innov-art3-i0.jpg",
@@ -3048,7 +3794,13 @@
 "studio": "innov",
 "id": "202220382_innov",
 "title": "6*23",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 38.92,
+"y": 18.25
+}
+]
 },
 "202220384_fusion": {
 "artworkImage": "images/studentWork/202220384_fusion-art3-i0.jpg",
@@ -3075,7 +3827,13 @@
 "images/studentWork/202220384_fusion-art3-i1.jpg"
 ],
 "title": "단추를 따라가다 보면",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 6.92,
+"y": 54.9
+}
+]
 },
 "202220384_innov": {
 "artworkImage": "images/studentWork/202220384_innov-art3-i0.jpg",
@@ -3098,7 +3856,13 @@
 "studio": "innov",
 "id": "202220384_innov",
 "title": "Re:ttthinggg",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 38.73,
+"y": 43.13
+}
+]
 },
 "202220385_fusion": {
 "artworkImage": "images/studentWork/202220385_fusion-art3-i0.jpg",
@@ -3125,7 +3889,13 @@
 "images/studentWork/202220385_fusion-art3-i1.jpg"
 ],
 "title": "Edible Edge(EE)",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 69.5,
+"y": 15.01
+}
+]
 },
 "202220385_innov": {
 "artworkImage": "images/studentWork/202220385_innov-art3-i0.jpg",
@@ -3152,7 +3922,13 @@
 "images/studentWork/202220385_innov-art3-i1.jpg"
 ],
 "title": "My Idea Typeface",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 16.79,
+"y": 51.72
+}
+]
 },
 "202220386_fusion": {
 "artworkImage": "images/studentWork/202220386_fusion-art3-i0.jpg",
@@ -3179,7 +3955,13 @@
 "images/studentWork/202220386_fusion-art3-i1.jpg"
 ],
 "title": "GLIDEON : AI 자율주행 모빌리티",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 22.76,
+"y": 71.99
+}
+]
 },
 "202220386_innov": {
 "artworkImage": "images/studentWork/202220386_innov-art3-i0.jpg",
@@ -3206,7 +3988,13 @@
 "images/studentWork/202220386_innov-art3-i1.jpg"
 ],
 "title": "TRAILER : 5가지 풍경기반 트레일 러닝 브랜드",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 69.85,
+"y": 37.99
+}
+]
 },
 "202220389_fusion": {
 "artworkImage": "images/studentWork/202220389_fusion-art3-i0.jpg",
@@ -3233,7 +4021,13 @@
 "images/studentWork/202220389_fusion-art3-i1.jpg"
 ],
 "title": "노출값",
-"hall": "1관"
+"hall": "1관",
+"hallPos": [
+{
+"x": 49.14,
+"y": 41.17
+}
+]
 },
 "202220389_innov": {
 "artworkImage": "images/studentWork/202220389_innov-art3-i0.jpg",
@@ -3256,7 +4050,13 @@
 "studio": "innov",
 "id": "202220389_innov",
 "title": "존경을 담아",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 35.13,
+"y": 18.25
+}
+]
 },
 "202220391_fusion": {
 "artworkImage": "images/studentWork/202220391_fusion-art3-i0.jpg",
@@ -3279,7 +4079,13 @@
 "studio": "fusion",
 "id": "202220391_fusion",
 "title": "DOUBTFUL DO",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 44.24,
+"y": 76.96
+}
+]
 },
 "202220391_innov": {
 "artworkImage": "images/studentWork/202220391_innov-art3-i0.jpg",
@@ -3302,7 +4108,13 @@
 "studio": "innov",
 "id": "202220391_innov",
 "title": "ASTREN Dynamics F1 Team",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 41.09,
+"y": 58.68
+}
+]
 },
 "202220392_fusion": {
 "artworkImage": "images/studentWork/202220392_fusion-art3-i0.jpg",
@@ -3329,7 +4141,13 @@
 "images/studentWork/202220392_fusion-art3-i1.jpg"
 ],
 "title": "POSITIONING",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 53.8,
+"y": 50.51
+}
+]
 },
 "202220392_innov": {
 "artworkImage": "images/studentWork/202220392_innov-art3-i0.jpg",
@@ -3352,7 +4170,13 @@
 "studio": "innov",
 "id": "202220392_innov",
 "title": "RE:TONE",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 25.95,
+"y": 49.45
+}
+]
 },
 "202220398_fusion": {
 "artworkImage": "images/studentWork/202220398_fusion-art3-i0.jpg",
@@ -3375,7 +4199,13 @@
 "studio": "fusion",
 "id": "202220398_fusion",
 "title": "셀레노포스 : 빛의 물약",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 38.23,
+"y": 17.3
+}
+]
 },
 "202220398_innov": {
 "artworkImage": "images/studentWork/202220398_innov-art3-i0.jpg",
@@ -3398,7 +4228,13 @@
 "studio": "innov",
 "id": "202220398_innov",
 "title": "Nomen Dubium : 정체불명",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 22.7,
+"y": 59.5
+}
+]
 },
 "202220403_fusion": {
 "artworkImage": "images/studentWork/202220403_fusion-art3-i0.jpg",
@@ -3425,7 +4261,13 @@
 "images/studentWork/202220403_fusion-art3-i1.jpg"
 ],
 "title": "Baskin Galaxy",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 22.76,
+"y": 78.3
+}
+]
 },
 "202220403_innov": {
 "artworkImage": "images/studentWork/202220403_innov-art3-i0.jpg",
@@ -3448,7 +4290,13 @@
 "studio": "innov",
 "id": "202220403_innov",
 "title": "Blent",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 43.36,
+"y": 56.0
+}
+]
 },
 "202220405_fusion": {
 "artworkImage": "images/studentWork/202220405_fusion-art3-i0.jpg",
@@ -3471,7 +4319,13 @@
 "studio": "fusion",
 "id": "202220405_fusion",
 "title": "완벽한 어른",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 49.15,
+"y": 26.22
+}
+]
 },
 "202220405_innov": {
 "artworkImage": "images/studentWork/202220405_innov-art3-i0.jpg",
@@ -3494,7 +4348,13 @@
 "studio": "innov",
 "id": "202220405_innov",
 "title": "NRPRN_00",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 59.66,
+"y": 10.08
+}
+]
 },
 "202221446_fusion": {
 "artworkImage": "images/studentWork/202221446_fusion-art3-i0.jpg",
@@ -3521,7 +4381,13 @@
 "images/studentWork/202221446_fusion-art3-i1.jpg"
 ],
 "title": "SCALIX : 남성용 스마트 양산 브랜드",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 41.65,
+"y": 50.51
+}
+]
 },
 "202221446_innov": {
 "artworkImage": "images/studentWork/202221446_innov-art3-i0.jpg",
@@ -3544,7 +4410,13 @@
 "studio": "innov",
 "id": "202221446_innov",
 "title": "바리바리보부상 : 보부상 유형 탐구 프로젝트",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 26.76,
+"y": 26.17
+}
+]
 },
 "202221495_fusion": {
 "artworkImage": "images/studentWork/202221495_fusion-art3-i0.jpg",
@@ -3571,7 +4443,13 @@
 "images/studentWork/202221495_fusion-art3-i1.jpg"
 ],
 "title": "SIDE B",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 40.32,
+"y": 36.42
+}
+]
 },
 "202221495_innov": {
 "artworkImage": "images/studentWork/202221495_innov-art3-i0.jpg",
@@ -3594,7 +4472,13 @@
 "studio": "innov",
 "id": "202221495_innov",
 "title": "교집합",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 81.24,
+"y": 35.56
+}
+]
 },
 "202221496_fusion": {
 "artworkImage": "images/studentWork/202221496_fusion-art3-i0.jpg",
@@ -3621,7 +4505,13 @@
 "studio": "fusion",
 "id": "202221496_fusion",
 "title": "유운체: 돌의 울림을 한글에 남기다.",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 91.44,
+"y": 27.08
+}
+]
 },
 "202221496_innov": {
 "artworkImage": "images/studentWork/202221496_innov-art3-i0.jpg",
@@ -3644,7 +4534,13 @@
 "studio": "innov",
 "id": "202221496_innov",
 "title": "RUMEN : 매일 밤 곱씹다 잠 못 들게 하는 생각을 끊어드립니다.",
-"hall": "1관"
+"hall": "1관",
+"hallPos": [
+{
+"x": 56.65,
+"y": 41.17
+}
+]
 },
 "202320033_fusion": {
 "artworkImage": "images/studentWork/202320033_fusion-art3-i0.jpg",
@@ -3667,7 +4563,13 @@
 "studio": "fusion",
 "id": "202320033_fusion",
 "title": "괜찮아, 괜찮지 않아",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 30.98,
+"y": 19.5
+}
+]
 },
 "202320033_innov": {
 "artworkImage": "images/studentWork/202320033_innov-art3-i0.jpg",
@@ -3690,7 +4592,13 @@
 "studio": "innov",
 "id": "202320033_innov",
 "title": "눈치",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 67.03,
+"y": 38.5
+}
+]
 },
 "202320198_fusion": {
 "artworkImage": "images/studentWork/202320198_fusion-art3-i0.jpg",
@@ -3717,7 +4625,13 @@
 "images/studentWork/202320198_fusion-art3-i1.jpg"
 ],
 "title": "Beeyound",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 18.13,
+"y": 60.09
+}
+]
 },
 "202320198_innov": {
 "artworkImage": "images/studentWork/202320198_innov-art3-i0.jpg",
@@ -3744,7 +4658,13 @@
 "images/studentWork/202320198_innov-art3-i1.jpg"
 ],
 "title": "TOSS TO TOMORROW",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 16.79,
+"y": 39.19
+}
+]
 },
 "202320214_fusion": {
 "artworkImage": "images/studentWork/202320214_fusion-art3-i0.jpg",
@@ -3767,7 +4687,13 @@
 "studio": "fusion",
 "id": "202320214_fusion",
 "title": "빙그르르 달그락 툭",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 49.17,
+"y": 57.57
+}
+]
 },
 "202320214_innov": {
 "artworkImage": "images/studentWork/202320214_innov-art3-i0.jpg",
@@ -3790,7 +4716,13 @@
 "studio": "innov",
 "id": "202320214_innov",
 "title": "UNDO",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 67.28,
+"y": 24.81
+}
+]
 },
 "202320219_fusion": {
 "artworkImage": "images/studentWork/202320219_fusion-art3-i0.jpg",
@@ -3817,7 +4749,13 @@
 "images/studentWork/202320219_fusion-art3-i1.jpg"
 ],
 "title": "PURIN",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 34.63,
+"y": 32.84
+}
+]
 },
 "202320219_innov": {
 "artworkImage": "images/studentWork/202320219_innov-art3-i0.jpg",
@@ -3840,7 +4778,13 @@
 "studio": "innov",
 "id": "202320219_innov",
 "title": "The Art of Failure",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 24.16,
+"y": 52.53
+}
+]
 },
 "202320230_fusion": {
 "artworkImage": "images/studentWork/202320230_fusion-art3-i0.jpg",
@@ -3867,7 +4811,13 @@
 "images/studentWork/202320230_fusion-art3-i1.jpg"
 ],
 "title": "꼬마 마녀 멜라니",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 39.31,
+"y": 59.22
+}
+]
 },
 "202320230_innov": {
 "artworkImage": "images/studentWork/202320230_innov-art3-i0.jpg",
@@ -3890,7 +4840,13 @@
 "studio": "innov",
 "id": "202320230_innov",
 "title": "Ellumi",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 36.0,
+"y": 53.14
+}
+]
 },
 "202320253_fusion": {
 "artworkImage": "images/studentWork/202320253_fusion-art3-i0.jpg",
@@ -3917,7 +4873,13 @@
 "images/studentWork/202320253_fusion-art3-i1.jpg"
 ],
 "title": "해인이의, 마음 그림",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 66.17,
+"y": 57.57
+}
+]
 },
 "202320253_innov": {
 "artworkImage": "images/studentWork/202320253_innov-art3-i0.jpg",
@@ -3944,7 +4906,13 @@
 "images/studentWork/202320253_innov-art3-i1.jpg"
 ],
 "title": "TMT CLUB",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 48.24,
+"y": 10.16
+}
+]
 },
 "202320287_fusion": {
 "artworkImage": "images/studentWork/202320287_fusion-art3-i0.jpg",
@@ -3967,7 +4935,13 @@
 "studio": "fusion",
 "id": "202320287_fusion",
 "title": "디지털 수집벽",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 18.13,
+"y": 55.05
+}
+]
 },
 "202320287_innov": {
 "artworkImage": "images/studentWork/202320287_innov-art3-i0.jpg",
@@ -3990,7 +4964,13 @@
 "studio": "innov",
 "id": "202320287_innov",
 "title": "잔흔의 가치",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 29.85,
+"y": 43.11
+}
+]
 },
 "202320310_fusion": {
 "artworkImage": "images/studentWork/202320310_fusion-art3-i0.jpg",
@@ -4017,7 +4997,13 @@
 "images/studentWork/202320310_fusion-art3-i1.jpg"
 ],
 "title": "MODU",
-"hall": "4관"
+"hall": "4관",
+"hallPos": [
+{
+"x": 59.33,
+"y": 17.14
+}
+]
 },
 "202320310_innov": {
 "artworkImage": "images/studentWork/202320310_innov-art3-i0.jpg",
@@ -4044,7 +5030,13 @@
 "images/studentWork/202320310_innov-art3-i1.jpg"
 ],
 "title": "딸깍출판",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 16.73,
+"y": 45.46
+}
+]
 },
 "202320312_fusion": {
 "artworkImage": "images/studentWork/202320312_fusion-art3-i0.jpg",
@@ -4067,7 +5059,13 @@
 "studio": "fusion",
 "id": "202320312_fusion",
 "title": "맷비둘기 두 마리",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 56.36,
+"y": 57.57
+}
+]
 },
 "202320312_innov": {
 "artworkImage": "images/studentWork/202320312_innov-art3-i0.jpg",
@@ -4090,7 +5088,13 @@
 "studio": "innov",
 "id": "202320312_innov",
 "title": "FLOTEA",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 36.15,
+"y": 56.0
+}
+]
 },
 "202320343_fusion": {
 "artworkImage": "images/studentWork/202320343_fusion-art3-i0.jpg",
@@ -4113,7 +5117,13 @@
 "studio": "fusion",
 "id": "202320343_fusion",
 "title": "애정과 애증 사이",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 18.13,
+"y": 70.26
+}
+]
 },
 "202320343_innov": {
 "artworkImage": "images/studentWork/202320343_innov-art3-i0.jpg",
@@ -4136,7 +5146,13 @@
 "studio": "innov",
 "id": "202320343_innov",
 "title": "내 옆집에 스타가 산다",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 24.7,
+"y": 85.86
+}
+]
 },
 "202320347_fusion": {
 "artworkImage": "images/studentWork/202320347_fusion-art3-i0.jpg",
@@ -4163,7 +5179,13 @@
 "images/studentWork/202320347_fusion-art3-i1.jpg"
 ],
 "title": "동생이랑 싸우고 집을 나갔어요!",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 66.33,
+"y": 44.34
+}
+]
 },
 "202320347_innov": {
 "artworkImage": "images/studentWork/202320347_innov-art3-i0.jpg",
@@ -4186,7 +5208,13 @@
 "studio": "innov",
 "id": "202320347_innov",
 "title": "조선야사실록",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 27.88,
+"y": 52.2
+}
+]
 },
 "202320357_fusion": {
 "artworkImage": "images/studentWork/202320357_fusion-art3-i0.jpg",
@@ -4209,7 +5237,13 @@
 "studio": "fusion",
 "id": "202320357_fusion",
 "title": "한지 공동브랜드, 겹",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 27.42,
+"y": 43.06
+}
+]
 },
 "202320357_innov": {
 "artworkImage": "images/studentWork/202320357_innov-art3-i0.jpg",
@@ -4232,7 +5266,13 @@
 "studio": "innov",
 "id": "202320357_innov",
 "title": "TAMTAM: 관심사를 연결하는 키즈 OTT",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 45.15,
+"y": 46.37
+}
+]
 },
 "202320359_fusion": {
 "artworkImage": "images/studentWork/202320359_fusion-art3-i0.jpg",
@@ -4259,7 +5299,13 @@
 "images/studentWork/202320359_fusion-art3-i1.jpg"
 ],
 "title": "설류 (SEOLRYU)",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 42.98,
+"y": 36.42
+}
+]
 },
 "202320359_innov": {
 "artworkImage": "images/studentWork/202320359_innov-art3-i0.jpg",
@@ -4282,7 +5328,13 @@
 "studio": "innov",
 "id": "202320359_innov",
 "title": "SONDE",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 16.2,
+"y": 36.83
+}
+]
 },
 "202320365_fusion": {
 "artworkImage": "images/studentWork/202320365_fusion-art3-i0.jpg",
@@ -4309,7 +5361,13 @@
 "images/studentWork/202320365_fusion-art3-i1.jpg"
 ],
 "title": "잉크고양이와 낙서 모험",
-"hall": "3관"
+"hall": "3관",
+"hallPos": [
+{
+"x": 32.0,
+"y": 57.28
+}
+]
 },
 "202320365_innov": {
 "artworkImage": "images/studentWork/202320365_innov-art3-i0.jpg",
@@ -4332,7 +5390,13 @@
 "studio": "innov",
 "id": "202320365_innov",
 "title": "한국 전통 디저트 도감",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 38.73,
+"y": 50.01
+}
+]
 },
 "202320367_fusion": {
 "artworkImage": "images/studentWork/202320367_fusion-art3-i0.jpg",
@@ -4355,7 +5419,13 @@
 "studio": "fusion",
 "id": "202320367_fusion",
 "title": "스르륵",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 40.32,
+"y": 32.84
+}
+]
 },
 "202320367_innov": {
 "artworkImage": "images/studentWork/202320367_innov-art3-i0.jpg",
@@ -4382,7 +5452,13 @@
 "images/studentWork/202320367_innov-art3-i1.jpg"
 ],
 "title": "앗차!",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 38.8,
+"y": 56.0
+}
+]
 },
 "202320382_fusion": {
 "artworkImage": "images/studentWork/202320382_fusion-art3-i0.jpg",
@@ -4409,7 +5485,13 @@
 "images/studentWork/202320382_fusion-art3-i1.jpg"
 ],
 "title": "RE:PACE",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 42.98,
+"y": 32.84
+}
+]
 },
 "202320382_innov": {
 "artworkImage": "images/studentWork/202320382_innov-art3-i0.jpg",
@@ -4436,7 +5518,13 @@
 "images/studentWork/202320382_innov-art3-i1.jpg"
 ],
 "title": "시유의 틈",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 53.22,
+"y": 56.0
+}
+]
 },
 "202320397_fusion": {
 "artworkImage": "images/studentWork/202320397_fusion-art3-i0.jpg",
@@ -4459,7 +5547,13 @@
 "studio": "fusion",
 "id": "202320397_fusion",
 "title": "Remnant",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 18.13,
+"y": 65.14
+}
+]
 },
 "202320397_innov": {
 "artworkImage": "images/studentWork/202320397_innov-art3-i0.jpg",
@@ -4482,7 +5576,13 @@
 "studio": "innov",
 "id": "202320397_innov",
 "title": "화색",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 18.13,
+"y": 50.01
+}
+]
 },
 "202320401_fusion": {
 "artworkImage": "images/studentWork/202320401_fusion-art3-i0.jpg",
@@ -4509,7 +5609,13 @@
 "images/studentWork/202320401_fusion-art3-i1.jpg"
 ],
 "title": "WORK, PLAY, LIFE",
-"hall": "4관"
+"hall": "4관",
+"hallPos": [
+{
+"x": 43.75,
+"y": 17.14
+}
+]
 },
 "202320401_innov": {
 "artworkImage": "images/studentWork/202320401_innov-art3-i0.jpg",
@@ -4532,7 +5638,13 @@
 "studio": "innov",
 "id": "202320401_innov",
 "title": "ROOV",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 45.15,
+"y": 53.3
+}
+]
 },
 "202320413_fusion": {
 "artworkImage": "images/studentWork/202320413_fusion-art3-i0.jpg",
@@ -4559,7 +5671,13 @@
 "images/studentWork/202320413_fusion-art3-i1.jpg"
 ],
 "title": "Pebbles",
-"hall": "4관"
+"hall": "4관",
+"hallPos": [
+{
+"x": 16.72,
+"y": 58.34
+}
+]
 },
 "202320413_innov": {
 "artworkImage": "images/studentWork/202320413_innov-art3-i0.jpg",
@@ -4582,7 +5700,13 @@
 "studio": "innov",
 "id": "202320413_innov",
 "title": "GOLD PICK",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 38.73,
+"y": 46.33
+}
+]
 },
 "202321452_fusion": {
 "artworkImage": "images/studentWork/202321452_fusion-art3-i0.jpg",
@@ -4609,7 +5733,13 @@
 "studio": "fusion",
 "id": "202321452_fusion",
 "title": "표준 규격의 오류",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 58.09,
+"y": 23.02
+}
+]
 },
 "202321452_innov": {
 "artworkImage": "images/studentWork/202321452_innov-art3-i0.jpg",
@@ -4632,7 +5762,13 @@
 "studio": "innov",
 "id": "202321452_innov",
 "title": "Shifted",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 41.09,
+"y": 45.6
+}
+]
 },
 "202321453_fusion": {
 "artworkImage": "images/studentWork/202321453_fusion-art3-i0.jpg",
@@ -4659,7 +5795,13 @@
 "images/studentWork/202321453_fusion-art3-i1.jpg"
 ],
 "title": "MNEMO records",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 38.91,
+"y": 38.58
+}
+]
 },
 "202321453_innov": {
 "artworkImage": "images/studentWork/202321453_innov-art3-i0.jpg",
@@ -4682,7 +5824,13 @@
 "studio": "innov",
 "id": "202321453_innov",
 "title": "What U Want - 소원빌기의 시스템",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 41.09,
+"y": 30.18
+}
+]
 },
 "202321454_fusion": {
 "artworkImage": "images/studentWork/202321454_fusion-art3-i0.jpg",
@@ -4705,7 +5853,13 @@
 "studio": "fusion",
 "id": "202321454_fusion",
 "title": "쪼르르",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 22.5,
+"y": 22.99
+}
+]
 },
 "202321454_innov": {
 "artworkImage": "images/studentWork/202321454_innov-art3-i0.jpg",
@@ -4728,7 +5882,13 @@
 "studio": "innov",
 "id": "202321454_innov",
 "title": "Manner Exchange",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 54.1,
+"y": 18.25
+}
+]
 },
 "202321455_fusion": {
 "artworkImage": "images/studentWork/202321455_fusion-art3-i0.jpg",
@@ -4751,7 +5911,13 @@
 "studio": "fusion",
 "id": "202321455_fusion",
 "title": "혐오의 논리, 낙인의 구조",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 61.63,
+"y": 23.02
+}
+]
 },
 "202321455_innov": {
 "artworkImage": "images/studentWork/202321455_innov-art3-i0.jpg",
@@ -4778,7 +5944,13 @@
 "images/studentWork/202321455_innov-art3-i1.jpg"
 ],
 "title": "Out of Spec 49",
-"hall": "2관"
+"hall": "2관",
+"hallPos": [
+{
+"x": 55.82,
+"y": 10.16
+}
+]
 },
 "202321456_fusion": {
 "artworkImage": "images/studentWork/202321456_fusion-art3-i0.jpg",
@@ -4805,7 +5977,13 @@
 "images/studentWork/202321456_fusion-art3-i1.jpg"
 ],
 "title": "FREITAG",
-"hall": "4관"
+"hall": "4관",
+"hallPos": [
+{
+"x": 86.39,
+"y": 41.66
+}
+]
 },
 "202321456_innov": {
 "artworkImage": "images/studentWork/202321456_innov-art3-i0.jpg",
@@ -4828,7 +6006,13 @@
 "studio": "innov",
 "id": "202321456_innov",
 "title": "HUGIN&MUNIN",
-"hall": "그랜드관"
+"hall": "그랜드관",
+"hallPos": [
+{
+"x": 18.13,
+"y": 44.96
+}
+]
 },
 "202321582_fusion": {
 "artworkImage": "images/studentWork/202321582_fusion-art3-i0.jpg",
@@ -4855,7 +6039,13 @@
 "images/studentWork/202321582_fusion-art3-i1.jpg"
 ],
 "title": "땅끝 식당",
-"hall": "4관"
+"hall": "4관",
+"hallPos": [
+{
+"x": 16.7,
+"y": 41.44
+}
+]
 },
 "202321582_innov": {
 "artworkImage": "images/studentWork/202321582_innov-art3-i0.jpg",
@@ -4882,6 +6072,12 @@
 "images/studentWork/202321582_innov-art3-i1.jpg"
 ],
 "title": "가독성의 온도",
-"hall": "5관"
+"hall": "5관",
+"hallPos": [
+{
+"x": 46.51,
+"y": 18.25
+}
+]
 }
 }
