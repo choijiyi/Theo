@@ -7,7 +7,9 @@
 "quantity": 29,
 "size": "2000x600",
 "usage": "마루아트 3관",
-"id": "t1"
+"id": "t1",
+"quantityNote": "12장 가져갈 예정",
+"memo": "다리 26세트 및 나사 챙기기"
 },
 "t2": {
 "createdAt": "2026-09-08T00:00:00.000Z",
@@ -36,12 +38,13 @@
 "installSchedule": "20일(화) 오후 4시",
 "location": "undecided",
 "order": 3,
-"quantity": null,
+"quantity": 104,
 "size": "600x600x1000",
 "teardownSchedule": "26일(월) 오후 5시 (반납)",
 "usage": null,
 "vendor": "렌탈프리",
-"id": "t4"
+"id": "t4",
+"quantityNote": "사용 84 + 여분 20"
 },
 "t5": {
 "contact": "010-5813-8844",
@@ -50,12 +53,13 @@
 "installSchedule": "20일(화) 오후 2시",
 "location": "undecided",
 "order": 4,
-"quantity": null,
+"quantity": 33,
 "size": "1500x600x1000",
 "teardownSchedule": "27일(화) 오전 10시",
 "usage": null,
 "vendor": "성장가구렌탈",
-"id": "t5"
+"id": "t5",
+"quantityNote": "사용 33"
 },
 "t6": {
 "contact": "010-4090-0750",
@@ -64,11 +68,12 @@
 "installSchedule": "20일(화) 오후 4시",
 "location": "undecided",
 "order": 5,
-"quantity": null,
+"quantity": 22,
 "size": "1200x600x1000",
 "teardownSchedule": "26일(월) 오후 5시 (반납)",
 "usage": null,
 "vendor": "렌탈프리",
-"id": "t6"
+"id": "t6",
+"quantityNote": "사용 12 + 여분 10"
 }
 }

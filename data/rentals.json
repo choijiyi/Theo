@@ -63,5 +63,47 @@
 "quantity": 89,
 "vendor": "애플플라자",
 "id": "rental-mouse"
+},
+"rental-table-600": {
+"contact": "010-4090-0750",
+"createdAt": "2026-10-05T17:25:00.000Z",
+"imageDataUrl": "images/tables/t4-imageDataUrl-4.jpg",
+"installSchedule": "20일(화) 오후 4시",
+"name": "테이블",
+"order": 6,
+"quantity": 104,
+"quantityNote": "사용 84 + 여분 20",
+"size": "600x600x1000",
+"teardownSchedule": "26일(월) 오후 5시 (반납)",
+"vendor": "렌탈프리",
+"id": "rental-table-600"
+},
+"rental-table-1200": {
+"contact": "010-4090-0750",
+"createdAt": "2026-10-05T17:25:00.000Z",
+"imageDataUrl": "images/tables/t6-imageDataUrl-6.jpg",
+"installSchedule": "20일(화) 오후 4시",
+"name": "테이블",
+"order": 7,
+"quantity": 22,
+"quantityNote": "사용 12 + 여분 10",
+"size": "1200x600x1000",
+"teardownSchedule": "26일(월) 오후 5시 (반납)",
+"vendor": "렌탈프리",
+"id": "rental-table-1200"
+},
+"rental-table-1500": {
+"contact": "010-5813-8844",
+"createdAt": "2026-10-05T17:25:00.000Z",
+"imageDataUrl": "images/tables/t5-imageDataUrl-5.jpg",
+"installSchedule": "20일(화) 오후 2시",
+"name": "테이블",
+"order": 8,
+"quantity": 33,
+"quantityNote": "사용 33",
+"size": "1500x600x1000",
+"teardownSchedule": "27일(화) 오전 10시",
+"vendor": "성장가구렌탈",
+"id": "rental-table-1500"
 }
 }

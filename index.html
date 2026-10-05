@@ -504,6 +504,8 @@
     font-size:10px; font-weight:700; padding:2px 8px; border-radius:999px;
     border:1px solid currentColor; flex:none; color:var(--ink-soft);
   }
+  .qty-note{font-size:11.5px; color:var(--ink-soft);}
+  .table-card-memo{font-size:12px; color:var(--ink); background:var(--surface-soft); border-radius:6px; padding:5px 8px; margin-top:4px;}
   .rental-card-vendor{font-size:11.5px; color:var(--ink-soft);}
   .rental-card-cost{font-size:12px; color:var(--ink); font-family:'IBM Plex Mono',monospace;}
   .rental-card-schedule{font-size:11.5px; color:var(--ink-soft); line-height:1.6; border-top:1px dashed var(--line); padding-top:6px; margin-top:2px;}
@@ -1579,7 +1581,8 @@
             '<span class="table-loc-badge ' + locKey + '">' + locLabel + '</span>' +
           '</div>' +
           '<div class="table-card-usage">' + escapeHtml(t.usage || '사용처 미정') + '</div>' +
-          '<div class="table-card-qty">수량 ' + (t.quantity != null ? t.quantity : '-') + '장</div>' +
+          '<div class="table-card-qty">수량 ' + (t.quantity != null ? t.quantity : '-') + '장' + (t.quantityNote ? ' <span class="qty-note">(' + escapeHtml(t.quantityNote) + ')</span>' : '') + '</div>' +
+          (t.memo ? '<div class="table-card-memo">' + escapeHtml(t.memo) + '</div>' : '') +
           vendorLine +
           scheduleBlock +
         '</div>' +
@@ -1622,7 +1625,7 @@
             (r.location ? '<span class="rental-loc-badge">' + escapeHtml(r.location) + '</span>' : '') +
           '</div>' +
           '<div class="table-card-usage">' + escapeHtml(r.name || '대여물품') + '</div>' +
-          '<div class="table-card-qty">수량 ' + (r.quantity != null ? r.quantity : '-') + '개</div>' +
+          '<div class="table-card-qty">수량 ' + (r.quantity != null ? r.quantity : '-') + '개' + (r.quantityNote ? ' <span class="qty-note">(' + escapeHtml(r.quantityNote) + ')</span>' : '') + '</div>' +
           vendorLine +
           costLine +
           scheduleBlock +
@@ -2363,7 +2366,7 @@
   /* ---------------- update checker (github pages caches this page for 10min,
      so a tab left open — or reloaded within that window — can silently show
      stale content; this polls a tiny always-fresh file and offers a banner) ---------------- */
-  var SITE_BUILD_VERSION = '2026-10-05T17:45:00Z';
+  var SITE_BUILD_VERSION = '2026-10-05T18:00:00Z';
   var VERSION_CHECK_URL = 'data/version.json';
   var versionBannerShown = false;
 
