@@ -349,7 +349,7 @@
 "dueDate": null,
 "meetingDate": "2026-09-09",
 "meetingId": "rec-plenary-2026-09-09",
-"status": "pending",
+"status": "done",
 "team": "plenary",
 "title": "서울 비규격 다이 사용 학생 대상 천안 전시 동일 적용 공지 발송",
 "id": "rec-plenary-2026-09-09-t3"
@@ -416,7 +416,7 @@
 "dueDate": "2026-09-08",
 "meetingDate": "2026-09-08",
 "meetingId": "adhoc-2026-09-08-p1q2r3",
-"status": "pending",
+"status": "done",
 "team": "plan",
 "title": "천안 비규격 테이블 여부 확인",
 "id": "task-2026-09-08-cheonanirregular"
@@ -428,7 +428,7 @@
 "meetingDate": "2026-09-21",
 "meetingId": null,
 "starred": true,
-"status": "pending",
+"status": "done",
 "team": "plan",
 "title": "천안 전시 졸준위 배포자료 내용 정리 및 숙지",
 "id": "task-2026-09-21-cheonan-handout-review"
@@ -440,7 +440,7 @@
 "meetingDate": "2026-09-21",
 "meetingId": null,
 "starred": true,
-"status": "pending",
+"status": "done",
 "team": "plan",
 "title": "천안 배치도 수정 및 숙지",
 "id": "task-2026-09-21-cheonan-layout-review"
@@ -452,7 +452,7 @@
 "meetingDate": "2026-09-21",
 "meetingId": null,
 "starred": true,
-"status": "pending",
+"status": "done",
 "team": "plan",
 "title": "천안 배치도면 손우성 교수님 공유",
 "id": "task-2026-09-21-cheonan-layout-share-son"
@@ -464,7 +464,7 @@
 "meetingDate": "2026-09-21",
 "meetingId": null,
 "starred": true,
-"status": "pending",
+"status": "done",
 "team": "plan",
 "title": "천안 테이블 업무 순서 계획",
 "id": "task-2026-09-21-cheonan-table-order-plan"
@@ -476,7 +476,7 @@
 "meetingDate": "2026-09-21",
 "meetingId": null,
 "starred": true,
-"status": "pending",
+"status": "done",
 "team": "plan",
 "title": "천안 테이블 업무 스태프 배치",
 "id": "task-2026-09-21-cheonan-table-staff"
