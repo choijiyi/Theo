@@ -608,6 +608,14 @@
   .roster-id.unassigned{color:var(--ink-faint); font-style:italic;}
   .roster-title{font-size:12px; line-height:1.35; color:var(--ink); margin-top:3px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; word-break:keep-all;}
   .roster-title.unassigned{color:var(--ink-faint); font-style:italic;}
+  .roster-card{border-top-width:4px; border-top-style:solid;}
+  .roster-meta{display:flex; align-items:center; gap:6px; flex-wrap:wrap; margin-top:5px;}
+  .prof-dot{width:9px; height:9px; border-radius:50%; flex:none; box-shadow:0 0 0 1px var(--line);}
+  .roster-prof{font-size:11px; color:var(--ink-soft);}
+  .hall-badge{font-size:11px; font-weight:700; padding:1px 7px; border-radius:999px; border:1px solid var(--line); color:var(--ink); background:var(--surface-soft); white-space:nowrap;}
+  .hall-badge.unassigned{font-weight:400; color:var(--ink-faint); font-style:italic;}
+  .prof-card{border-left-width:5px; border-left-style:solid;}
+  .detail-hall{font-size:15px; font-weight:700;}
 
   /* ---------- promo materials panel ---------- */
   .promo-panel{border-top:2px solid var(--team-pr); margin-top:16px;}
@@ -983,7 +991,7 @@
       <span class="sub" id="studentsCrumb"></span>
     </div>
     <div class="roster-search-wrap">
-      <input type="text" id="studentsSearchInput" class="roster-search" data-role="student-search" placeholder="이름 · 학번 · 작품 제목으로 학생 검색" autocomplete="off">
+      <input type="text" id="studentsSearchInput" class="roster-search" data-role="student-search" placeholder="이름 · 학번 · 작품 제목 · 관(예: 2관, 그랜드관)으로 학생 검색" autocomplete="off">
     </div>
     <div id="studentsBody"><div class="empty-note">불러오는 중…</div></div>
   </section>
@@ -1066,16 +1074,16 @@
     innov:  {label:'혁신디자인스튜디오', profs:['i1','i2','i3','i4','i5']}
   };
   var PROF_DEFS = {
-    f1: {name:'김석진', studio:'fusion'},
-    f2: {name:'서승연', studio:'fusion'},
-    f3: {name:'손우성', studio:'fusion'},
-    f4: {name:'신윤진', studio:'fusion'},
-    f5: {name:'이원제', studio:'fusion'},
-    i1: {name:'김한솔', studio:'innov'},
-    i2: {name:'남정',   studio:'innov'},
-    i3: {name:'박소연', studio:'innov'},
-    i4: {name:'방경란', studio:'innov'},
-    i5: {name:'안혜선', studio:'innov'}
+    f1: {name:'김석진', color:'#FF6F6F', studio:'fusion'},
+    f2: {name:'서승연', color:'#2F992D', studio:'fusion'},
+    f3: {name:'손우성', color:'#000000', studio:'fusion'},
+    f4: {name:'신윤진', color:'#785F2D', studio:'fusion'},
+    f5: {name:'이원제', color:'#1D81AC', studio:'fusion'},
+    i1: {name:'김한솔', color:'#FF0000', studio:'innov'},
+    i2: {name:'남정',   color:'#FF00CC', studio:'innov'},
+    i3: {name:'박소연', color:'#4400FF', studio:'innov'},
+    i4: {name:'방경란', color:'#9D00FF', studio:'innov'},
+    i5: {name:'안혜선', color:'#FF9900', studio:'innov'}
   };
 
   function recurringFor(dow){
@@ -1791,6 +1799,11 @@
     }).join('');
   }
 
+  function profColorByName(name){
+    for (var k in PROF_DEFS){ if (PROF_DEFS[k].name === name) return PROF_DEFS[k].color; }
+    return null;
+  }
+
   function studentSortKey(s){ return s.studentId ? ('0_' + s.studentId) : '1_'; }
 
   function renderStudentCard(s, showTag, studio){
@@ -1801,9 +1814,18 @@
       ? '<span class="roster-id">' + escapeHtml(s.studentId) + '</span>'
       : '<span class="roster-id unassigned">학번 미정</span>';
     var tagHtml = showTag
-      ? '<span class="roster-id">' + escapeHtml(s.studioLabel || '') + ' · ' + escapeHtml(s.profName || '') + '</span>'
+      ? '<span class="roster-id">' + escapeHtml(s.studioLabel || '') + '</span>'
       : '';
     var swork = (s.studentId && studio) ? state.studentWorkById.get(s.studentId + '_' + studio) : null;
+    var profColor = s.profColor || (swork && profColorByName(swork.professor)) || 'var(--line)';
+    var profName = s.profName || (swork && swork.professor) || '';
+    var metaHtml = '<span class="roster-meta">' +
+        '<span class="prof-dot" style="background:' + profColor + '"></span>' +
+        (profName ? '<span class="roster-prof">' + escapeHtml(profName) + '</span>' : '') +
+        ((swork && swork.hall)
+          ? '<span class="hall-badge">' + escapeHtml(swork.hall) + '</span>'
+          : '<span class="hall-badge unassigned">관 미정</span>') +
+      '</span>';
     var titleHtml = (swork && swork.title)
       ? '<span class="roster-title" title="' + escapeAttr(swork.title) + '">' + escapeHtml(swork.title) + '</span>'
       : '<span class="roster-title unassigned">작품 제목 미정</span>';
@@ -1811,12 +1833,13 @@
     var attrs = clickable
       ? ' data-action="select-student" data-sid="' + escapeAttr(s.studentId) + '" data-studio="' + escapeAttr(studio) + '" data-name="' + escapeAttr(s.name || '') + '"'
       : '';
-    return '<div class="roster-card' + (clickable ? ' roster-card--clickable' : '') + '"' + attrs + '>' +
+    return '<div class="roster-card' + (clickable ? ' roster-card--clickable' : '') + '" style="border-top-color:' + profColor + '"' + attrs + '>' +
       '<div class="roster-card-imgwrap">' + imgHtml + '</div>' +
       '<div class="roster-card-body">' +
         '<span class="roster-name">' + escapeHtml(s.name || '') + '</span>' +
         idHtml +
         titleHtml +
+        metaHtml +
         tagHtml +
       '</div>' +
     '</div>';
@@ -1842,7 +1865,7 @@
         rec.roster.forEach(function(s){
           all.push({
             name: s.name, studentId: s.studentId, photo: s.photo,
-            profName: pd.name, studioLabel: sd ? sd.label : '', studio: pd.studio
+            profName: pd.name, profColor: pd.color, studioLabel: sd ? sd.label : '', studio: pd.studio
           });
         });
       });
@@ -1851,7 +1874,8 @@
         var sw = s.studentId ? state.studentWorkById.get(s.studentId + '_' + s.studio) : null;
         return (s.name && s.name.toLowerCase().indexOf(qLower) !== -1) ||
                (s.studentId && s.studentId.indexOf(query) !== -1) ||
-               (sw && sw.title && sw.title.toLowerCase().indexOf(qLower) !== -1);
+               (sw && sw.title && sw.title.toLowerCase().indexOf(qLower) !== -1) ||
+               (sw && sw.hall && (sw.hall === query || (query.indexOf('관') !== -1 && sw.hall.indexOf(query) !== -1)));
       });
       matched.sort(function(a, b){
         var ak = studentSortKey(a), bk = studentSortKey(b);
@@ -1912,7 +1936,7 @@
           var pd = PROF_DEFS[pk];
           var rec = state.studentsById.get(pk);
           var count = rec && rec.roster ? rec.roster.length : 0;
-          return '<button type="button" class="prof-card" data-action="select-prof" data-prof="' + pk + '">' +
+          return '<button type="button" class="prof-card" style="border-left-color:' + (pd.color || 'var(--line)') + '" data-action="select-prof" data-prof="' + pk + '">' +
             '<div class="prof-card-name">' + escapeHtml(pd.name) + ' 교수님</div>' +
             '<div class="prof-card-count">학생 ' + count + '명</div>' +
           '</button>';
@@ -1980,6 +2004,13 @@
             '<span class="detail-name">' + escapeHtml(nav.studentName || '') + '</span>' +
             '<span class="detail-id">' + escapeHtml(nav.studentId || '') + '</span>' +
             '<span class="detail-tag">' + escapeHtml(sd4.label) + '</span>' +
+            '<span class="detail-tag"><span class="prof-dot" style="display:inline-block; margin-right:5px; vertical-align:-1px; background:' + (pd3.color || 'var(--line)') + '"></span>' + escapeHtml(pd3.name) + ' 교수님</span>' +
+          '</div>' +
+          '<div class="detail-section">' +
+            '<div class="detail-section-title">배치 관</div>' +
+            ((work && work.hall)
+              ? '<div class="detail-hall">' + escapeHtml(work.hall) + '</div>'
+              : '<div class="detail-empty">아직 배치 정보가 없습니다.</div>') +
           '</div>' +
           '<div class="detail-section">' +
             '<div class="detail-section-title">작품 제목</div>' +
