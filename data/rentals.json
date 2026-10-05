@@ -76,7 +76,8 @@
 "size": "600x600x1000",
 "teardownSchedule": "26일(월) 오후 5시 (반납)",
 "vendor": "렌탈프리",
-"id": "rental-table-600"
+"id": "rental-table-600",
+"location": "1관, 2관, 5관, 그랜드관"
 },
 "rental-table-1200": {
 "contact": "010-4090-0750",
@@ -90,7 +91,8 @@
 "size": "1200x600x1000",
 "teardownSchedule": "26일(월) 오후 5시 (반납)",
 "vendor": "렌탈프리",
-"id": "rental-table-1200"
+"id": "rental-table-1200",
+"location": "1관, 2관, 5관, 그랜드관"
 },
 "rental-table-1500": {
 "contact": "010-5813-8844",
@@ -104,6 +106,7 @@
 "size": "1500x600x1000",
 "teardownSchedule": "27일(화) 오전 10시",
 "vendor": "성장가구렌탈",
-"id": "rental-table-1500"
+"id": "rental-table-1500",
+"location": "2관, 5관, 4관, 그랜드관"
 }
 }
