@@ -7,7 +7,21 @@
 "sourceTitle": "10월 05일 기획팀 회의",
 "uploadedAt": "2026-10-05T07:13:00.000Z",
 "versionLabel": "2026-10-05 기획팀 회의 배치도",
-"id": "seoul-grand"
+"id": "seoul-grand",
+"tableCounts": [
+{
+"label": "600×600",
+"qty": 20
+},
+{
+"label": "1200×600",
+"qty": 6
+},
+{
+"label": "1500×600",
+"qty": 14
+}
+]
 },
 "seoul-hall1": {
 "hallLabel": "1관",
@@ -17,7 +31,17 @@
 "sourceTitle": "10월 05일 기획팀 회의",
 "uploadedAt": "2026-10-05T07:13:00.000Z",
 "versionLabel": "2026-10-05 기획팀 회의 배치도",
-"id": "seoul-hall1"
+"id": "seoul-hall1",
+"tableCounts": [
+{
+"label": "600×600",
+"qty": 1
+},
+{
+"label": "1200×600",
+"qty": 3
+}
+]
 },
 "seoul-hall2": {
 "hallLabel": "2관",
@@ -27,7 +51,21 @@
 "sourceTitle": "10월 05일 기획팀 회의",
 "uploadedAt": "2026-10-05T07:13:00.000Z",
 "versionLabel": "2026-10-05 기획팀 회의 배치도",
-"id": "seoul-hall2"
+"id": "seoul-hall2",
+"tableCounts": [
+{
+"label": "600×600",
+"qty": 32
+},
+{
+"label": "1200×600",
+"qty": 1
+},
+{
+"label": "1500×600",
+"qty": 4
+}
+]
 },
 "seoul-hall3": {
 "hallLabel": "3관",
@@ -37,7 +75,13 @@
 "sourceTitle": "10월 05일 기획팀 회의",
 "uploadedAt": "2026-10-05T07:13:00.000Z",
 "versionLabel": "2026-10-05 기획팀 회의 배치도",
-"id": "seoul-hall3"
+"id": "seoul-hall3",
+"tableCounts": [
+{
+"label": "우드테이블",
+"qty": 10
+}
+]
 },
 "seoul-hall4": {
 "hallLabel": "4관",
@@ -47,7 +91,13 @@
 "sourceTitle": "10월 05일 기획팀 회의",
 "uploadedAt": "2026-10-05T07:13:00.000Z",
 "versionLabel": "2026-10-05 기획팀 회의 배치도",
-"id": "seoul-hall4"
+"id": "seoul-hall4",
+"tableCounts": [
+{
+"label": "1500×600",
+"qty": 6
+}
+]
 },
 "seoul-hall5": {
 "hallLabel": "5관",
@@ -57,7 +107,21 @@
 "sourceTitle": "10월 05일 기획팀 회의",
 "uploadedAt": "2026-10-05T07:13:00.000Z",
 "versionLabel": "2026-10-05 기획팀 회의 배치도",
-"id": "seoul-hall5"
+"id": "seoul-hall5",
+"tableCounts": [
+{
+"label": "600×600",
+"qty": 27
+},
+{
+"label": "1200×600",
+"qty": 4
+},
+{
+"label": "1500×600",
+"qty": 9
+}
+]
 },
 "seoul-maruart-floor1": {
 "hallLabel": "마루아트센터 1층",

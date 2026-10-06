@@ -539,6 +539,11 @@
   .floorplan-card-imgwrap.expanded .floorplan-card-img{width:auto; height:auto; max-width:100%; max-height:82vh;}
   .floorplan-card-body{padding:10px 12px 12px; display:flex; flex-direction:column; gap:4px;}
   .floorplan-card-title{font-family:'Gothic A1',sans-serif; font-weight:700; font-size:14px;}
+  .fp-tables{display:flex; flex-wrap:wrap; align-items:center; gap:5px; margin-top:4px;}
+  .fp-tables-label{font-size:11px; color:var(--ink-faint); margin-right:2px;}
+  .fp-table-pill{font-size:11.5px; padding:2px 8px; border:1px solid var(--line); border-radius:999px; background:var(--paper); white-space:nowrap;}
+  .fp-table-pill b{font-weight:700;}
+  .fp-table-total{font-size:11px; color:var(--ink-faint); font-family:'IBM Plex Mono',monospace;}
   .floorplan-card-version{font-size:11px; color:var(--ink-faint); font-family:'IBM Plex Mono',monospace;}
 
   /* ---------- students panel ---------- */
@@ -1673,9 +1678,22 @@
             (state.floorplanFilter === 'all' ? '<span class="table-loc-badge ' + locKey + '">' + locLabel + '</span>' : '') +
           '</div>' +
           '<div class="floorplan-card-version">' + escapeHtml(f.versionLabel || '') + (f.uploadedAt ? ' · ' + timeOnly(f.uploadedAt) : '') + '</div>' +
+          renderFloorplanTables(f) +
         '</div>' +
       '</div>';
     }).join('');
+  }
+
+  function renderFloorplanTables(f){
+    var list = Array.isArray(f.tableCounts) ? f.tableCounts.filter(function(t){ return t && t.qty > 0; }) : [];
+    if (!list.length) return '';
+    var total = list.reduce(function(a, t){ return a + t.qty; }, 0);
+    return '<div class="fp-tables"><span class="fp-tables-label">테이블</span>' +
+      list.map(function(t){
+        return '<span class="fp-table-pill">' + escapeHtml(t.label) + ' <b class="num">' + t.qty + '</b>개</span>';
+      }).join('') +
+      (list.length > 1 ? '<span class="fp-table-total">· 총 ' + total + '개</span>' : '') +
+    '</div>';
   }
 
   /* ---------------- rendering: promo materials panel ---------------- */
