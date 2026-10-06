@@ -354,5 +354,43 @@
 "tasks": [],
 "team": "plenary",
 "time": "17:00"
+},
+"rec-plenary-2026-10-07": {
+"cancelReason": "10/6(화)로 앞당김",
+"createdAt": "2026-10-06T04:30:00.000Z",
+"date": "2026-10-07",
+"kind": "recurring",
+"label": "졸준위 전체 대면회의",
+"minutes": "",
+"minutesContent": "",
+"minutesNextTasks": "",
+"minutesUpdatedAt": null,
+"status": "cancelled",
+"summary": "",
+"summaryUpdatedAt": null,
+"tasks": [],
+"team": "plenary",
+"time": "17:00",
+"timeTBD": false,
+"id": "rec-plenary-2026-10-07"
+},
+"adhoc-2026-10-06-plenary": {
+"cancelReason": null,
+"createdAt": "2026-10-06T04:30:00.000Z",
+"date": "2026-10-06",
+"kind": "adhoc",
+"label": "졸준위 전체 대면회의 (10/7에서 앞당김)",
+"minutes": "",
+"minutesContent": "",
+"minutesNextTasks": "",
+"minutesUpdatedAt": null,
+"status": "scheduled",
+"summary": "",
+"summaryUpdatedAt": null,
+"tasks": [],
+"team": "plenary",
+"time": "17:00",
+"timeTBD": false,
+"id": "adhoc-2026-10-06-plenary"
 }
 }
