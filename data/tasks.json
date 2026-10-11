@@ -575,5 +575,16 @@
 "team": "plan",
 "title": "3차 작품설명서 미제출자 명단 작성",
 "id": "task-2026-09-27-worksheet3-nonsubmitters"
+},
+"task-2026-10-11-hall-studentinfo-promo": {
+"assignee": null,
+"createdAt": "2026-10-11T12:55:00.000Z",
+"dueDate": "2026-10-12",
+"meetingDate": "2026-10-11",
+"meetingId": null,
+"status": "pending",
+"team": "plan",
+"title": "관별 학생정보 홍보팀 요청사항 완료하기",
+"id": "task-2026-10-11-hall-studentinfo-promo"
 }
 }
