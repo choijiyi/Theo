@@ -2384,7 +2384,9 @@
   /* ---------------- update checker (github pages caches this page for 10min,
      so a tab left open — or reloaded within that window — can silently show
      stale content; this polls a tiny always-fresh file and offers a banner) ---------------- */
-  var SITE_BUILD_VERSION = '2026-10-05T18:05:00Z';
+  // 기준 버전은 페이지를 연 시점의 version.json 값으로 잡는다.
+  // (예전엔 여기에 고정값을 적어 두어서, version.json만 갱신되면 새로고침해도 배너가 계속 떴음)
+  var SITE_BUILD_VERSION = null;
   var VERSION_CHECK_URL = 'data/version.json';
   var versionBannerShown = false;
 
@@ -2393,7 +2395,9 @@
     fetch(VERSION_CHECK_URL + '?t=' + Date.now(), { cache: 'no-store' })
       .then(function(r){ return r.ok ? r.json() : null; })
       .then(function(data){
-        if (data && data.version && data.version !== SITE_BUILD_VERSION) {
+        if (!data || !data.version) return;
+        if (SITE_BUILD_VERSION === null) { SITE_BUILD_VERSION = data.version; return; }
+        if (data.version !== SITE_BUILD_VERSION) {
           showUpdateBanner();
         }
       })
@@ -2422,7 +2426,7 @@
   }
 
   function initUpdateChecker(){
-    setTimeout(checkForNewVersion, 3000);
+    checkForNewVersion();
     setInterval(checkForNewVersion, 120000);
     document.addEventListener('visibilitychange', function(){
       if (!document.hidden) checkForNewVersion();
