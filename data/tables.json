@@ -75,5 +75,18 @@
 "vendor": "렌탈프리",
 "id": "t6",
 "quantityNote": "사용 14 + 여분 8"
+},
+"t7": {
+"createdAt": "2026-10-14T18:30:00.000Z",
+"imageDataUrl": "images/tables/t7-imageDataUrl-13.jpg",
+"location": "seoul",
+"order": 6,
+"quantity": 2,
+"size": "구름형 우드 상판 + 파란 A형 다리",
+"usage": "마루아트 1관 (굿즈 테이블 · 방명록 테이블)",
+"quantityNote": "굿즈 1 + 방명록 1",
+"vendor": "학교 보유 (렌탈 아님, 학교에서 가져감)",
+"id": "t7",
+"memo": "1관 굿즈 테이블과 방명록 테이블로 사용"
 }
 }
