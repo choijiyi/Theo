@@ -1,12 +1,12 @@
 {
 "seoul-grand": {
 "hallLabel": "그랜드관",
-"imageDataUrl": "images/floorplans/seoul-grand-1014.jpg",
+"imageDataUrl": "images/floorplans/seoul-grand-1015.jpg",
 "location": "seoul",
 "order": 1,
-"sourceTitle": "10월 13일 기획팀 도면 미팅 이후 정리본",
-"uploadedAt": "2026-10-14T14:30:00.000Z",
-"versionLabel": "2026-10-14 기획팀 도면 수정본",
+"sourceTitle": "10월 15일 전체공유용 정리본",
+"uploadedAt": "2026-10-14T18:00:00.000Z",
+"versionLabel": "2026-10-15 전체공유용 배치도",
 "id": "seoul-grand",
 "tableCounts": [
 {
@@ -26,12 +26,12 @@
 },
 "seoul-hall1": {
 "hallLabel": "1관",
-"imageDataUrl": "images/floorplans/seoul-hall1-1014.jpg",
+"imageDataUrl": "images/floorplans/seoul-hall1-1015.jpg",
 "location": "seoul",
 "order": 5,
-"sourceTitle": "10월 13일 기획팀 도면 미팅 이후 정리본",
-"uploadedAt": "2026-10-14T14:30:00.000Z",
-"versionLabel": "2026-10-14 기획팀 도면 수정본",
+"sourceTitle": "10월 15일 전체공유용 정리본",
+"uploadedAt": "2026-10-14T18:00:00.000Z",
+"versionLabel": "2026-10-15 전체공유용 배치도",
 "id": "seoul-hall1",
 "tableCounts": [
 {
@@ -47,12 +47,12 @@
 },
 "seoul-hall2": {
 "hallLabel": "2관",
-"imageDataUrl": "images/floorplans/seoul-hall2-1014.jpg",
+"imageDataUrl": "images/floorplans/seoul-hall2-1015.jpg",
 "location": "seoul",
 "order": 3,
-"sourceTitle": "10월 13일 기획팀 도면 미팅 이후 정리본",
-"uploadedAt": "2026-10-14T14:30:00.000Z",
-"versionLabel": "2026-10-14 기획팀 도면 수정본",
+"sourceTitle": "10월 15일 전체공유용 정리본",
+"uploadedAt": "2026-10-14T18:00:00.000Z",
+"versionLabel": "2026-10-15 전체공유용 배치도",
 "id": "seoul-hall2",
 "tableCounts": [
 {
@@ -72,12 +72,12 @@
 },
 "seoul-hall3": {
 "hallLabel": "3관",
-"imageDataUrl": "images/floorplans/seoul-hall3-1014.jpg",
+"imageDataUrl": "images/floorplans/seoul-hall3-1015.jpg",
 "location": "seoul",
 "order": 2,
-"sourceTitle": "10월 13일 기획팀 도면 미팅 이후 정리본",
-"uploadedAt": "2026-10-14T14:30:00.000Z",
-"versionLabel": "2026-10-14 기획팀 도면 수정본",
+"sourceTitle": "10월 15일 전체공유용 정리본",
+"uploadedAt": "2026-10-14T18:00:00.000Z",
+"versionLabel": "2026-10-15 전체공유용 배치도",
 "id": "seoul-hall3",
 "tableCounts": [
 {
@@ -89,12 +89,12 @@
 },
 "seoul-hall4": {
 "hallLabel": "4관",
-"imageDataUrl": "images/floorplans/seoul-hall4-1014.jpg",
+"imageDataUrl": "images/floorplans/seoul-hall4-1015.jpg",
 "location": "seoul",
 "order": 4,
-"sourceTitle": "10월 13일 기획팀 도면 미팅 이후 정리본",
-"uploadedAt": "2026-10-14T14:30:00.000Z",
-"versionLabel": "2026-10-14 기획팀 도면 수정본",
+"sourceTitle": "10월 15일 전체공유용 정리본",
+"uploadedAt": "2026-10-14T18:00:00.000Z",
+"versionLabel": "2026-10-15 전체공유용 배치도",
 "id": "seoul-hall4",
 "tableCounts": [
 {
@@ -106,12 +106,12 @@
 },
 "seoul-hall5": {
 "hallLabel": "5관",
-"imageDataUrl": "images/floorplans/seoul-hall5-1014.jpg",
+"imageDataUrl": "images/floorplans/seoul-hall5-1015.jpg",
 "location": "seoul",
 "order": 0,
-"sourceTitle": "10월 13일 기획팀 도면 미팅 이후 정리본",
-"uploadedAt": "2026-10-14T14:30:00.000Z",
-"versionLabel": "2026-10-14 기획팀 도면 수정본",
+"sourceTitle": "10월 15일 전체공유용 정리본",
+"uploadedAt": "2026-10-14T18:00:00.000Z",
+"versionLabel": "2026-10-15 전체공유용 배치도",
 "id": "seoul-hall5",
 "tableCounts": [
 {
