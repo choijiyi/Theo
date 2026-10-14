@@ -1674,7 +1674,7 @@
         '<div class="floorplan-card-imgwrap' + (expanded ? ' expanded' : '') + '">' + img + '</div>' +
         '<div class="floorplan-card-body">' +
           '<div class="table-card-top">' +
-            '<div class="floorplan-card-title">' + escapeHtml(f.hallLabel || '-') + '</div>' +
+            '<div class="floorplan-card-title">' + escapeHtml((f.building ? f.building + ' ' : '') + (f.hallLabel || '-')) + '</div>' +
             (state.floorplanFilter === 'all' ? '<span class="table-loc-badge ' + locKey + '">' + locLabel + '</span>' : '') +
           '</div>' +
           '<div class="floorplan-card-version">' + escapeHtml(f.versionLabel || '') + (f.uploadedAt ? ' · ' + timeOnly(f.uploadedAt) : '') + '</div>' +
@@ -1827,6 +1827,22 @@
     }).join('');
   }
 
+  // 서울 관 이름 앞에 건물(본관/신관)을 붙여 표시. 건물 정보는 floorplans.json의 building 필드
+  function hallBuilding(h){
+    var b = '';
+    state.floorplansById.forEach(function(f){
+      if (!b && f.location === 'seoul' && f.hallLabel === h && f.building) b = f.building;
+    });
+    return b;
+  }
+  function hallWithBuilding(h){
+    if (!h) return '';
+    return String(h).split(' · ').map(function(x){
+      var b = hallBuilding(x);
+      return b ? b + ' ' + x : x;
+    }).join(' · ');
+  }
+
   function renderHallMap(work, color){
     if (!work || !work.hall || !work.hallPos || !work.hallPos.length) return '';
     // 한 작품이 여러 관에 나뉘어 있을 수 있으므로(예: 캡션 1·2·3), 위치마다 p.hall이 있으면 그 관 도면에 표시
@@ -1846,7 +1862,7 @@
       var pins = list.map(function(p){
         return '<span class="hall-pin" style="left:' + p.x + '%; top:' + p.y + '%; --pin:' + (color || '#e11') + '"></span>';
       }).join('');
-      return '<div>' + (groups.length > 1 ? '<div class="detail-hall">' + escapeHtml(h) + '</div>' : '') +
+      return '<div>' + (groups.length > 1 ? '<div class="detail-hall">' + escapeHtml(hallWithBuilding(h)) + '</div>' : '') +
         '<div class="hall-map"><img src="' + plan.imageDataUrl + '" alt="' + escapeAttr(h) + ' 도면">' + pins + '</div>' +
         '<div class="hall-map-note">' + escapeHtml(plan.versionLabel || '') + ' 기준 · 표시된 자리가 이 작품의 배치 위치입니다' + (list.length > 1 ? ' (' + list.length + '곳)' : '') + '</div></div>';
     }).join('');
@@ -1876,7 +1892,7 @@
         '<span class="prof-dot" style="background:' + profColor + '"></span>' +
         (profName ? '<span class="roster-prof">' + escapeHtml(profName) + '</span>' : '') +
         ((swork && swork.hall)
-          ? '<span class="hall-badge">' + escapeHtml(swork.hall) + '</span>'
+          ? '<span class="hall-badge">' + escapeHtml(hallWithBuilding(swork.hall)) + '</span>'
           : '<span class="hall-badge unassigned">관 미정</span>') +
       '</span>';
     var titleHtml = (swork && swork.title)
@@ -1928,7 +1944,7 @@
         return (s.name && s.name.toLowerCase().indexOf(qLower) !== -1) ||
                (s.studentId && s.studentId.indexOf(query) !== -1) ||
                (sw && sw.title && sw.title.toLowerCase().indexOf(qLower) !== -1) ||
-               (sw && sw.hall && (sw.hall === query || (query.indexOf('관') !== -1 && sw.hall.indexOf(query) !== -1)));
+               (sw && sw.hall && (sw.hall === query || (query.indexOf('관') !== -1 && hallWithBuilding(sw.hall).indexOf(query) !== -1)));
       });
       matched.sort(function(a, b){
         var ak = studentSortKey(a), bk = studentSortKey(b);
@@ -2062,7 +2078,7 @@
           '<div class="detail-section">' +
             '<div class="detail-section-title">배치 관</div>' +
             ((work && work.hall)
-              ? '<div class="detail-hall">' + escapeHtml(work.hall) + '</div>' + renderHallMap(work, pd3.color)
+              ? '<div class="detail-hall">' + escapeHtml(hallWithBuilding(work.hall)) + '</div>' + renderHallMap(work, pd3.color)
               : '<div class="detail-empty">아직 배치 정보가 없습니다.</div>') +
           '</div>' +
           '<div class="detail-section">' +

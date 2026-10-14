@@ -21,7 +21,8 @@
 "label": "1500×600",
 "qty": 14
 }
-]
+],
+"building": "신관"
 },
 "seoul-hall1": {
 "hallLabel": "1관",
@@ -41,7 +42,8 @@
 "label": "1200×600",
 "qty": 3
 }
-]
+],
+"building": "본관"
 },
 "seoul-hall2": {
 "hallLabel": "2관",
@@ -65,7 +67,8 @@
 "label": "1500×600",
 "qty": 4
 }
-]
+],
+"building": "본관"
 },
 "seoul-hall3": {
 "hallLabel": "3관",
@@ -81,7 +84,8 @@
 "label": "우드테이블",
 "qty": 10
 }
-]
+],
+"building": "본관"
 },
 "seoul-hall4": {
 "hallLabel": "4관",
@@ -97,7 +101,8 @@
 "label": "1500×600",
 "qty": 6
 }
-]
+],
+"building": "본관"
 },
 "seoul-hall5": {
 "hallLabel": "5관",
@@ -121,7 +126,8 @@
 "label": "1500×600",
 "qty": 9
 }
-]
+],
+"building": "신관"
 },
 "seoul-maruart-floor1": {
 "hallLabel": "마루아트센터 1층",
