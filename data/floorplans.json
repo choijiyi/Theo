@@ -1,37 +1,37 @@
 {
 "seoul-grand": {
 "hallLabel": "그랜드관",
-"imageDataUrl": "images/floorplans/seoul-grand-1015.jpg",
+"imageDataUrl": "images/floorplans/seoul-grand-1016.jpg",
 "location": "seoul",
 "order": 1,
-"sourceTitle": "10월 15일 전체공유용 정리본",
-"uploadedAt": "2026-10-14T18:00:00.000Z",
-"versionLabel": "2026-10-15 전체공유용 배치도",
+"sourceTitle": "10월 15일 교수님 미팅 변경본",
+"uploadedAt": "2026-10-16T13:30:00.000Z",
+"versionLabel": "2026-10-16 최종 배치도",
 "id": "seoul-grand",
 "tableCounts": [
 {
 "label": "600×600",
-"qty": 20
+"qty": 19
 },
 {
 "label": "1200×600",
-"qty": 6
+"qty": 7
 },
 {
 "label": "1500×600",
-"qty": 14
+"qty": 15
 }
 ],
 "building": "신관"
 },
 "seoul-hall1": {
 "hallLabel": "1관",
-"imageDataUrl": "images/floorplans/seoul-hall1-1015.jpg",
+"imageDataUrl": "images/floorplans/seoul-hall1-1016.jpg",
 "location": "seoul",
 "order": 5,
-"sourceTitle": "10월 15일 전체공유용 정리본",
-"uploadedAt": "2026-10-14T18:00:00.000Z",
-"versionLabel": "2026-10-15 전체공유용 배치도",
+"sourceTitle": "10월 15일 교수님 미팅 변경본",
+"uploadedAt": "2026-10-16T13:30:00.000Z",
+"versionLabel": "2026-10-16 최종 배치도",
 "id": "seoul-hall1",
 "tableCounts": [
 {
@@ -39,8 +39,8 @@
 "qty": 1
 },
 {
-"label": "1200×600",
-"qty": 3
+"label": "1500×600",
+"qty": 6
 },
 {
 "label": "우드테이블",
@@ -55,17 +55,17 @@
 },
 "seoul-hall2": {
 "hallLabel": "2관",
-"imageDataUrl": "images/floorplans/seoul-hall2-1015.jpg",
+"imageDataUrl": "images/floorplans/seoul-hall2-1016.jpg",
 "location": "seoul",
 "order": 3,
-"sourceTitle": "10월 15일 전체공유용 정리본",
-"uploadedAt": "2026-10-14T18:00:00.000Z",
-"versionLabel": "2026-10-15 전체공유용 배치도",
+"sourceTitle": "10월 15일 교수님 미팅 변경본",
+"uploadedAt": "2026-10-16T13:30:00.000Z",
+"versionLabel": "2026-10-16 최종 배치도",
 "id": "seoul-hall2",
 "tableCounts": [
 {
 "label": "600×600",
-"qty": 32
+"qty": 26
 },
 {
 "label": "1200×600",
@@ -73,21 +73,25 @@
 },
 {
 "label": "1500×600",
-"qty": 4
+"qty": 5
 }
 ],
 "building": "본관"
 },
 "seoul-hall3": {
 "hallLabel": "3관",
-"imageDataUrl": "images/floorplans/seoul-hall3-1015.jpg",
+"imageDataUrl": "images/floorplans/seoul-hall3-1016.jpg",
 "location": "seoul",
 "order": 2,
-"sourceTitle": "10월 15일 전체공유용 정리본",
-"uploadedAt": "2026-10-14T18:00:00.000Z",
-"versionLabel": "2026-10-15 전체공유용 배치도",
+"sourceTitle": "10월 15일 교수님 미팅 변경본",
+"uploadedAt": "2026-10-16T13:30:00.000Z",
+"versionLabel": "2026-10-16 최종 배치도",
 "id": "seoul-hall3",
 "tableCounts": [
+{
+"label": "1200×600",
+"qty": 1
+},
 {
 "label": "우드테이블",
 "qty": 6
@@ -97,12 +101,12 @@
 },
 "seoul-hall4": {
 "hallLabel": "4관",
-"imageDataUrl": "images/floorplans/seoul-hall4-1015.jpg",
+"imageDataUrl": "images/floorplans/seoul-hall4-1016.jpg",
 "location": "seoul",
 "order": 4,
-"sourceTitle": "10월 15일 전체공유용 정리본",
-"uploadedAt": "2026-10-14T18:00:00.000Z",
-"versionLabel": "2026-10-15 전체공유용 배치도",
+"sourceTitle": "10월 15일 교수님 미팅 변경본",
+"uploadedAt": "2026-10-16T13:30:00.000Z",
+"versionLabel": "2026-10-16 최종 배치도",
 "id": "seoul-hall4",
 "tableCounts": [
 {
@@ -114,25 +118,25 @@
 },
 "seoul-hall5": {
 "hallLabel": "5관",
-"imageDataUrl": "images/floorplans/seoul-hall5-1015.jpg",
+"imageDataUrl": "images/floorplans/seoul-hall5-1016.jpg",
 "location": "seoul",
 "order": 0,
-"sourceTitle": "10월 15일 전체공유용 정리본",
-"uploadedAt": "2026-10-14T18:00:00.000Z",
-"versionLabel": "2026-10-15 전체공유용 배치도",
+"sourceTitle": "10월 15일 교수님 미팅 변경본",
+"uploadedAt": "2026-10-16T13:30:00.000Z",
+"versionLabel": "2026-10-16 최종 배치도",
 "id": "seoul-hall5",
 "tableCounts": [
 {
 "label": "600×600",
-"qty": 27
+"qty": 31
 },
 {
 "label": "1200×600",
-"qty": 4
+"qty": 2
 },
 {
 "label": "1500×600",
-"qty": 9
+"qty": 1
 },
 {
 "label": "우드테이블",
