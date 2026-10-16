@@ -1,12 +1,12 @@
 {
 "seoul-grand": {
 "hallLabel": "그랜드관",
-"imageDataUrl": "images/floorplans/seoul-grand-1016.jpg",
+"imageDataUrl": "images/floorplans/seoul-grand-1017.jpg",
 "location": "seoul",
 "order": 1,
-"sourceTitle": "10월 15일 교수님 미팅 변경본",
-"uploadedAt": "2026-10-16T13:30:00.000Z",
-"versionLabel": "2026-10-16 최종 배치도",
+"sourceTitle": "10월 17일 최종 도면 (오다인·황지은 자리 교체)",
+"uploadedAt": "2026-10-16T20:15:00.000Z",
+"versionLabel": "2026-10-17 최종 배치도",
 "id": "seoul-grand",
 "tableCounts": [
 {
