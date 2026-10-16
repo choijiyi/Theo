@@ -72,12 +72,12 @@
 "name": "테이블",
 "order": 6,
 "quantity": 104,
-"quantityNote": "사용 84 + 여분 20",
+"quantityNote": "사용 78 + 여분 26",
 "size": "600x600x1000",
 "teardownSchedule": "26일(월) 오후 5시 (반납)",
 "vendor": "렌탈프리",
 "id": "rental-table-600",
-"location": "1관, 2관, 5관, 그랜드관"
+"location": "1관, 2관, 4관, 5관, 그랜드관"
 },
 "rental-table-1200": {
 "contact": "010-4090-0750",
